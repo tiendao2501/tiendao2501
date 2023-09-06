@@ -1,0 +1,468 @@
+body {
+ font-family: deglacer;
+}
+
+#headerLogo{
+    width: 30vw;
+    /* max-width: 534px; */
+    /* width: 30%; */
+    aspect-ratio: 1/1;
+    transition: all 0.5s;
+}
+
+.header{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    gap: 18px;
+    z-index: 10000;
+}
+
+#mobile-menu{
+    display: none;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    gap: 48px;
+    position: fixed;
+    right: 48px;
+    z-index: 10000;
+    opacity: 0;
+    color: var(--secondary-color);
+    transition: all 0.5s;
+}
+
+#menu span{
+    display: inline-block;
+}
+
+#menu .reserveCTA{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 48px;
+    right: 32px;
+}
+
+.messenger-icon{
+    width: 68px;
+    height: 68px;
+    background-color: var(--secondary-color);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-wrapper{
+    position: fixed;
+	width: 100vw;
+	height: 100vh;
+    z-index: 6000;   
+}
+
+
+#loadingContainer{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+    transform: scale(3);
+}
+
+#loadingContainer > svg{
+	width: 100% !important;
+	height: 100% !important;
+	/* transform: translate(-25%, -25%) !important; */
+}
+
+
+.hero-warper{
+	width: 100vw;
+	height: 100vh;
+    z-index: 2000;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+#heroContainer{
+	width: 100vw;
+	height: 100vh;
+    transform: scale(2.7);
+    overflow: hidden;
+    z-index: 2000;
+}
+
+#heroContainer > svg{
+	width: 100% !important;
+	height: 100% !important;
+    overflow: hidden;
+	/* transform: translate(-25%, -25%) !important; */
+}
+
+.greenOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-color);
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#aboutDeglacer{
+    position: relative;
+    width: 100vw;
+    /* z-index: 2500; */
+    background: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    /* overflow: hidden; */
+}
+
+#aboutDeglacer .sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+    z-index: 200;
+    width: 400px;
+    height: 300px;
+    transition: all 0.5s ease-in-out;
+    /* background-color: rgba(165, 42, 42, 0.483); */
+}
+
+.sticky .warper{
+    position: relative;
+}
+
+.sticky .warper img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -200px;
+    width: 400px;
+    transition: all 0.5s;
+}
+
+
+#aboutDeglacer > .content{
+    margin: 50px 60px 200px 60px;
+    max-width: 1000px;
+}
+
+#aboutDeglacer > #patternContainer{
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    z-index: 100;
+}
+
+/* Contact Us ======================= */
+#contactUs{
+    background-color: var(--pure-black);
+    z-index: 2600;
+    position: relative;
+}
+
+#contactUs .staffImg{
+    z-index: 50;
+    width: 100vw;
+    box-sizing: border-box;
+    height: 780px;
+    position: relative;
+    /* background-color: black; */
+}
+
+#contactUs #mask{
+    z-index: 50;
+    -webkit-mask-image: url(../asset/icon/mask.svg);
+    mask-image: url(../asset/icon/mask.svg);
+    -webkit-mask-size: 260px;
+    mask-size: 260px;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    position: absolute;
+    top: 32;
+    width: 100%;
+    height: 100%;
+    mask-position: 100px 100px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../asset/contact-section/staff-main.png);
+  }
+
+#contactUs .bg-img{
+    z-index: 40;
+    position: absolute;
+    top: 32;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../asset/contact-section/staff-bg.png);
+}
+
+#contactUs div{
+    color: var(--secondary-color);
+}
+
+#contactUs #contactUsSeparateLine{
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 0.2px;
+}
+
+#contactUs .content{
+    z-index: 300;
+    padding: 0px 32px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    position: relative;
+    top: -214px;
+}
+
+#contactUs > .content > * {
+    max-width: 960px;
+}
+
+
+#contactUs  .content * {
+    z-index: 300;
+}
+
+#contactUs .content .text .normal-text{
+    font-family: Oldschool Grotesk;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 181.4%; /* 43.536px */
+    letter-spacing: 1.68px;
+}
+
+#contactUs .content .text .quote > *{
+    font-size: 32px !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    line-height: 160% !important;
+    letter-spacing: 2.24px;
+}
+
+#contactUs .info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#contactUs .info .title{
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+#contactUs .social{
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#contactUs .map{
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.googlemap{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+}
+
+.googlemap .overlay1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: #67513D;
+    mix-blend-mode: overlay;
+    z-index: 100 !important;
+    pointer-events: none;
+}
+
+.googlemap .overlay2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: var(----main-color-100, #000);
+    mix-blend-mode: color;
+    z-index: 95 !important;
+    pointer-events: none;
+}
+
+.googlemap iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 90 !important;
+}
+
+/* Mobile size ============================================== */
+
+@media only screen and (max-width: 759px) {
+
+    #menu{
+        width: 100vw;
+        height: 100vh;
+        /* background-color: #a437d643; */
+        right: 0px;
+        top: 0px;
+        pointer-events: none;
+    }
+
+    #menu .menu-about{
+        left: 24px;
+        top: 24px;
+        position: fixed;
+        pointer-events: auto;
+    }
+
+    #menu .menu-popup{
+        left: 24px;
+        top: 24px;
+        position: fixed;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    #menu .menu-menu{
+        position: fixed;
+        right: 24px;
+        top: 24px;
+        pointer-events: auto;
+    }
+
+    #menu .menu-contact{
+        position: fixed;
+        left: 24px;
+        bottom: 24px;
+        pointer-events: auto;
+    }
+    
+    #menu .reserveCTA{
+        bottom: 24px;
+        right: 12px;
+        pointer-events: auto;
+    }
+
+    #headerLogo{
+        width: 80vw;
+    }
+
+    #aboutDeglacer img{
+        width: 250px;
+        top: 0px;
+    }
+
+    #aboutDeglacer > .content{
+        width: 90vw;
+        box-sizing: border-box;
+    }
+
+    #aboutDeglacer #patternContainer{
+        width: 100vw;
+        scale: 4;
+        overflow-x: hidden;
+    }
+
+    #aboutDeglacer .sticky{
+        width: 100vw;
+        overflow-x: clip;
+    }
+
+    #aboutDeglacer > .image{
+        height: 330px;
+    }
+
+    #tagline{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 7%;
+    }
+
+    .header{
+        width: 100vw;
+        height: 100vh;
+        gap: 0px;
+    }
+
+    #contactUs .content {
+        top: -60px;
+    }
+
+    #contactUs .content .text .normal-text{
+        font-family: Oldschool Grotesk;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 180%;
+        letter-spacing: 1.68px;
+    }
+    
+    #contactUs .content .text .quote > *{
+        font-size: 20px !important;
+        font-style: normal;
+        font-weight: 600 !important;
+        line-height: 160% !important;
+        letter-spacing: 2.24px;
+    }
+
+    #contactUs .info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: space-between;
+    }
+
+    #mask{
+        display: none;
+    }
+
+    #contactUs .staffImg{
+        height: 60vw;
+    }
+}
