@@ -1,122 +1,139 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .parent-to-position-by {
+            position: relative;
+            top: 40px; /* just to show it's relative positioned */
+        }
+        .scrolling-contents {
+            display: inline-block;
+            width: 100%;
+            height: 200px;
+            line-height: 20px;
+            white-space: nowrap;
+            background-color: #CCC;
+            overflow: scroll;
+        }
+        .fixed-elements {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .fixed {
+            position: absolute; /* effectively fixed */
+            top: 20px;
+            left: 20px;
+            background-color: #F00;
+            width: 200px;
+            height: 20px;
+        }
 
-
-<!-- Meta data -->
-
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Deglacer Bistro</title>
-	<link rel="icon" href="/asset/icon/Logo.ico">
-
-	<meta name="title" content="Deglacer Bistro">
-	<meta property="og:type" content="website">
-	<meta property="description" content='Deglacer Modern Riverside Bistro'/>
-	<meta property="og:image" content="https://i.ibb.co/vjDZt2r/tamdovisual-website-thumbnail.jpg"/>
-	<meta property="og:description" content='Deglacer Modern Riverside Bistro'/>
-	<meta property="og:url" content='https://deglacerbistro.com//'/>
-	<meta name="description" content="DÉGLACER is a modern open-kitchen bistro offering simple & delightful plates located in the up-and-coming Long Bien neighborhood. We strive to honor the classic French culinary technique whilst cultivating originality of our own, using hyperlocal ingredients offered by our garden and Vietnamese market.">
-
-	<!-- custom css -->
-
-	<link rel="stylesheet" type="text/css" href="style/definition.css">
-	<link rel="stylesheet" type="text/css" href="style/style.css">
-
-	<!-- Libs scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="script/libs/jquery.csv.min.js"></script>
-
+        .scrolling{
+            height: 300vh;
+            width: 100vw;
+            color: rgb(78, 78, 78);
+            display: block;
+        }
+    </style>
 </head>
 <body>
 
-    <input type="file" id="csvfile" />  
-    <input type="button" id="viewfile" value="Export To Table" onclick="ExportToTable()" />  
-    <br />  
-    <br />  
-    <table id="csvtable">  
-        <thead>  
-            <tr>  
-                <th>    
-                    Name    
-                </th>  
-                <th>    
-                    Job    
-                </th>  
-                <th>    
-                    City    
-                </th>  
-                <th>    
-                    State    
-                </th>  
-            </tr>  
-        </thead>  
-        <tbody></tbody>  
-    </table>     
-</div>
+    <div class="parent-to-position-by">
+        <div class="fixed-elements">
+            <div class="fixed">
+                I am &quot;fixed positioned&quot;
+            </div>
+        </div>
+        <div class="scrolling-contents">
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            Lots of contents which may be scrolled.
+            <br>
+            
+        </div>
+    </div>
 
-<style>
-    td{
-        width: 300px;
-    }
-    tr{
-        width: 1800px;
-    }
-</style>
-
-<!-- <script type = "text/javascript">  
- function ExportToTable() {  
-  var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.csv)$/;  
-  //Checks whether the file is a valid csv file    
-  if (regex.test($("#csvfile").val().toLowerCase())) {  
-   //Checks whether the browser supports HTML5    
-   if (typeof(FileReader) != "undefined") {  
-    var reader = new FileReader();  
-    reader.onload = function(e) {  
-     var table = $("#csvtable > tbody");  
-     //Splitting of Rows in the csv file    
-     var csvrows = e.target.result.split("\n");  
-     for (var i = 0; i < csvrows.length; i++) {  
-      if (csvrows[i] != "") {  
-       var row = "<tr>";  
-       var csvcols = csvrows[i].split(",");  
-       //Looping through each cell in a csv row    
-       for (var j = 0; j < csvcols.length; j++) {  
-        var cols = "<td>" + csvcols[j] + "</td>";  
-        row += cols;  
-       }  
-       row += "</tr>";  
-       table.append(row);  
-      }  
-     }  
-     $('#csvtable').show();  
-    }  
-    reader.readAsText($("#csvfile")[0].files[0]);  
-   } else {  
-    alert("Sorry! Your browser does not support HTML5!");  
-   }  
-  } else {  
-   alert("Please upload a valid CSV file!");  
-  }  
- }  
-</script>   -->
-
-
-<script>
-    $.ajax({
-    url: "menu.csv",
-    async: false,
-    success: function (csvd) {
-        var items = $.csv.toObjects(csvd);
-        var jsonobject = JSON.stringify(items);
-        alert(jsonobject);
-    },
-    dataType: "text",
-    complete: function () {
-        // call a function on complete 
-    }
-});
-</script>
+    <div class="scrolling"></div>
+    
 </body>
 </html>

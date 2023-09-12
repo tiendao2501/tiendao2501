@@ -22,6 +22,32 @@
   font-weight: 600;
 }
 
+/* ::-webkit-scrollbar { 
+  display: none; 
+  }   */
+
+/* Custom scroll bar ============================*/
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00000080;
+}
+
 
 body {
   margin: 0px;

@@ -466,3 +466,219 @@ body {
         height: 60vw;
     }
 }
+
+
+/* Meal Menu ------------------------------------------------------ */
+#meal-menu{
+    background-color: var(--main-color);
+    position: relative;
+}
+
+#meal-menu .menu-background{
+    position: fixed;
+    border-radius: 16px;
+    background-color: #033327;
+    border: 0.5px solid var(--secondary-color, #E0C0A4);
+    width: -webkit-fill-available;
+    height: 90vh;
+    margin: 32px 180px;
+    top: 62px;
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+
+#meal-menu .meal-menu-scroller {
+    background-color: black;
+    position: fixed;
+    height: 100vh;
+    width: 100px;
+    top: 0px;
+    left: 10px;
+}
+
+#meal-menu-list{
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 32px 200px;
+    gap: 32px;
+}
+
+#meal-menu > #meal-menu-list > .meal-menu-container{
+    background: #043C2D;
+    border-radius: 16px;
+    border: 0.5px solid var(--secondary-color, #E0C0A4);
+    position: relative;
+    top: 50px;
+    /* margin: 32px 200px; */
+    padding-bottom: 32px ;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.meal-menu-tabbar{
+    /* border-bottom: 0.5px solid var(--secondary-color); */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 32px;
+    padding: 24px 0px 24px 24px;
+    box-sizing: border-box;
+	transform: rotate(270deg) translate(-100%,80px);
+	transform-origin: left bottom;
+    position: sticky;
+    top: 0px;
+    width: fit-content;
+    /* transition: all 1s ease-in-out; */
+}
+
+.meal-menu-tabbar-item{
+    color: var(--secondary-color);
+    opacity: 0.3;
+    /* display: inline-block; */
+    transition: all 0.5s ease;
+}
+
+.meal-menu-tabbar-item:hover{
+    opacity: 1;
+}
+
+
+.meal-menu-sub1{
+    color: var(--secondary-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 16px 80px;
+    margin: 0px 80px;
+    border-left: 0.5px solid var(--secondary-color);
+    border-right: 0.5px solid var(--secondary-color);
+}
+
+.meal-menu-sub2-title{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 16px;
+    transition: all 0.5s;
+}
+
+#meal-menu .separate-line{
+    opacity: 0.2;
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-bottom: 8px;
+    justify-content: center;
+}
+
+#meal-menu .separate-line hr{
+    margin: 0px;
+    border: 0.1px solid  var(--secondary-color);
+    width: 100%;
+}
+
+.end-section-separator{
+    position: relative;
+    height: 52px;
+    transition: all 0.5s;
+}
+
+.end-section-separator img{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+
+.meal-menu-sub2-title-text{
+    width: auto;
+    display: block;
+    white-space:nowrap;
+    text-transform: uppercase;
+}
+
+.meal-menu-sub2{
+    margin: 12px 0px;
+}
+
+.meal-menu-sub1-title{
+    transition: all 0.5s;
+}
+
+
+.meal-list-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 16px 0px;
+    gap: 0px 48px;
+    position: relative;
+}
+
+.meal-list-div .meal-item{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 34%;
+    flex-grow: 1;
+}
+
+.center-horizontal-line{
+    position: absolute;
+    top: 10%;
+    width: 1px;
+    height: 80%;
+    left: 50%;
+}
+
+.meal-image-indicator{
+    position: absolute;
+    top: 50%;
+    left: -16px;
+    transform: translate(0%, -50%);
+}
+
+.meal-item .meal-item-row{
+    margin: 0px 24px;
+    display: flex;
+    position: relative;
+    background-color: #043c2d01;
+    border-bottom: solid 0.5px #e0c0a410;
+
+}
+
+.meal-item-row .meal-info{
+    text-align: left;
+    color: var(--secondary-color);
+    padding: 16px 0px;
+    position: relative;
+}
+
+.meal-item-image-container .meal-image{
+    max-width: 100vw;
+    max-height: 100vh;
+    display: none;
+    transition: opacity 1s;
+    opacity: 0;
+    width: 30vw;
+    position: fixed;
+    top: 50vh;
+    left: 0px;
+    /* padding: 0px 200px; */
+    transform: translate(-50%, -50%);
+}
+
+.meal-item-image-container{
+    background-color: red;
+    z-index: 500;
+}
