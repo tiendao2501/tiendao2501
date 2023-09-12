@@ -2,138 +2,37 @@
 <html>
 <head>
     <style>
-        .parent-to-position-by {
-            position: relative;
-            top: 40px; /* just to show it's relative positioned */
+
+        body{
+            height: 200vh;
         }
-        .scrolling-contents {
-            display: inline-block;
-            width: 100%;
-            height: 200px;
-            line-height: 20px;
-            white-space: nowrap;
-            background-color: #CCC;
-            overflow: scroll;
-        }
-        .fixed-elements {
-            display: inline-block;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        .fixed {
-            position: absolute; /* effectively fixed */
-            top: 20px;
-            left: 20px;
-            background-color: #F00;
-            width: 200px;
-            height: 20px;
+        #maskDiv{
+            width:1280px;
+            height:5000px;
+            background: rgba(255, 166, 0, 0.302);
+            -webkit-clip-path: url(#maskRect1);
         }
 
-        .scrolling{
-            height: 300vh;
-            width: 100vw;
-            color: rgb(78, 78, 78);
-            display: block;
+        svg, svg *{
+            position: fixed;
+            top: 0;
         }
     </style>
 </head>
 <body>
 
-    <div class="parent-to-position-by">
-        <div class="fixed-elements">
-            <div class="fixed">
-                I am &quot;fixed positioned&quot;
-            </div>
-        </div>
-        <div class="scrolling-contents">
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            Lots of contents which may be scrolled.
-            <br>
-            
-        </div>
-    </div>
+    <div id="maskDiv"></div>
 
-    <div class="scrolling"></div>
-    
+    <svg>
+      <defs>
+        <clipPath id="maskRect1" >
+          <!-- <path id="curve" d="M1279.919,13c0,0-612.618,21.562-816.925,22.298C347.224,35.715,0,26,0,26V13c0,0,347.981,9.71,464.005,9.287C668.059,21.542,1279.919,0,1279.919,0V13z"/> -->
+            <ellipse cx="353.5" cy="166.5" rx="353.5" ry="166.5" fill="#DC1414"/>
+            
+
+        </clipPath>
+      </defs>
+    </svg>
+
 </body>
 </html>

@@ -503,10 +503,18 @@ function loadMealMenuContainer(){
     //for each Menu Section ------
     for (var i = 0; i < mealMenu.length; i++){
         var mealMenuContainer = document.createElement('div');
+
         mealMenuContainer.id = "meal-container-"+ trimWhitespace(mealMenu[i].name);
         mealMenuContainer.classList.add('meal-menu-container','meal-menu-section');
         mealMenuContainer.setAttribute('name', mealMenu[i].name);
 
+
+        var mealMenuContainerBg = document.createElement('div');
+        var separateLine = document.createElement('div');
+        separateLine.classList.add('menu-bg-separate-line');
+        mealMenuContainerBg.appendChild(separateLine);
+        mealMenuContainerBg.classList.add('meal-menu-container-bg');
+        
         // add tab into meal menu container -------------------
         var tabbar = document.createElement('div');
         tabbar.id = 'tabbar-' + trimWhitespace(mealMenu[i].name);
@@ -588,6 +596,13 @@ function loadMealMenuContainer(){
                         mealImgUrl = 'asset/menu-img/' + mealItem.Image;
                     };
                     mealDiv.classList.add('meal-item', 'meal-menu-all-item');
+                    // add class left-right-class to mealItem -> to hide when show image.
+                    if (a % 2){
+                        mealDiv.classList.add ('meal-item-left');
+                    }
+                    else{
+                        mealDiv.classList.add('meal-item-right');
+                    }
                     mealDiv.innerHTML = `
                     <div class="meal-item-row">
                     <img style="display: ${hasImgDisplay};" class='meal-image-indicator' src="asset/icon/image-indicator.svg">
@@ -607,7 +622,7 @@ function loadMealMenuContainer(){
 
                 // add end sub2 section lines
                 var endSectionSeparator = document.createElement('div');
-                endSectionSeparator.classList.add('end-section-separator', 'separate-line');
+                endSectionSeparator.classList.add('end-section-separator', 'separate-line', 'meal-menu-all-item');
                 endSectionSeparator.innerHTML = `
                 <img src="asset/icon/end-section-center.svg" class = "end-section-center">
                 <hr> <hr>
@@ -620,6 +635,7 @@ function loadMealMenuContainer(){
 
         // add meal menu container into mealMenu List ----------
         mealMenuList.appendChild(mealMenuContainer);
+        document.getElementById('menu-bg-container').appendChild(mealMenuContainerBg);
     }
 }
 
@@ -645,31 +661,48 @@ for (var i = 0; i < scrollTriggerMenuContainer.length; i++) {
             start: () => "bottom " + (tabbar.getBoundingClientRect().height + 230),
             end: () => "bottom " + (tabbar.getBoundingClientRect().height + 100),
             // scrub: true, cái này sẽ chạy animate theo cuộn chuột, bỏ đi thì sẽ tự động chạy khi cuộn.
-            toggleActions: "restart none none reverse", // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
+            toggleActions: "restart none none reverse", 
             // markers: true
         },
         duration: 0.43,
         opacity: 0,
     });
+
+    // move menu-background with menu-section
+    gsap.from(document.getElementsByClassName('meal-menu-container-bg')[i], {
+        scrollTrigger: {
+            trigger: tabbar,
+            start: 'top bottom+=100',
+            end: 'top top+=100',
+            scrub: true, 
+            toggleActions: "restart none none reverse", 
+            // markers: true
+        },
+        top: '100vh',
+        ease: 'none',
+        duration: 0.3,
+    });
 }
+
+// hide item when menu item leave the background ------------
 
 var scrollTriggerAllMenuItem = gsap.utils.toArray('.meal-menu-all-item');
 scrollTriggerAllMenuItem.forEach((el) => {
     gsap.fromTo(el, {
-        opacity: 1,
+        opacity: 0,
     }, {
         scrollTrigger: {
             trigger: el,
-            start: 'top top+=20',
-            end: 'top top+=10',
+            start: 'bottom bottom-=100',
+            end: 'top top+=100',
             // scrub: true, 
-            toggleActions: "restart none none reverse", 
+            toggleActions: "restart reverse restart restart", // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
             // markers: true
         },
-        opacity: 0.2,
-        duration: 0.3,
+        opacity: 1,
+        duration: 0.1,
         ease: "power2.out",
-        stagger: 0.3,
+        // stagger: 0.3,
     });
 });
 
@@ -684,24 +717,35 @@ gsap.from('#meal-menu .menu-background',{
         // markers: true
     },
     top: '100vh',
-    duration: 0.4,
+    // duration: 0.4,
     ease: "power1.inOut",
 });
 
 
+// hover on meal has image -> show image ----------------------
+
 function showThumb(el){
-    el.getElementsByClassName('meal-info')[0].style.opacity = 0.5;
+    // console.log(el);
     var image = el.getElementsByClassName('meal-image')[0];
     image.style.display = 'block';
     image.style.opacity = 1;
     // document.querySelectorAll('.meal-menu-sub2-title, .end-section-separator, .meal-menu-sub1-title').style.width = '50%';
 
+    // set left right -----------
     if (el.getBoundingClientRect().left < window.innerWidth/2){
         // return 1 -> image on right
         image.style.left = (window.innerWidth/2 + (window.innerWidth-560)/4) + 'px';
         document.querySelectorAll('.meal-menu-sub2-title, .end-section-separator, .meal-menu-sub1-title').forEach(element => {
             element.style.width = '50%';
         });
+
+        document.querySelectorAll('.meal-item-left *').forEach(element => {
+            element.style.opacity = '0';
+        });
+        document.querySelectorAll('.meal-item-right *').forEach(element => {
+            element.style.opacity = '0.5';
+        });
+
     } else {
         // return 0 -> image on left
         image.style.left = (window.innerWidth/2-200)/2+240 + 'px';
@@ -709,6 +753,35 @@ function showThumb(el){
             element.style.width = '50%';
             element.style.marginLeft = '50%';
         });
+
+        document.querySelectorAll('.meal-item-right *').forEach(element => {
+            element.style.opacity = '0';
+        });
+        document.querySelectorAll('.meal-item-left *').forEach(element => {
+            element.style.opacity = '0.5';
+        });
+
+    }
+
+    el.querySelectorAll('*').forEach(element => {
+        element.style.opacity = '1';
+    });
+
+    // set top -----------------
+    var sectionMenu = el.closest(".meal-menu-container");
+    if(sectionMenu.getBoundingClientRect().top > 0) {
+
+        // section doesn't scroll all way up to the top of screen
+        image.style.top = sectionMenu.getBoundingClientRect().top + 80 + 'px';
+        image.style.transform = 'translate(-50%, 0%)';
+    }
+    // else if( sectionMenu.getBoundingClientRect().bottom < image.getBoundingClientRect().bottom ){
+    //     image.style.top = sectionMenu.getBoundingClientRect().bottom - image.getBoundingClientRect().height - 80 + 'px';
+    //     image.style.transform = 'translate(-50%, 0%)';
+    // }
+    else {
+        image.style.top = '50vh';
+        image.style.transform = 'translate(-50%, -50%)';
     }
 }
 
@@ -719,9 +792,17 @@ function hideThumb(el){
     var image = el.getElementsByClassName('meal-image')[0];
     image.style.display = 'none';
     image.style.opacity = 0;
+    image.style.top = '50vh';
+    image.style.transform = 'translate(-50%, -50%)';
+    image.style.lèt = '0px';
     document.querySelectorAll('.meal-menu-sub2-title, .end-section-separator, .meal-menu-sub1-title').forEach(element => {
         element.style.width = '100%';
         element.style.marginLeft = '0';
+    });
+
+
+    document.querySelectorAll('.meal-item-left *, .meal-item-right *').forEach(element => {
+        element.style.opacity = '1';
     });
 }
 
@@ -729,12 +810,13 @@ var mealsHaveImage = document.getElementsByClassName('meal-has-image');
 for(var i = 0; i< mealsHaveImage.length; i++){
     // console.log(mealsHaveImage[i]);
 
+
     mealsHaveImage[i].addEventListener('mouseenter', function(){
         showThumb( $(this)[0] )
     });
 
     mealsHaveImage[i].addEventListener('mouseleave', function(){
-        hideThumb( $(this)[0] )
+        hideThumb( $(this)[0])
     });
 
 }
