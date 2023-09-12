@@ -631,6 +631,7 @@ body {
     position: relative;
     width: 34%;
     flex-grow: 1;
+    max-width: 50%;
 }
 
 .center-horizontal-line{
@@ -674,11 +675,12 @@ body {
     position: fixed;
     top: 50vh;
     left: 0px;
+    z-index: 1000;
     /* padding: 0px 200px; */
     transform: translate(-50%, -50%);
 }
 
 .meal-item-image-container{
     background-color: red;
-    z-index: 500;
+    z-index: 1000;
 }

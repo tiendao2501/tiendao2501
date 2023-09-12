@@ -690,6 +690,7 @@ gsap.from('#meal-menu .menu-background',{
 
 
 function showThumb(el){
+    el.getElementsByClassName('meal-info')[0].style.opacity = 0.5;
     var image = el.getElementsByClassName('meal-image')[0];
     image.style.display = 'block';
     image.style.opacity = 1;
@@ -697,13 +698,13 @@ function showThumb(el){
 
     if (el.getBoundingClientRect().left < window.innerWidth/2){
         // return 1 -> image on right
-        image.style.left = (window.innerWidth/2 + (window.innerWidth-400)/4) + 'px';
+        image.style.left = (window.innerWidth/2 + (window.innerWidth-560)/4) + 'px';
         document.querySelectorAll('.meal-menu-sub2-title, .end-section-separator, .meal-menu-sub1-title').forEach(element => {
             element.style.width = '50%';
         });
     } else {
         // return 0 -> image on left
-        image.style.left = (window.innerWidth/2-200)/2+200 + 'px';
+        image.style.left = (window.innerWidth/2-200)/2+240 + 'px';
         document.querySelectorAll('.meal-menu-sub2-title, .end-section-separator, .meal-menu-sub1-title').forEach(element => {
             element.style.width = '50%';
             element.style.marginLeft = '50%';
@@ -713,6 +714,8 @@ function showThumb(el){
 
 
 function hideThumb(el){
+    el.getElementsByClassName('meal-info')[0].style.opacity = 1;
+
     var image = el.getElementsByClassName('meal-image')[0];
     image.style.display = 'none';
     image.style.opacity = 0;
