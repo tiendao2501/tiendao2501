@@ -240,6 +240,10 @@ a{
 	color: var(--main-color-100);
 }
 
+a:hover{
+	text-decoration : underline;
+}
+
 
 
 .bold-24 {

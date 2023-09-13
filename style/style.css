@@ -261,6 +261,7 @@ body {
     letter-spacing: 1.68px;
 }
 
+
 #contactUs .content .text .quote > *{
     font-size: 32px !important;
     font-style: normal;
@@ -358,7 +359,7 @@ body {
         pointer-events: auto;
     }
 
-    #menu .menu-popup{
+    #menu .menu-events{
         left: 24px;
         top: 24px;
         position: fixed;
@@ -469,7 +470,10 @@ body {
 
 /* Meal Menu ------------------------------------------------------ */
 #meal-menu{
-    background-color: var(--main-color);
+    background-image: url( '../asset/icon/pattern-bg.svg' );
+    background-repeat: repeat;
+    background-position: center;
+
     position: relative;
 }
 
@@ -558,13 +562,13 @@ body {
 
 .meal-menu-tabbar-item{
     color: var(--secondary-color);
-    opacity: 0.3;
+    opacity: 1;
     /* display: inline-block; */
     transition: all 0.5s ease;
 }
 
 .meal-menu-tabbar-item:hover{
-    opacity: 1;
+    opacity: 0.5;
 }
 
 
@@ -702,11 +706,10 @@ body {
     z-index: 1000;
 }
 
-
-.meal-item-left{
-    opacity: 1;
+.meal-item-left * {
+    transition: opacity 0.3s ease-in-out;
 }
 
-.meal-item-right{
-    opacity: 1;
+.meal-item-right * {
+    transition: opacity 0.3s ease-in-out;
 }

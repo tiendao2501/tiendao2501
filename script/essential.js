@@ -1,4 +1,5 @@
 // Playing Lottie =========================================
+stylesheet = document.styleSheets[1];
 var loadingContainer = document.getElementById('loadingContainer')
 var loadingLottieItem = bodymovin.loadAnimation({
     wrapper: loadingContainer,
@@ -671,7 +672,7 @@ for (var i = 0; i < scrollTriggerMenuContainer.length; i++) {
     // move menu-background with menu-section
     gsap.from(document.getElementsByClassName('meal-menu-container-bg')[i], {
         scrollTrigger: {
-            trigger: tabbar,
+            trigger: el,
             start: 'top bottom+=100',
             end: 'top top+=100',
             scrub: true, 
@@ -688,21 +689,33 @@ for (var i = 0; i < scrollTriggerMenuContainer.length; i++) {
 
 var scrollTriggerAllMenuItem = gsap.utils.toArray('.meal-menu-all-item');
 scrollTriggerAllMenuItem.forEach((el) => {
-    gsap.fromTo(el, {
+
+    // show -----------
+    gsap.from(el,{
+        scrollTrigger: {
+            trigger: el,
+            start: 'bottom bottom-=32',
+            end: 'bottom 70% ',
+            scrub: true, 
+            toggleActions: "restart none restart none", 
+        },
         opacity: 0,
+    });
+
+    // hide -----------
+    gsap.fromTo(el, {
+        opacity: 1
     }, {
         scrollTrigger: {
             trigger: el,
-            start: 'bottom bottom-=100',
-            end: 'top top+=100',
-            // scrub: true, 
-            toggleActions: "restart reverse restart restart", // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
-            // markers: true
+            start: 'top 10%',
+            end: 'top 5%',
+            scrub: true, 
+            toggleActions: "restart restart restart restart", // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
+            // markers: true,
         },
-        opacity: 1,
-        duration: 0.1,
-        ease: "power2.out",
-        // stagger: 0.3,
+        opacity: 0,
+        ease: "none",
     });
 });
 
@@ -737,7 +750,11 @@ function showThumb(el){
         image.style.left = (window.innerWidth/2 + (window.innerWidth-560)/4) + 'px';
         document.querySelectorAll('.meal-menu-sub2-title, .end-section-separator, .meal-menu-sub1-title').forEach(element => {
             element.style.width = '50%';
+            element.style.opacity = '0.3';
         });
+
+        // stylesheet.insertRule(".meal-item-left * { opacity: 0}");
+        // stylesheet.insertRule(".meal-item-right * { opacity: 0.5 }");
 
         document.querySelectorAll('.meal-item-left *').forEach(element => {
             element.style.opacity = '0';
@@ -752,7 +769,11 @@ function showThumb(el){
         document.querySelectorAll('.meal-menu-sub2-title, .end-section-separator, .meal-menu-sub1-title').forEach(element => {
             element.style.width = '50%';
             element.style.marginLeft = '50%';
+            element.style.opacity = '0.3';
         });
+
+        // stylesheet.insertRule(".meal-item-right * { opacity: 0}");
+        // stylesheet.insertRule(".meal-item-left * { opacity: 0.5 }");
 
         document.querySelectorAll('.meal-item-right *').forEach(element => {
             element.style.opacity = '0';
@@ -798,6 +819,7 @@ function hideThumb(el){
     document.querySelectorAll('.meal-menu-sub2-title, .end-section-separator, .meal-menu-sub1-title').forEach(element => {
         element.style.width = '100%';
         element.style.marginLeft = '0';
+        element.style.opacity = '1';
     });
 
 
