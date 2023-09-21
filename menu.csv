@@ -1,7 +1,7 @@
 Section,Sub1,Sub2,Name,Ingredient,Image
-Dinner,Starter,Hot,Vichyssoise soup,"bacon, herbs, garlic",
+Dinner,Starter,Hot,Vichyssoise soup,"bacon, herbs, garlic",Vichyssoise soup.jpg
 Dinner,Starter,Hot,French onion soup with puff pastry,,French onion soup with puff pastry.jpg
-Dinner,Starter,Hot,Bouillabaisse soup,"seafood carcasses, prawn, squid, focaccia",
+Dinner,Starter,Hot,Bouillabaisse soup,"seafood carcasses, prawn, squid, focaccia",Bouillabaisse soup.jpg
 Dinner,Starter,Hot,Clams casino,"bacon, coriander, parsley",Clams casino.jpg
 Dinner,Starter,Hot,Foie gras with berries and brioche ,,Foie gras with berries and brioche.jpg
 Dinner,Starter,Hot,Grilled prawn,"Ajo blanco, grape",Grilled prawn.jpg
@@ -22,7 +22,7 @@ Dinner,Main,HOMEMADE PASTA,Puttanesca,"Anchovies, tomatoes, eggplants, chillies"
 Dinner,Main,HOMEMADE PASTA,Carbonara,"Guanciale, eggs, peppers, 24-month parmigiano",Carbonara.jpg
 Dinner,Main,HOMEMADE PASTA,Tomato basil,"Tomatoes, basil, 24-month parmigiano",Tomato basil.jpg
 Dinner,Main,HOMEMADE PASTA,Vongole,"Clams, white wine, parsley",Vongole.jpg
-Dinner,Main,HOMEMADE PASTA,Lasagna,"Minced beef, tomatoes, piperade, cheese",
+Dinner,Main,HOMEMADE PASTA,Lasagna,"Minced beef, tomatoes, piperade, cheese",Lasagna.jpg
 Dinner,Main,COCOTTE,Bœuf Bourguignon en cocotte,mashed potato,
 Dinner,Main,COCOTTE,Duck parmentier and mixed salad,"mixed forest mushrooms, potatoes",Duck parmentier and mixed salad.jpg
 Dinner,Main,COCOTTE,Coniglio al Vino Rosso,"stewed rabbit, vegetables, red wine, long grain rice",Coniglio al Vino Rosso.jpg
@@ -31,27 +31,26 @@ Dinner,Main,COCOTTE,Œufs cocotte,"Eggs, ham, spinach, mushroom, sourdough",
 Dinner,Main,LE POISSON,Salt-baked grouper,"mountain pear, hollandaise sauce",Salt-baked grouper.jpg
 Dinner,Main,LE POISSON,Broiled barramundi,"chilly butter, ratatouille, tomato sauce",Broiled barramundi.jpg
 Dinner,Main,LE POISSON,Pan seared Hake fish,"kale, Dugléré sauce, potato scales",
-Dinner,Main,LE POISSON,Grilled octopus tentacle,"soya glazed, kalamansi, quinoa",
+Dinner,Main,LE POISSON,Grilled octopus tentacle,"soya glazed, kalamansi, quinoa",Grilled octopus tentacle.jpg
 Dinner,Snack & Dessert,Snack,Chicken popcorn,,
 Dinner,Snack & Dessert,Snack,Crab cake,,
 Dinner,Snack & Dessert,Snack,French fries/Sweet potato fries,,
 Dinner,Snack & Dessert,Snack,Olives,,
 Dinner,Snack & Dessert,Snack,Sundried tomato,,
 Dinner,Snack & Dessert,Dessert,Baba au rhum,,Baba au rhum.jpg
-Dinner,Snack & Dessert,Dessert,St. Honoré mini gâteaux with salted caramel,,
-Dinner,Snack & Dessert,Dessert,French rhubarb and lemon tart,,
-Dinner,Snack & Dessert,Dessert,Citrus mixed with sweet potato custard and basil sorbet ,,
+Dinner,Snack & Dessert,Dessert,Choco chilly ,"Smoked chocolate cremeux with tabasco, moussem rye cocoa crumble, vanilla dehydrated sponge",
+Dinner,Snack & Dessert,Dessert,Basil-berry island ,"Strawberry jasmine consommé, basil ice cream, green apple foam",
+Dinner,Snack & Dessert,Dessert,Brioche brulée,"Smoked cheese ice cream, French toast brioche brulée, , caramelized walnuts, macerated cherries",
 Dinner,Snack & Dessert,Dessert,Add Ice cream/Sorbet to any dessert/Gọi thêm kem cùng món tráng miệng ,,
 Brunch,Brunch,Brunch,Viennoiserie basket,"Croissant, pain au chocolat, danish",
-Brunch,Brunch,Brunch,Avocado on toast,"Sourdough, eggs of choice (poached, scrambled, sunny side-up) feta cheese, avocado",
+Brunch,Brunch,Brunch,Avocado on toast,"Sourdough, eggs of choice (poached, scrambled, sunny side-up) feta cheese, avocado",Avocado on toast.jpg
 Brunch,Brunch,Brunch,Shakshouka,"Stewed bell peppers & tomatoes, basil, focaccia, goat cheese, poached eggs",Shakshouka.jpg
 Brunch,Brunch,Brunch,French toast,"brioche, cinnamon, caramel",
-Brunch,Brunch,Brunch,Ricotta & roasted berry toast ,"Sourdough, olive oil, lime",
-Brunch,Brunch,Brunch,Déglacer omelette ,"Oyster mushroom,emmental, goat cheese and side salad",
-Brunch,Brunch,Brunch,Eggs Benedict,"Soft poached eggs, ham, on an English muffin topped with a creamy hollandaise sauce",
-Brunch,Brunch,Brunch,Croque monsieur/madame & mixed salad,"sandwich, ham, cheese, (sunny-side up)",
+Brunch,Brunch,Brunch,Déglacer omelette ,"Oyster mushroom,emmental, goat cheese and side salad",Déglacer omelette.jpg
+Brunch,Brunch,Brunch,Eggs Benedict,"Soft poached eggs, ham, on an English muffin topped with a creamy hollandaise sauce",Eggs Benedict.jpg
+Brunch,Brunch,Brunch,Croque monsieur/madame & mixed salad,"sandwich, ham, cheese, (sunny-side up)",Croque monsieur/madame & mixed salad.jpg
 Brunch,Brunch,Brunch,Flatbread with hummus dippings,,
-Brunch,Brunch,Brunch,Big breakie,"eggs, bacons or ham, mixed salad, sausage, french fries",
+Brunch,Brunch,Brunch,Big breakie,"eggs, bacons or ham, mixed salad, sausage, french fries",Big breakie.jpg
 Brunch,Brunch,Brunch,Mixed salad with kumquat dressing & burrata cheese,,
 Brunch,Brunch,Brunch,Rocket salad with mixed nuts & torched feta cheese,,
 Brunch,Brunch,Brunch,Grilled veggie salad with balsamic dressing and walnuts,,
@@ -77,18 +76,17 @@ Drink,Alcohol,White Wine,Muga Blanco,"Grenache Blanc, Malvasía | Rioja, Spain",
 Drink,Alcohol,Red wine,House Wine,,
 Drink,Alcohol,Red wine,Les Jamelles ,"Malbec | Vin de Pays, Pays d'Oc, France",
 Drink,Alcohol,Red wine,Delas St Esprit Rouge,"Syrah - Grenache | Côtes du Rhône AOC, France",
-Drink,Alcohol,Red wine,Zenato Bardolino,"Ganarcha | Veneto, Italy",
 Drink,Alcohol,Red wine,Michele Chiarlo Le Orme Barbera d'Asti Superiore,"Barbera | Piemonte, Barbera d'Asti, Italy",
 Drink,Alcohol,Red wine,Casalforte Valpolicella Ripasso,"Corvina, Rondinella, Corvinone | Valpolicella, Italy",
 Drink,Alcohol,Dessert wine,La Morandina D'asti,"Moscato | Piemonte, Italy",
 Drink,Alcohol,Beer,Carlsberg,,
 Drink,Alcohol,Beer,Blanc 1664,,
-Drink,Alcohol,Cocktail,Phù sa,"gold rum, spicy apricot, orange bItter ",
-Drink,Alcohol,Cocktail,Long Bien bridge,"red wine, white sour",
+Drink,Alcohol,Cocktail,Phù sa,"gold rum, spicy apricot, orange bItter ",Phù sa.jpg
+Drink,Alcohol,Cocktail,Long Bien bridge,"red wine, white sour",Long Bien bridge.jpg
 Drink,Alcohol,Cocktail,Bana island,"Về để đi's creme de cacao, banana vodka, espresso, whipping",
-Drink,Non alcohol,FRUIT TEA,Hibiberries,"Hibicus, berries, green tea",
-Drink,Non alcohol,FRUIT TEA,Citron,Yuzu lemonade & red grapefruit tea,
-Drink,Non alcohol,FRUIT TEA,Tropicana,Pink guava & strawberry tea,
+Drink,Non alcohol,FRUIT TEA,Hibiberries,"Hibicus, berries, green tea",Hibiberries.jpg
+Drink,Non alcohol,FRUIT TEA,Citron,Yuzu lemonade & red grapefruit tea,Citron.jpg
+Drink,Non alcohol,FRUIT TEA,Tropicana,Pink guava & strawberry tea,Tropicana.jpg
 Drink,Non alcohol,FRUIT TEA,Hot tea (cup/pot),,
 Drink,Non alcohol,SOFT DRINKS,Coke/Coke Light/ Sprite,,
 Drink,Non alcohol,SOFT DRINKS,Tonic Schweppes,,
@@ -98,8 +96,8 @@ Drink,Non alcohol,SOFT DRINKS,Sparkling water 450ml,,
 Drink,Non alcohol,Juice,Watermelon juice,,
 Drink,Non alcohol,Juice,Lemon juice,,
 Drink,Non alcohol,Juice,Orange juice,,
-Drink,Non alcohol,KOMBUCHA,Lychee & Rose,,
-Drink,Non alcohol,KOMBUCHA,Mango & Passionfruit ,,
+Drink,Non alcohol,KOMBUCHA,Lychee & Rose,,Lychee & Rose.jpg
+Drink,Non alcohol,KOMBUCHA,Mango & Passionfruit ,,Mango & Passionfruit.jpg
 Drink,Non alcohol,COFFEE,Espresso,,
 Drink,Non alcohol,COFFEE,Americano,,
 Drink,Non alcohol,COFFEE,Latte,,
