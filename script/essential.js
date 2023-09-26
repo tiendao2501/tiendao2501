@@ -832,13 +832,28 @@ var mealsHaveImage = document.getElementsByClassName('meal-has-image');
 for(var i = 0; i< mealsHaveImage.length; i++){
     // console.log(mealsHaveImage[i]);
 
+    if(isMobileDevice()){
+        // 
+    }
+    else {
+        // Desktop device -> Hover to show image.
+        mealsHaveImage[i].addEventListener('mouseenter', function(){
+            showThumb( $(this)[0] )
+        });
+    
+        mealsHaveImage[i].addEventListener('mouseleave', function(){
+            hideThumb( $(this)[0])
+        });
+    }
 
-    mealsHaveImage[i].addEventListener('mouseenter', function(){
-        showThumb( $(this)[0] )
-    });
+}
 
-    mealsHaveImage[i].addEventListener('mouseleave', function(){
-        hideThumb( $(this)[0])
-    });
 
+function isMobileDevice(){
+    var x = window.matchMedia("(max-width: 759px)");
+        if (x.matches) { // If media query matches
+          return true;
+        } else {
+            return false;
+        }
 }
