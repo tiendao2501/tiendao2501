@@ -36,6 +36,9 @@ var patternContainerItem = bodymovin.loadAnimation({
     animationData: patternJson,
   });
 
+var mealImgContEl = document.getElementsByClassName('meal-item-image-container');
+
+
 
 // page transition ========================================
 $(window).on("load", function () {
@@ -98,6 +101,17 @@ $(window).on("load", function () {
         fill: '#00533E',
         ease: "Power3.inOut",
     })
+
+
+    // Initial loading --------
+    // load css to all meal image.
+
+    for(var i = 0; i < mealImgContEl.length; i++){
+        // mealImgContEl[i].style.height = 0;
+        mealImgContEl[i].getElementsByClassName('meal-image')[0].style.display = 'none';
+
+    }
+
 
 });
 
@@ -261,8 +275,18 @@ window.addEventListener("scroll", (event) => {
         document.querySelector('#aboutUsImg1').style.transform = "rotate(0deg)";
         document.querySelector('#aboutUsImg1').style.width = "400px";
         document.querySelector('#aboutUsImg1').style.marginLeft = "-200px";
-
     }
+
+// onscroll to hide expanded image.
+
+    if(isMobileDevice()){
+        console.log('show image');
+        for(var i = 0; i < mealImgContEl.length; i++){
+            if(mealImgContEl[i].getElementsByClassName('meal-image')[0].getBoundingClientRect().top < 100){
+            mealImgContEl[i].getElementsByClassName('meal-image')[0].style.height = 0;
+        }}
+    }
+
 });
 
 gsap.fromTo('#aboutDeglacer img', {
@@ -661,7 +685,7 @@ for (var i = 0; i < scrollTriggerMenuContainer.length; i++) {
             trigger: el,
             start: () => "bottom " + (tabbar.getBoundingClientRect().height + 230),
             end: () => "bottom " + (tabbar.getBoundingClientRect().height + 100),
-            // scrub: true, cái này sẽ chạy animate theo cuộn chuột, bỏ đi thì sẽ tự động chạy khi cuộn.
+            scrub: true,
             toggleActions: "restart none none reverse", 
             // markers: true
         },
@@ -741,6 +765,7 @@ function showThumb(el){
     // console.log(el);
     var image = el.getElementsByClassName('meal-image')[0];
     image.style.display = 'block';
+    image.style.position = 'fixed';
     image.style.opacity = 1;
     // document.querySelectorAll('.meal-menu-sub2-title, .end-section-separator, .meal-menu-sub1-title').style.width = '50%';
 
@@ -815,7 +840,7 @@ function hideThumb(el){
     image.style.opacity = 0;
     image.style.top = '50vh';
     image.style.transform = 'translate(-50%, -50%)';
-    image.style.lèt = '0px';
+    image.style.left = '0px';
     document.querySelectorAll('.meal-menu-sub2-title, .end-section-separator, .meal-menu-sub1-title').forEach(element => {
         element.style.width = '100%';
         element.style.marginLeft = '0';
@@ -833,7 +858,9 @@ for(var i = 0; i< mealsHaveImage.length; i++){
     // console.log(mealsHaveImage[i]);
 
     if(isMobileDevice()){
-        // 
+        mealsHaveImage[i].addEventListener('click', function(){
+            toggleProductImg( $(this)[0] );
+        });
     }
     else {
         // Desktop device -> Hover to show image.
@@ -848,6 +875,28 @@ for(var i = 0; i< mealsHaveImage.length; i++){
 
 }
 
+function toggleProductImg(el){
+    var img = el.getElementsByClassName('meal-image')[0];
+    if(img.style.display == 'none'){
+
+        img.style.display = 'block';
+        img.style.position = 'relative';
+        img.style.opacity = '1';
+        img.style.top = '0';
+        img.style.left = '50%';
+        img.style.width = '80vw';
+        img.style.maxHeight = '80vh';
+        img.style.height = 'auto';
+        img.style.transform = "translate(-50%, 0%)";
+    }
+
+    else{
+
+        img.style.display = 'none';
+        img.style.opacity = '0';
+        img.style.height = '0';
+    }
+}
 
 function isMobileDevice(){
     var x = window.matchMedia("(max-width: 759px)");

@@ -572,10 +572,14 @@ body {
     z-index: 5000;
     /* padding: 0px 200px; */
     transform: translate(-50%, -50%);
+    object-fit: cover;
+    transition: all 1s ease-in-out;
 }
 
 .meal-item-image-container{
     z-index: 1000;
+    transition: all 1s ease-in-out;
+    /* background-color: red; */
 }
 
 .meal-item-left * {
