@@ -280,7 +280,7 @@ window.addEventListener("scroll", (event) => {
 // onscroll to hide expanded image.
 
     if(isMobileDevice()){
-        console.log('show image');
+        // console.log('show image');
         for(var i = 0; i < mealImgContEl.length; i++){
             if(mealImgContEl[i].getElementsByClassName('meal-image')[0].getBoundingClientRect().top < 100){
             mealImgContEl[i].getElementsByClassName('meal-image')[0].style.height = 0;
@@ -468,6 +468,143 @@ $.ajax({
         // call a function on complete 
     }
 });
+
+// read events CSV files ----------------------------
+var eventsCSV, events = []; //eventsCSV read all event row in CSV file; events filter out the event with display = yes.
+$.ajax({
+    url: "events.csv",
+    async: false,
+    success: function (csvd) {
+        eventsCSV = $.csv.toObjects(csvd);
+    },
+    dataType: "text",
+    complete: function () {
+        // call a function on complete 
+    }
+});
+
+// split description into multiple paragraph ----------
+for (var i = 0; i < eventsCSV.length; i++){
+    if (eventsCSV[i].display == 'yes'){
+        eventsCSV[i].description = eventsCSV[i].description.split(/\r?\n|\r|\n/g);
+        eventsCSV[i].image = eventsCSV[i].image.split(/\r?\n|\r|\n/g);
+        eventsCSV[i].time = eventsCSV[i].time.split(/\r?\n|\r|\n/g);
+        eventsCSV[i].pricing = eventsCSV[i].pricing.split(/\r?\n|\r|\n/g);
+        events.push(eventsCSV[i]);
+    }
+}
+
+// if has event
+if (events.length != 0){
+    // console.log(events);
+    for(var i = 0; i < events.length; i++){
+        var eventContainer = document.createElement('div');
+        eventContainer.classList.add('event-container');
+        var eventContainerTime = '';
+        for (var j = 0; j < events[i].time.length; j++){
+            var time = document.createElement('span');
+            eventContainerTime += '<span class = "regular-16 event-time">'+ events[i].time[j] +'</span>';
+        }
+        eventContainer.innerHTML = `
+        <div class="event-element">
+            <div class="event-content">
+                <span class="event-name">${events[i].name}</span>
+                <div>
+                    <span class="event-location regular-16">${events[i].location}</span>
+                    ${eventContainerTime}
+                </div>
+                <button>View Details</button>
+                <a target="_blank" href="https://www.facebook.com/messages/t/632392223509705"><span>Rerseve your slots</span></a>
+            </div>
+            <div class="event-thumbnail" style="background-image: url('asset/event/${events[i].thumbnail}');"></div>
+
+        </div>
+        `;
+        document.getElementById('event-container').appendChild(eventContainer);
+    }
+
+    // new CircleType(document.getElementsByClassName('event-name-host')[0]).radius(330);
+
+
+
+    // animate each event on scroll -------------------------------------------------------
+
+    for(var i = 0; i < document.getElementsByClassName('event-container').length; i++){
+        var eventContainer = document.getElementsByClassName('event-container')[i];
+        gsap.from(eventContainer.getElementsByClassName('event-element')[0], {
+            scrollTrigger: {
+                trigger: eventContainer.getElementsByClassName('event-element')[0],
+                start: 'top bottom',
+                end: 'top 75%',
+                scrub: true, 
+                toggleActions: "restart none none reverse", 
+                // markers: true
+            },
+            scale: 0,
+            ease: 'none',
+            duration: 0.3,
+        });
+
+        gsap.from(eventContainer.getElementsByClassName('event-content')[0].children, {
+            scrollTrigger: {
+                trigger: eventContainer.getElementsByClassName('event-element')[0],
+                start: 'top 60%',
+                end: 'top center',
+                // scrub: true, 
+                toggleActions: "restart none none reverse", 
+                // markers: true
+            },
+            opacity: 0,
+            ease: 'none',
+            duration: 0.3,
+            stagger: 0.1,
+        });
+
+        gsap.to(eventContainer.getElementsByClassName('event-thumbnail'), {
+            scrollTrigger: {
+                trigger: eventContainer.getElementsByClassName('event-element')[0],
+                start: 'top 60%',
+                end: 'top center',
+                // scrub: true, 
+                toggleActions: "restart none none reverse", 
+                // markers: true,
+            },
+            opacity: 0.4,
+            ease: 'none',
+            duration: 0.3,
+        });
+
+        gsap.to(eventContainer,{
+            scrollTrigger: {
+                trigger: eventContainer,
+                start: 'bottom bottom',
+                end: 'bottom top',
+                scrub: true, 
+                toggleActions: "restart none none reverse", 
+                // markers: true,
+            },
+            // scale: 1.5,
+            top: '100vh' ,
+            ease: 'none',
+            duration: 0.3,
+        })
+
+        gsap.to(eventContainer,{
+            scrollTrigger: {
+                trigger: eventContainer,
+                start: 'bottom 20%',
+                end: 'bottom 20%',
+                // scrub: true, 
+                toggleActions: "restart none none reverse", 
+                // markers: true,
+            },
+            opacity: 0,
+            ease: 'none',
+            duration: 0.5,
+        })
+    }
+}
+
 
 var menuSection =  Array.from(new Set(jsonMenu.map((item) => item.Section)));
 var menuSubSection1 = Array.from(new Set(jsonMenu.map((item) => item.Sub1)));

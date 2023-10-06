@@ -34,12 +34,12 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: none;
+  background: #000000;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #000000;
+  background: #3d3d3d;
   border-radius: 20px;
 }
 

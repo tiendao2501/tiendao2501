@@ -1,38 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="script/libs/jquery.csv.min.js"></script>
 
-        body{
-            height: 200vh;
-        }
-        #maskDiv{
-            width:1280px;
-            height:5000px;
-            background: rgba(255, 166, 0, 0.302);
-            -webkit-clip-path: url(#maskRect1);
-        }
-
-        svg, svg *{
-            position: fixed;
-            top: 0;
-        }
-    </style>
 </head>
 <body>
 
-    <div id="maskDiv"></div>
-
-    <svg>
-      <defs>
-        <clipPath id="maskRect1" >
-          <!-- <path id="curve" d="M1279.919,13c0,0-612.618,21.562-816.925,22.298C347.224,35.715,0,26,0,26V13c0,0,347.981,9.71,464.005,9.287C668.059,21.542,1279.919,0,1279.919,0V13z"/> -->
-            <ellipse cx="353.5" cy="166.5" rx="353.5" ry="166.5" fill="#DC1414"/>
-            
-
-        </clipPath>
-      </defs>
-    </svg>
+<div id="demo"></div>
 
 </body>
+
+<script>
+
+var events;
+$.ajax({
+    url: "events.csv",
+    async: false,
+    success: function (csvd) {
+        events = $.csv.toObjects(csvd);
+        console.log(events[0].description);
+    },
+    dataType: "text",
+    complete: function () {
+        // call a function on complete 
+    }
+});
+    document.getElementById('demo').innerHTML = events[0].description;
+</script>
 </html>
