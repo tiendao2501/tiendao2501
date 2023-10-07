@@ -494,8 +494,18 @@ for (var i = 0; i < eventsCSV.length; i++){
     }
 }
 
-// if has event
+// if has event--------------
 if (events.length != 0){
+
+    // show event link in the menu mobile and hide about link.
+    if(isMobileDevice()){
+        document.getElementById('menu').getElementsByClassName('menu-about')[0].style.visibility = 'hidden';
+        document.getElementById('menu').getElementsByClassName('menu-about')[0].style.pointerEvents = 'none';
+        
+        document.getElementById('menu').getElementsByClassName('menu-events')[0].style.visibility = 'visible';
+        document.getElementById('menu').getElementsByClassName('menu-events')[0].style.pointerEvents = 'auto';
+    }
+
     // console.log(events);
     for(var i = 0; i < events.length; i++){
         var eventContainer = document.createElement('div');
@@ -522,10 +532,6 @@ if (events.length != 0){
         `;
         document.getElementById('event-container').appendChild(eventContainer);
     }
-
-    // new CircleType(document.getElementsByClassName('event-name-host')[0]).radius(330);
-
-
 
     // animate each event on scroll -------------------------------------------------------
 
@@ -565,7 +571,7 @@ if (events.length != 0){
                 trigger: eventContainer.getElementsByClassName('event-element')[0],
                 start: 'top 60%',
                 end: 'top center',
-                // scrub: true, 
+                scrub: true, 
                 toggleActions: "restart none none reverse", 
                 // markers: true,
             },
@@ -593,8 +599,8 @@ if (events.length != 0){
             scrollTrigger: {
                 trigger: eventContainer,
                 start: 'bottom 20%',
-                end: 'bottom 20%',
-                // scrub: true, 
+                end: 'bottom top',
+                scrub: true, 
                 toggleActions: "restart none none reverse", 
                 // markers: true,
             },
@@ -602,6 +608,21 @@ if (events.length != 0){
             ease: 'none',
             duration: 0.5,
         })
+    }
+}
+else{ // if no event currently showed -----------------
+    document.getElementById('event-container').style.display = 'none';
+
+    if(isMobileDevice()){
+        document.getElementById('menu').getElementsByClassName('menu-about')[0].style.visibility = 'visible';
+        document.getElementById('menu').getElementsByClassName('menu-about')[0].style.pointerEvents = 'auto';
+
+        document.getElementById('menu').getElementsByClassName('menu-events')[0].style.visibility = 'hidden';
+        document.getElementById('menu').getElementsByClassName('menu-events')[0].style.pointerEvents = 'none';
+
+    }
+    else{
+        document.getElementById('menu').getElementsByClassName('menu-events')[0].style.display = 'none';
     }
 }
 
@@ -852,15 +873,18 @@ var scrollTriggerAllMenuItem = gsap.utils.toArray('.meal-menu-all-item');
 scrollTriggerAllMenuItem.forEach((el) => {
 
     // show -----------
+
     gsap.from(el,{
         scrollTrigger: {
             trigger: el,
-            start: 'bottom bottom-=32',
-            end: 'bottom 70% ',
+            start: 'bottom bottom+=32',
+            end: 'bottom 90% ',
             scrub: true, 
-            toggleActions: "restart none restart none", 
+            toggleActions: "restart none restart none", // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
+            // markers: true,
         },
         opacity: 0,
+        ease: Expo.easeIn,
     });
 
     // hide -----------
@@ -872,7 +896,7 @@ scrollTriggerAllMenuItem.forEach((el) => {
             start: 'top 10%',
             end: 'top 5%',
             scrub: true, 
-            toggleActions: "restart restart restart restart", // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
+            toggleActions: "restart restart restart restart",
             // markers: true,
         },
         opacity: 0,
