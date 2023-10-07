@@ -600,7 +600,7 @@ if (events.length != 0){
                 end: 'top top',
                 // scrub: true, 
                 toggleActions: "restart none none reverse", 
-                markers: true,
+                // markers: true,
             },
             position: 'fixed',
             top: 0,
