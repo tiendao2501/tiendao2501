@@ -601,6 +601,8 @@ body {
     align-items: center;
     justify-content: center;
     padding-top: 48px;
+    height: 100vh;
+
 }
 
 .event-element{
@@ -682,6 +684,7 @@ body {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 3.2px;
+    color: #000;
 }
 
 /* Mobile size ============================================== */

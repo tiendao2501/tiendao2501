@@ -566,7 +566,7 @@ if (events.length != 0){
             stagger: 0.1,
         });
 
-        gsap.to(eventContainer.getElementsByClassName('event-thumbnail'), {
+        gsap.to(eventContainer.getElementsByClassName('event-thumbnail')[0], {
             scrollTrigger: {
                 trigger: eventContainer.getElementsByClassName('event-element')[0],
                 start: 'top 60%',
@@ -580,19 +580,32 @@ if (events.length != 0){
             duration: 0.3,
         });
 
-        gsap.to(eventContainer,{
+        // gsap.to(eventContainer,{
+        //     scrollTrigger: {
+        //         trigger: eventContainer,
+        //         start: 'bottom bottom',
+        //         end: 'bottom top',
+        //         scrub: true, 
+        //         toggleActions: "restart none none reverse", 
+        //     },
+        //     top: '100vh' ,
+        //     ease: 'none',
+        //     duration: 0.3,
+        // })
+
+        gsap.to(eventContainer.getElementsByClassName('event-element')[0],{
             scrollTrigger: {
                 trigger: eventContainer,
-                start: 'bottom bottom',
-                end: 'bottom top',
-                scrub: true, 
+                start: 'top top',
+                end: 'top top',
+                // scrub: true, 
                 toggleActions: "restart none none reverse", 
-                // markers: true,
+                markers: true,
             },
-            // scale: 1.5,
-            top: '100vh' ,
+            position: 'fixed',
+            top: 0,
             ease: 'none',
-            duration: 0.3,
+            duration: 0.001,
         })
 
         gsap.to(eventContainer,{
