@@ -537,6 +537,7 @@ if (events.length != 0){
 
     for(var i = 0; i < document.getElementsByClassName('event-container').length; i++){
         var eventContainer = document.getElementsByClassName('event-container')[i];
+        
         gsap.from(eventContainer.getElementsByClassName('event-element')[0], {
             scrollTrigger: {
                 trigger: eventContainer.getElementsByClassName('event-element')[0],
@@ -579,19 +580,6 @@ if (events.length != 0){
             ease: 'none',
             duration: 0.3,
         });
-
-        // gsap.to(eventContainer,{
-        //     scrollTrigger: {
-        //         trigger: eventContainer,
-        //         start: 'bottom bottom',
-        //         end: 'bottom top',
-        //         scrub: true, 
-        //         toggleActions: "restart none none reverse", 
-        //     },
-        //     top: '100vh' ,
-        //     ease: 'none',
-        //     duration: 0.3,
-        // })
 
         gsap.to(eventContainer.getElementsByClassName('event-element')[0],{
             scrollTrigger: {
@@ -880,6 +868,39 @@ for (var i = 0; i < scrollTriggerMenuContainer.length; i++) {
     });
 }
 
+// animating hiding menu while scroll to bottom section
+
+gsap.to('#menu-bg-container > *',{
+    scrollTrigger: {
+        trigger: '#meal-menu',
+        start: 'bottom 75%',
+        end: 'bottom center',
+        // scrub: true, 
+        toggleActions: "restart none none reverse", 
+    },
+    // top: '-200vh',
+    marginTop: '-100vh',
+    ease: 'Power2.easeIn',
+    duration: 0.5,
+    stagger: -0.1,
+});
+
+gsap.to('#meal-menu .meal-menu-container',{
+    scrollTrigger: {
+        trigger: '#meal-menu',
+        start: 'bottom 75%',
+        end: 'bottom center',
+        // scrub: true, 
+        toggleActions: "restart none none reverse", 
+    },
+    // top: '-100vh',
+    opacity: 0,
+    ease: 'Power2.easeIn',
+    duration: 0.5,
+    stagger: -0.1,
+});
+
+
 // hide item when menu item leave the background ------------
 
 var scrollTriggerAllMenuItem = gsap.utils.toArray('.meal-menu-all-item');
@@ -925,10 +946,8 @@ gsap.from('#meal-menu .menu-background',{
         end: 'top top',
         scrub: true, 
         toggleActions: "restart none none reverse", 
-        // markers: true
     },
     top: '100vh',
-    // duration: 0.4,
     ease: "power1.inOut",
 });
 
