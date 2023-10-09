@@ -1,14 +1,14 @@
 // Playing Lottie =========================================
 stylesheet = document.styleSheets[1];
-var loadingContainer = document.getElementById('loadingContainer')
+var loadingContainer = document.getElementById('loadingContainer');
+
 var loadingLottieItem = bodymovin.loadAnimation({
     wrapper: loadingContainer,
     animType: 'svg',
     loop: false,
     autoplay: false,
     animationData: loadingJson,
-  });
-
+});
 loadingLottieItem.addEventListener('complete', function(){
     // loadingLottieItem.destroy();
     $('.loader-wrapper').fadeOut();
@@ -16,25 +16,23 @@ loadingLottieItem.addEventListener('complete', function(){
     document.getElementById('menu').style.opacity = 1;
 })
 
+var heroContainer = document.getElementById('heroContainer');
+    var heroItem = bodymovin.loadAnimation({
+        wrapper: heroContainer,
+        animType: 'svg',
+        loop: false,
+        autoplay: false,
+        animationData: heroJson,
+    });
 
-var heroContainer = document.getElementById('heroContainer')
-var heroItem = bodymovin.loadAnimation({
-    wrapper: heroContainer,
-    animType: 'svg',
-    loop: false,
-    autoplay: false,
-    animationData: heroJson,
-  });
-
-
-var patternContainer = document.getElementById('patternContainer')
-var patternContainerItem = bodymovin.loadAnimation({
-    wrapper: patternContainer,
-    animType: 'svg',
-    loop: false,
-    autoplay: false,
-    animationData: patternJson,
-  });
+var patternContainer = document.getElementById('patternContainer');
+    var patternContainerItem = bodymovin.loadAnimation({
+        wrapper: patternContainer,
+        animType: 'svg',
+        loop: false,
+        autoplay: false,
+        animationData: patternJson,
+    });
 
 var mealImgContEl = document.getElementsByClassName('meal-item-image-container');
 
@@ -487,6 +485,12 @@ $.ajax({
 for (var i = 0; i < eventsCSV.length; i++){
     if (eventsCSV[i].display == 'yes'){
         eventsCSV[i].description = eventsCSV[i].description.split(/\r?\n|\r|\n/g);
+        var tempDesciption = '';
+        for(var x = 0; x< eventsCSV[i].description.length; x++){
+            tempDesciption += eventsCSV[i].description[x] + '<br>';
+        }
+        eventsCSV[i].description = tempDesciption;
+
         eventsCSV[i].image = eventsCSV[i].image.split(/\r?\n|\r|\n/g);
         eventsCSV[i].time = eventsCSV[i].time.split(/\r?\n|\r|\n/g);
         eventsCSV[i].pricing = eventsCSV[i].pricing.split(/\r?\n|\r|\n/g);
@@ -523,7 +527,7 @@ if (events.length != 0){
                     <span class="event-location regular-16">${events[i].location}</span>
                     ${eventContainerTime}
                 </div>
-                <button>View Details</button>
+                <button onclick="showEventDetail(${i});">View Details</button>
                 <a target="_blank" href="https://www.facebook.com/messages/t/632392223509705"><span>Rerseve your slots</span></a>
             </div>
             <div class="event-thumbnail" style="background-image: url('asset/event/${events[i].thumbnail}');"></div>
@@ -610,6 +614,7 @@ if (events.length != 0){
             duration: 0.5,
         })
     }
+
 }
 else{ // if no event currently showed -----------------
     document.getElementById('event-container').style.display = 'none';
@@ -627,6 +632,100 @@ else{ // if no event currently showed -----------------
     }
 }
 
+
+function showEventDetail(eventID){ 
+    console.log(eventID);
+    var thumbnail = document.getElementsByClassName('event-container')[0].getElementsByClassName('event-thumbnail')[0];
+    var thumbnailTransition = document.getElementById('event-thumbnail-transition');
+
+    thumbnailTransition.style.borderRadius = '1000px 1000px 0px 0px';
+    thumbnailTransition.style.backgroundImage = thumbnail.style.backgroundImage;
+    thumbnailTransition.style.display  = 'block';
+    thumbnailTransition.style.width  = thumbnail.getBoundingClientRect().width + 'px';
+    thumbnailTransition.style.height = thumbnail.getBoundingClientRect().height + 'px';
+    thumbnailTransition.style.left   = thumbnail.getBoundingClientRect().left + 'px';
+    thumbnailTransition.style.top    = thumbnail.getBoundingClientRect().top  + 'px';
+
+    const tl = gsap.timeline();
+    tl.from('#event-thumbnail-transition', { opacity: 0 });
+    tl.to('#event-thumbnail-transition', { opacity: 1, duration: 0.03 })
+        .to('#event-thumbnail-transition', { width: '100vw', height: '60vh', top: 0, left: 0, borderRadius: '0px 0px 0px 0px', duration: 0.5 })
+        .to('#event-detail-background', {height: '100vh', duration: 0.5}, '<')
+        .add( function(){
+            document.getElementById('event-detail-exit').style.display = 'block';
+            document.getElementById('event-detail-info-container').style.display = 'flex';
+            document.getElementsByTagName('body')[0].style.overflowY = 'hidden';
+        })
+        .to('#event-detail-info-container', { top: '0vh', duration: 1})
+        .to('#event-detail-container .event-detail-CTA', {bottom: '5vh', duration: 0.3})
+
+
+    document.getElementById('event-detail-name').innerHTML = events[eventID].name;
+    document.getElementById('event-detail-host').innerHTML = events[eventID].host;
+    document.getElementById('event-detail-description').innerHTML = events[eventID].description;
+    document.getElementById('event-detail-location').innerHTML = '➤ Địa điểm: <br>' + events[eventID].location;
+    
+    //set time
+    var tempTime = '➤ Thời gian: <br>';
+    for(var i = 0; i< events[eventID].time.length; i++){
+        tempTime += events[eventID].time[i] + '<br>';
+    }
+        document.getElementById('event-detail-time').innerHTML = tempTime;
+
+    // set pricing
+    var tempPrice = '➤ Chi phí: <br>';
+    for(var i = 0; i< events[eventID].pricing.length; i++){
+        tempPrice += events[eventID].pricing[i] + '<br>';
+    }
+    document.getElementById('event-detail-pricing').innerHTML = tempPrice;
+
+    // add image list
+    var tempImage = '<img src="asset/event/'+ events[eventID].thumbnail +'">';
+
+    if(events[0].image[0] != '' || events[eventID].image.length > 1){
+        tempImage = '';
+        for(var i = 0; i < events[eventID].image.length; i++){
+            tempImage += '<img src="asset/event/' + events[eventID].image[i] + '">'
+        }
+    }
+
+    document.getElementById('event-detail-images').innerHTML = tempImage;
+
+}
+
+
+function closeEventDetail(){
+    var thumbnail = document.getElementsByClassName('event-container')[0].getElementsByClassName('event-thumbnail')[0];
+    const tl = gsap.timeline();
+    tl.from('#event-thumbnail-transition', { opacity: 1 });
+    tl.to('#event-detail-info-container', { top: '120vh', duration: 1})
+
+    .to('#event-thumbnail-transition', {
+            width: () => thumbnail.getBoundingClientRect().width + 'px',
+            height: () => thumbnail.getBoundingClientRect().height + 'px',
+            top: () => thumbnail.getBoundingClientRect().top  + 'px',
+            left: () => thumbnail.getBoundingClientRect().left  + 'px',
+            borderRadius: '1000px 1000px 0px 0px',
+            duration: 0.5 })
+        .to('#event-detail-container .event-detail-CTA',{
+            bottom: '-20vh',
+            duration: 0.3}, '<')
+        .to('#event-thumbnail-transition', {
+                opacity: 0,
+                duration: 0.5,})
+        .to('#event-detail-background', {
+            height: '0px',
+            width: '100vw',
+            bottom: 0,
+            left: 0,
+            duration: 0.2}, '<')
+        .add( function(){
+            document.getElementById('event-detail-exit').style.display = 'none';
+            document.getElementById('event-thumbnail-transition').style.display = 'none';
+            document.getElementsByTagName('body')[0].style.overflowY = '';
+        })
+
+}
 
 var menuSection =  Array.from(new Set(jsonMenu.map((item) => item.Section)));
 var menuSubSection1 = Array.from(new Set(jsonMenu.map((item) => item.Sub1)));
