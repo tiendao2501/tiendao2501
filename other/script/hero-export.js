@@ -13,7 +13,7 @@ let heroJson = {
             "w": 400,
             "h": 225,
             "u": "other/asset/homepage-photo/",
-            "p": "img_0.JPG",
+            "p": "img_0.jpg",
             "e": 0
         },
         {
@@ -21,7 +21,7 @@ let heroJson = {
             "w": 400,
             "h": 225,
             "u": "other/asset/homepage-photo/",
-            "p": "img_1.JPG",
+            "p": "img_1.jpg",
             "e": 0
         },
         {
@@ -61,7 +61,7 @@ let heroJson = {
             "w": 400,
             "h": 711,
             "u": "other/asset/homepage-photo/",
-            "p": "img_6.JPG",
+            "p": "img_6.jpg",
             "e": 0
         },
         {
@@ -133,7 +133,7 @@ let heroJson = {
             "w": 400,
             "h": 225,
             "u": "other/asset/homepage-photo/",
-            "p": "img_15.JPG",
+            "p": "img_15.jpg",
             "e": 0
         },
         {
