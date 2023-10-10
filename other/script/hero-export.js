@@ -1105,12 +1105,12 @@ let heroJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Group 1",
+                    "nm": "grp1",
                     "np": 7,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],

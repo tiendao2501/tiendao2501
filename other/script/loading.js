@@ -3,14 +3,14 @@ let loadingJson = {
     "v": "5.9.0",
     "fr": 60,
     "ip": 0,
-    "op": 85,
+    "op": 75,
     "w": 1440,
     "h": 1440,
     "nm": "loading-export-final",
     "ddd": 0,
     "assets": [
         {
-            "id": "image_0",
+            "id": "img_0.png",
             "w": 1000,
             "h": 1012,
             "u": "other/asset/loading-image/",
@@ -18,7 +18,7 @@ let loadingJson = {
             "e": 0
         },
         {
-            "id": "image_1",
+            "id": "img_1.png",
             "w": 1000,
             "h": 920,
             "u": "other/asset/loading-image/",
@@ -26,7 +26,7 @@ let loadingJson = {
             "e": 0
         },
         {
-            "id": "image_2",
+            "id": "img_2.png",
             "w": 1000,
             "h": 1422,
             "u": "other/asset/loading-image/",
@@ -34,7 +34,7 @@ let loadingJson = {
             "e": 0
         },
         {
-            "id": "image_3",
+            "id": "img_3.png",
             "w": 1000,
             "h": 1233,
             "u": "other/asset/loading-image/",
@@ -42,7 +42,7 @@ let loadingJson = {
             "e": 0
         },
         {
-            "id": "image_4",
+            "id": "img_4.png",
             "w": 1000,
             "h": 825,
             "u": "other/asset/loading-image/",
@@ -50,7 +50,7 @@ let loadingJson = {
             "e": 0
         },
         {
-            "id": "image_5",
+            "id": "img_5.png",
             "w": 1000,
             "h": 1767,
             "u": "other/asset/loading-image/",
@@ -58,7 +58,7 @@ let loadingJson = {
             "e": 0
         },
         {
-            "id": "image_6",
+            "id": "img_6.png",
             "w": 1000,
             "h": 2563,
             "u": "other/asset/loading-image/",
@@ -66,7 +66,7 @@ let loadingJson = {
             "e": 0
         },
         {
-            "id": "image_7",
+            "id": "img_7.png",
             "w": 1000,
             "h": 2563,
             "u": "other/asset/loading-image/",
@@ -74,7 +74,7 @@ let loadingJson = {
             "e": 0
         },
         {
-            "id": "image_8",
+            "id": "img_8.png",
             "w": 1000,
             "h": 2171,
             "u": "other/asset/loading-image/",
@@ -87,9 +87,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 1,
             "ty": 2,
-            "nm": "loading-img-9.png",
+            "nm": "img_0.png",
             "cl": "png",
-            "refId": "image_0",
+            "refId": "img_0.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -117,13 +117,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 26.461,
+                            "t": 27.461,
                             "s": [
                                 -13
                             ]
                         },
                         {
-                            "t": 76.037109375,
+                            "t": 77.037109375,
                             "s": [
                                 12
                             ]
@@ -153,15 +153,15 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 26.936,
+                                "t": 27.936,
                                 "s": [
                                     1331
                                 ]
                             },
                             {
-                                "t": 76.02734375,
+                                "t": 77.02734375,
                                 "s": [
-                                    1965.4
+                                    2049.4
                                 ]
                             }
                         ],
@@ -187,15 +187,15 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 26.936,
+                                "t": 27.936,
                                 "s": [
                                     405
                                 ]
                             },
                             {
-                                "t": 76.009765625,
+                                "t": 77.009765625,
                                 "s": [
-                                    -129.077
+                                    -213.077
                                 ]
                             }
                         ],
@@ -225,8 +225,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -238,8 +238,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -302,8 +331,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -422,27 +451,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 3,
             "ty": 2,
-            "nm": "loading-img-1.png",
+            "nm": "img_1.png",
             "cl": "png",
-            "refId": "image_1",
+            "refId": "img_1.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -470,13 +499,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 25.459,
+                            "t": 26.459,
                             "s": [
                                 132
                             ]
                         },
                         {
-                            "t": 76.037109375,
+                            "t": 77.037109375,
                             "s": [
                                 111
                             ]
@@ -506,13 +535,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 25.934,
+                                "t": 26.934,
                                 "s": [
                                     73
                                 ]
                             },
                             {
-                                "t": 76.017578125,
+                                "t": 77.017578125,
                                 "s": [
                                     -458.307
                                 ]
@@ -540,13 +569,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 25.934,
+                                "t": 26.934,
                                 "s": [
                                     407
                                 ]
                             },
                             {
-                                "t": 76.009765625,
+                                "t": 77.009765625,
                                 "s": [
                                     -159.077
                                 ]
@@ -578,8 +607,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -591,8 +620,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -655,8 +713,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -775,27 +833,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 5,
             "ty": 2,
-            "nm": "loading-img-8.png",
+            "nm": "img_2.png",
             "cl": "png",
-            "refId": "image_2",
+            "refId": "img_2.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -823,13 +881,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 24.459,
+                            "t": 25.459,
                             "s": [
                                 -59
                             ]
                         },
                         {
-                            "t": 74.03515625,
+                            "t": 75.03515625,
                             "s": [
                                 -47
                             ]
@@ -859,15 +917,15 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 24.934,
+                                "t": 25.934,
                                 "s": [
                                     1378
                                 ]
                             },
                             {
-                                "t": 74.025390625,
+                                "t": 75,
                                 "s": [
-                                    1948.4
+                                    2022
                                 ]
                             }
                         ],
@@ -893,15 +951,15 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 24.934,
+                                "t": 25.934,
                                 "s": [
                                     1046.5
                                 ]
                             },
                             {
-                                "t": 74.0234375,
+                                "t": 75,
                                 "s": [
-                                    1614.431
+                                    1694.5
                                 ]
                             }
                         ],
@@ -931,8 +989,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -944,8 +1002,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -1008,8 +1095,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -1128,27 +1215,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 7,
             "ty": 2,
-            "nm": "loading-img-2.png",
+            "nm": "img_3.png",
             "cl": "png",
-            "refId": "image_3",
+            "refId": "img_3.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -1176,13 +1263,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 23.525,
+                            "t": 24.525,
                             "s": [
                                 67
                             ]
                         },
                         {
-                            "t": 72.033203125,
+                            "t": 73.033203125,
                             "s": [
                                 46
                             ]
@@ -1212,13 +1299,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 24,
+                                "t": 25,
                                 "s": [
                                     273
                                 ]
                             },
                             {
-                                "t": 72.013671875,
+                                "t": 73.013671875,
                                 "s": [
                                     -366.307
                                 ]
@@ -1246,13 +1333,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 24,
+                                "t": 25,
                                 "s": [
                                     975
                                 ]
                             },
                             {
-                                "t": 72.021484375,
+                                "t": 73.021484375,
                                 "s": [
                                     1878.931
                                 ]
@@ -1284,8 +1371,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -1297,8 +1384,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -1361,8 +1477,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -1481,27 +1597,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 9,
             "ty": 2,
-            "nm": "loading-img-3.png",
+            "nm": "img_4.png",
             "cl": "png",
-            "refId": "image_4",
+            "refId": "img_4.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -1529,13 +1645,13 @@ let loadingJson = {
                                     -1.418
                                 ]
                             },
-                            "t": 21.523,
+                            "t": 22.523,
                             "s": [
                                 -26
                             ]
                         },
                         {
-                            "t": 72.033203125,
+                            "t": 73.033203125,
                             "s": [
                                 -47
                             ]
@@ -1565,13 +1681,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 21.998,
+                                "t": 22.998,
                                 "s": [
                                     407
                                 ]
                             },
                             {
-                                "t": 72.013671875,
+                                "t": 73.013671875,
                                 "s": [
                                     -280.307
                                 ]
@@ -1599,13 +1715,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 21.998,
+                                "t": 22.998,
                                 "s": [
                                     669
                                 ]
                             },
                             {
-                                "t": 72.021484375,
+                                "t": 73.021484375,
                                 "s": [
                                     1596.931
                                 ]
@@ -1637,8 +1753,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -1650,8 +1766,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -1714,8 +1859,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -1834,27 +1979,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 11,
             "ty": 2,
-            "nm": "loading-img-3.png",
+            "nm": "img_4.png",
             "cl": "png",
-            "refId": "image_4",
+            "refId": "img_4.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -1882,13 +2027,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 20.584,
+                            "t": 21.584,
                             "s": [
                                 -4
                             ]
                         },
                         {
-                            "t": 70.03125,
+                            "t": 71.03125,
                             "s": [
                                 7
                             ]
@@ -1918,13 +2063,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 21.059,
+                                "t": 22.059,
                                 "s": [
                                     1015
                                 ]
                             },
                             {
-                                "t": 70.021484375,
+                                "t": 71.021484375,
                                 "s": [
                                     1469.4
                                 ]
@@ -1952,13 +2097,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 21.059,
+                                "t": 22.059,
                                 "s": [
                                     838
                                 ]
                             },
                             {
-                                "t": 70.01953125,
+                                "t": 71.01953125,
                                 "s": [
                                     1733.931
                                 ]
@@ -1990,8 +2135,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -2003,8 +2148,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -2067,8 +2241,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -2187,27 +2361,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 13,
             "ty": 2,
-            "nm": "loading-img-4.png",
+            "nm": "img_5.png",
             "cl": "png",
-            "refId": "image_5",
+            "refId": "img_5.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -2235,13 +2409,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 19.641,
+                            "t": 20.641,
                             "s": [
                                 69
                             ]
                         },
                         {
-                            "t": 68.029296875,
+                            "t": 69.029296875,
                             "s": [
                                 44
                             ]
@@ -2271,13 +2445,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 20.115,
+                                "t": 21.115,
                                 "s": [
                                     187
                                 ]
                             },
                             {
-                                "t": 68.009765625,
+                                "t": 69.009765625,
                                 "s": [
                                     -668.307
                                 ]
@@ -2305,13 +2479,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 20.115,
+                                "t": 21.115,
                                 "s": [
                                     668
                                 ]
                             },
                             {
-                                "t": 68.029296875,
+                                "t": 69.029296875,
                                 "s": [
                                     796
                                 ]
@@ -2343,8 +2517,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -2356,8 +2530,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -2420,8 +2623,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -2540,27 +2743,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 15,
             "ty": 2,
-            "nm": "loading-img-4.png",
+            "nm": "img_5.png",
             "cl": "png",
-            "refId": "image_5",
+            "refId": "img_5.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -2588,13 +2791,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 18.693,
+                            "t": 19.693,
                             "s": [
                                 -108
                             ]
                         },
                         {
-                            "t": 66.02734375,
+                            "t": 67.02734375,
                             "s": [
                                 -79
                             ]
@@ -2624,13 +2827,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 19.168,
+                                "t": 20.168,
                                 "s": [
                                     1245
                                 ]
                             },
                             {
-                                "t": 66.017578125,
+                                "t": 67.017578125,
                                 "s": [
                                     1663.4
                                 ]
@@ -2658,13 +2861,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 19.168,
+                                "t": 20.168,
                                 "s": [
                                     354
                                 ]
                             },
                             {
-                                "t": 66,
+                                "t": 67,
                                 "s": [
                                     -428.077
                                 ]
@@ -2696,8 +2899,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -2709,8 +2912,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -2773,8 +3005,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -2893,27 +3125,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 17,
             "ty": 2,
-            "nm": "loading-img-4.png",
+            "nm": "img_5.png",
             "cl": "png",
-            "refId": "image_5",
+            "refId": "img_5.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -2941,13 +3173,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 17.742,
+                            "t": 18.742,
                             "s": [
                                 62
                             ]
                         },
                         {
-                            "t": 62.0234375,
+                            "t": 63.0234375,
                             "s": [
                                 79
                             ]
@@ -2977,13 +3209,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 18.217,
+                                "t": 19.217,
                                 "s": [
                                     510
                                 ]
                             },
                             {
-                                "t": 62.00390625,
+                                "t": 63.00390625,
                                 "s": [
                                     326.693
                                 ]
@@ -3011,13 +3243,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 18.217,
+                                "t": 19.217,
                                 "s": [
                                     1009
                                 ]
                             },
                             {
-                                "t": 62,
+                                "t": 63,
                                 "s": [
                                     1761.703
                                 ]
@@ -3049,8 +3281,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -3062,8 +3294,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -3126,8 +3387,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -3246,27 +3507,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 19,
             "ty": 2,
-            "nm": "loading-img-5.png",
+            "nm": "img_6.png",
             "cl": "png",
-            "refId": "image_6",
+            "refId": "img_6.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -3301,13 +3562,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 17.262,
+                                "t": 18.262,
                                 "s": [
                                     185
                                 ]
                             },
                             {
-                                "t": 60.001953125,
+                                "t": 61.001953125,
                                 "s": [
                                     -354.307
                                 ]
@@ -3335,13 +3596,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 17.262,
+                                "t": 18.262,
                                 "s": [
                                     1010
                                 ]
                             },
                             {
-                                "t": 60.009765625,
+                                "t": 61.009765625,
                                 "s": [
                                     1877.931
                                 ]
@@ -3373,8 +3634,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -3386,8 +3647,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -3450,8 +3740,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -3570,27 +3860,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 21,
             "ty": 2,
-            "nm": "loading-img-5.png",
+            "nm": "img_6.png",
             "cl": "png",
-            "refId": "image_6",
+            "refId": "img_6.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -3618,13 +3908,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 15.828,
+                            "t": 16.828,
                             "s": [
                                 78
                             ]
                         },
                         {
-                            "t": 58.01953125,
+                            "t": 59.01953125,
                             "s": [
                                 57
                             ]
@@ -3654,13 +3944,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 16.303,
+                                "t": 17.303,
                                 "s": [
                                     145
                                 ]
                             },
                             {
-                                "t": 58,
+                                "t": 59,
                                 "s": [
                                     -570.307
                                 ]
@@ -3688,13 +3978,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 16.303,
+                                "t": 17.303,
                                 "s": [
                                     821
                                 ]
                             },
                             {
-                                "t": 58.0078125,
+                                "t": 59.0078125,
                                 "s": [
                                     1372.931
                                 ]
@@ -3726,8 +4016,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -3739,8 +4029,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -3803,8 +4122,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -3923,27 +4242,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 23,
             "ty": 2,
-            "nm": "loading-img-7.png",
+            "nm": "img_7.png",
             "cl": "png",
-            "refId": "image_7",
+            "refId": "img_7.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -3971,13 +4290,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 14.863,
+                            "t": 15.863,
                             "s": [
                                 99
                             ]
                         },
                         {
-                            "t": 56.017578125,
+                            "t": 57.017578125,
                             "s": [
                                 130
                             ]
@@ -4007,13 +4326,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 15.338,
+                                "t": 16.338,
                                 "s": [
                                     1101
                                 ]
                             },
                             {
-                                "t": 56.0078125,
+                                "t": 57.0078125,
                                 "s": [
                                     2047.4
                                 ]
@@ -4041,13 +4360,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 15.338,
+                                "t": 16.338,
                                 "s": [
                                     637
                                 ]
                             },
                             {
-                                "t": 55.990234375,
+                                "t": 56.990234375,
                                 "s": [
                                     314.923
                                 ]
@@ -4079,8 +4398,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -4092,8 +4411,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -4156,8 +4504,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -4276,27 +4624,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 25,
             "ty": 2,
-            "nm": "loading-img-6.png",
+            "nm": "img_8.png",
             "cl": "png",
-            "refId": "image_8",
+            "refId": "img_8.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -4324,13 +4672,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 13.895,
+                            "t": 14.895,
                             "s": [
                                 -63
                             ]
                         },
                         {
-                            "t": 54.015625,
+                            "t": 55.015625,
                             "s": [
                                 -66
                             ]
@@ -4360,13 +4708,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 14.369,
+                                "t": 15.369,
                                 "s": [
                                     985
                                 ]
                             },
                             {
-                                "t": 54.005859375,
+                                "t": 55.005859375,
                                 "s": [
                                     1799.4
                                 ]
@@ -4394,13 +4742,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 14.369,
+                                "t": 15.369,
                                 "s": [
                                     469
                                 ]
                             },
                             {
-                                "t": 53.98828125,
+                                "t": 54.98828125,
                                 "s": [
                                     -441.077
                                 ]
@@ -4477,8 +4825,8 @@ let loadingJson = {
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -4490,8 +4838,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -4554,8 +4931,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -4674,27 +5051,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 27,
             "ty": 2,
-            "nm": "loading-img-6.png",
+            "nm": "img_8.png",
             "cl": "png",
-            "refId": "image_8",
+            "refId": "img_8.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -4722,13 +5099,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 12.922,
+                            "t": 13.922,
                             "s": [
                                 56
                             ]
                         },
                         {
-                            "t": 52.013671875,
+                            "t": 53.013671875,
                             "s": [
                                 64
                             ]
@@ -4758,13 +5135,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 13.396,
+                                "t": 14.396,
                                 "s": [
                                     279
                                 ]
                             },
                             {
-                                "t": 51.994140625,
+                                "t": 52.994140625,
                                 "s": [
                                     -148.307
                                 ]
@@ -4792,13 +5169,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 13.396,
+                                "t": 14.396,
                                 "s": [
                                     476
                                 ]
                             },
                             {
-                                "t": 51.986328125,
+                                "t": 52.986328125,
                                 "s": [
                                     -18.077
                                 ]
@@ -4875,8 +5252,8 @@ let loadingJson = {
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -4888,8 +5265,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -4952,8 +5358,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -5072,27 +5478,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 29,
             "ty": 2,
-            "nm": "loading-img-7.png",
+            "nm": "img_7.png",
             "cl": "png",
-            "refId": "image_7",
+            "refId": "img_7.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -5120,13 +5526,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 10.945,
+                            "t": 11.945,
                             "s": [
                                 96
                             ]
                         },
                         {
-                            "t": 50.01171875,
+                            "t": 51.01171875,
                             "s": [
                                 85
                             ]
@@ -5156,13 +5562,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 11.42,
+                                "t": 12.42,
                                 "s": [
                                     1050
                                 ]
                             },
                             {
-                                "t": 50.001953125,
+                                "t": 51.001953125,
                                 "s": [
                                     1452.4
                                 ]
@@ -5190,13 +5596,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 11.42,
+                                "t": 12.42,
                                 "s": [
                                     1025
                                 ]
                             },
                             {
-                                "t": 49.98828125,
+                                "t": 50.98828125,
                                 "s": [
                                     1889.703
                                 ]
@@ -5228,8 +5634,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -5241,8 +5647,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -5305,8 +5740,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -5425,27 +5860,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 31,
             "ty": 2,
-            "nm": "loading-img-5.png",
+            "nm": "img_6.png",
             "cl": "png",
-            "refId": "image_6",
+            "refId": "img_6.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -5473,13 +5908,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 9.965,
+                            "t": 10.965,
                             "s": [
                                 -80
                             ]
                         },
                         {
-                            "t": 48.009765625,
+                            "t": 49.009765625,
                             "s": [
                                 -45
                             ]
@@ -5509,13 +5944,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 10.439,
+                                "t": 11.439,
                                 "s": [
                                     1254
                                 ]
                             },
                             {
-                                "t": 48,
+                                "t": 49,
                                 "s": [
                                     1964.4
                                 ]
@@ -5543,13 +5978,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 10.439,
+                                "t": 11.439,
                                 "s": [
                                     898
                                 ]
                             },
                             {
-                                "t": 48.009765625,
+                                "t": 49.009765625,
                                 "s": [
                                     1038
                                 ]
@@ -5581,8 +6016,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -5594,8 +6029,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -5658,8 +6122,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -5778,27 +6242,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 33,
             "ty": 2,
-            "nm": "loading-img-8.png",
+            "nm": "img_2.png",
             "cl": "png",
-            "refId": "image_2",
+            "refId": "img_2.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -5833,13 +6297,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 8.455,
+                                "t": 9.455,
                                 "s": [
                                     550
                                 ]
                             },
                             {
-                                "t": 46.0078125,
+                                "t": 47.0078125,
                                 "s": [
                                     406
                                 ]
@@ -5867,13 +6331,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 8.455,
+                                "t": 9.455,
                                 "s": [
                                     464.5
                                 ]
                             },
                             {
-                                "t": 45.98046875,
+                                "t": 46.98046875,
                                 "s": [
                                     -225.577
                                 ]
@@ -5905,8 +6369,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -5918,8 +6382,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -5982,8 +6475,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -6102,27 +6595,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 35,
             "ty": 2,
-            "nm": "loading-img-6.png",
+            "nm": "img_8.png",
             "cl": "png",
-            "refId": "image_8",
+            "refId": "img_8.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -6150,13 +6643,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 5.992,
+                            "t": 6.992,
                             "s": [
                                 56
                             ]
                         },
                         {
-                            "t": 44.005859375,
+                            "t": 45.005859375,
                             "s": [
                                 68
                             ]
@@ -6186,13 +6679,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 6.467,
+                                "t": 7.467,
                                 "s": [
                                     378
                                 ]
                             },
                             {
-                                "t": 43.986328125,
+                                "t": 44.986328125,
                                 "s": [
                                     -61.307
                                 ]
@@ -6220,13 +6713,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 6.467,
+                                "t": 7.467,
                                 "s": [
                                     535
                                 ]
                             },
                             {
-                                "t": 43.978515625,
+                                "t": 44.978515625,
                                 "s": [
                                     -35.077
                                 ]
@@ -6303,8 +6796,8 @@ let loadingJson = {
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -6316,8 +6809,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -6380,8 +6902,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -6500,27 +7022,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 37,
             "ty": 2,
-            "nm": "loading-img-7.png",
+            "nm": "img_7.png",
             "cl": "png",
-            "refId": "image_7",
+            "refId": "img_7.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -6548,13 +7070,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 4,
+                            "t": 5,
                             "s": [
                                 99
                             ]
                         },
                         {
-                            "t": 42.00390625,
+                            "t": 43.00390625,
                             "s": [
                                 141
                             ]
@@ -6584,13 +7106,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 4.475,
+                                "t": 5.475,
                                 "s": [
                                     1179
                                 ]
                             },
                             {
-                                "t": 41.994140625,
+                                "t": 42.994140625,
                                 "s": [
                                     2033.4
                                 ]
@@ -6618,13 +7140,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 4.475,
+                                "t": 5.475,
                                 "s": [
                                     659
                                 ]
                             },
                             {
-                                "t": 42.00390625,
+                                "t": 43.00390625,
                                 "s": [
                                     567
                                 ]
@@ -6701,8 +7223,8 @@ let loadingJson = {
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -6714,8 +7236,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -6778,8 +7329,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -6898,27 +7449,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 39,
             "ty": 2,
-            "nm": "loading-img-4.png",
+            "nm": "img_5.png",
             "cl": "png",
-            "refId": "image_5",
+            "refId": "img_5.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -6946,13 +7497,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 2,
+                            "t": 3,
                             "s": [
                                 71
                             ]
                         },
                         {
-                            "t": 40.001953125,
+                            "t": 41.001953125,
                             "s": [
                                 55
                             ]
@@ -6982,13 +7533,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 2.475,
+                                "t": 3.475,
                                 "s": [
                                     370
                                 ]
                             },
                             {
-                                "t": 39.982421875,
+                                "t": 40.982421875,
                                 "s": [
                                     -665.307
                                 ]
@@ -7016,13 +7567,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 2.475,
+                                "t": 3.475,
                                 "s": [
                                     581
                                 ]
                             },
                             {
-                                "t": 39.974609375,
+                                "t": 40.974609375,
                                 "s": [
                                     226.923
                                 ]
@@ -7099,8 +7650,8 @@ let loadingJson = {
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -7112,8 +7663,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -7176,8 +7756,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -7296,27 +7876,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 41,
             "ty": 2,
-            "nm": "loading-img-6.png",
+            "nm": "img_8.png",
             "cl": "png",
-            "refId": "image_8",
+            "refId": "img_8.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -7344,13 +7924,13 @@ let loadingJson = {
                                     -2.297
                                 ]
                             },
-                            "t": 0,
+                            "t": 1,
                             "s": [
                                 -72
                             ]
                         },
                         {
-                            "t": 38,
+                            "t": 39,
                             "s": [
                                 -83
                             ]
@@ -7380,13 +7960,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 0,
+                                "t": 1,
                                 "s": [
                                     678
                                 ]
                             },
                             {
-                                "t": 38,
+                                "t": 39,
                                 "s": [
                                     762
                                 ]
@@ -7414,13 +7994,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 0,
+                                "t": 1,
                                 "s": [
                                     825
                                 ]
                             },
                             {
-                                "t": 37.9765625,
+                                "t": 38.9765625,
                                 "s": [
                                     1653.703
                                 ]
@@ -7497,8 +8077,8 @@ let loadingJson = {
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -7510,8 +8090,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -7574,8 +8183,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -7694,27 +8303,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 43,
             "ty": 2,
-            "nm": "loading-img-8.png",
+            "nm": "img_2.png",
             "cl": "png",
-            "refId": "image_2",
+            "refId": "img_2.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -7742,13 +8351,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 24.459,
+                            "t": 25.459,
                             "s": [
                                 -59
                             ]
                         },
                         {
-                            "t": 74.03515625,
+                            "t": 75.03515625,
                             "s": [
                                 -47
                             ]
@@ -7778,13 +8387,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 24.934,
+                                "t": 25.934,
                                 "s": [
                                     1378
                                 ]
                             },
                             {
-                                "t": 74.025390625,
+                                "t": 75.025390625,
                                 "s": [
                                     1948.4
                                 ]
@@ -7812,13 +8421,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 24.934,
+                                "t": 25.934,
                                 "s": [
                                     1446.5
                                 ]
                             },
                             {
-                                "t": 74.0234375,
+                                "t": 75.0234375,
                                 "s": [
                                     2014.431
                                 ]
@@ -7850,8 +8459,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -7863,8 +8472,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -7927,8 +8565,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -8047,27 +8685,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 45,
             "ty": 2,
-            "nm": "loading-img-2.png",
+            "nm": "img_3.png",
             "cl": "png",
-            "refId": "image_3",
+            "refId": "img_3.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -8095,13 +8733,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 23.525,
+                            "t": 24.525,
                             "s": [
                                 67
                             ]
                         },
                         {
-                            "t": 72.033203125,
+                            "t": 73.033203125,
                             "s": [
                                 46
                             ]
@@ -8131,13 +8769,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 24,
+                                "t": 25,
                                 "s": [
                                     273
                                 ]
                             },
                             {
-                                "t": 72.013671875,
+                                "t": 73.013671875,
                                 "s": [
                                     -366.307
                                 ]
@@ -8165,13 +8803,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 24,
+                                "t": 25,
                                 "s": [
                                     1375
                                 ]
                             },
                             {
-                                "t": 72.021484375,
+                                "t": 73.021484375,
                                 "s": [
                                     2278.931
                                 ]
@@ -8203,8 +8841,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -8216,8 +8854,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -8280,8 +8947,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -8400,27 +9067,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 47,
             "ty": 2,
-            "nm": "loading-img-4.png",
+            "nm": "img_5.png",
             "cl": "png",
-            "refId": "image_5",
+            "refId": "img_5.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -8448,13 +9115,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 17.742,
+                            "t": 18.742,
                             "s": [
                                 62
                             ]
                         },
                         {
-                            "t": 62.0234375,
+                            "t": 63.0234375,
                             "s": [
                                 79
                             ]
@@ -8484,13 +9151,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 18.217,
+                                "t": 19.217,
                                 "s": [
                                     510
                                 ]
                             },
                             {
-                                "t": 62.00390625,
+                                "t": 63.00390625,
                                 "s": [
                                     326.693
                                 ]
@@ -8518,13 +9185,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 18.217,
+                                "t": 19.217,
                                 "s": [
                                     1409
                                 ]
                             },
                             {
-                                "t": 62,
+                                "t": 63,
                                 "s": [
                                     2161.703
                                 ]
@@ -8556,8 +9223,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -8569,8 +9236,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -8633,8 +9329,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -8753,27 +9449,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 49,
             "ty": 2,
-            "nm": "loading-img-5.png",
+            "nm": "img_6.png",
             "cl": "png",
-            "refId": "image_6",
+            "refId": "img_6.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -8808,13 +9504,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 17.262,
+                                "t": 18.262,
                                 "s": [
                                     185
                                 ]
                             },
                             {
-                                "t": 60.001953125,
+                                "t": 61.001953125,
                                 "s": [
                                     -354.307
                                 ]
@@ -8842,13 +9538,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 17.262,
+                                "t": 18.262,
                                 "s": [
                                     1410
                                 ]
                             },
                             {
-                                "t": 60.009765625,
+                                "t": 61.009765625,
                                 "s": [
                                     2277.931
                                 ]
@@ -8880,8 +9576,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -8893,8 +9589,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -8957,8 +9682,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -9077,27 +9802,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 51,
             "ty": 2,
-            "nm": "loading-img-7.png",
+            "nm": "img_7.png",
             "cl": "png",
-            "refId": "image_7",
+            "refId": "img_7.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -9125,13 +9850,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 10.945,
+                            "t": 11.945,
                             "s": [
                                 96
                             ]
                         },
                         {
-                            "t": 50.01171875,
+                            "t": 51.01171875,
                             "s": [
                                 85
                             ]
@@ -9161,13 +9886,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 11.42,
+                                "t": 12.42,
                                 "s": [
                                     1050
                                 ]
                             },
                             {
-                                "t": 50.001953125,
+                                "t": 51.001953125,
                                 "s": [
                                     1452.4
                                 ]
@@ -9195,13 +9920,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 11.42,
+                                "t": 12.42,
                                 "s": [
                                     1425
                                 ]
                             },
                             {
-                                "t": 50,
+                                "t": 51,
                                 "s": [
                                     2236.931
                                 ]
@@ -9233,8 +9958,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -9246,8 +9971,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -9310,8 +10064,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -9430,27 +10184,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 53,
             "ty": 2,
-            "nm": "loading-img-5.png",
+            "nm": "img_6.png",
             "cl": "png",
-            "refId": "image_6",
+            "refId": "img_6.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -9478,13 +10232,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 9.965,
+                            "t": 10.965,
                             "s": [
                                 -80
                             ]
                         },
                         {
-                            "t": 48.009765625,
+                            "t": 49.009765625,
                             "s": [
                                 -45
                             ]
@@ -9514,13 +10268,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 10.439,
+                                "t": 11.439,
                                 "s": [
                                     1254
                                 ]
                             },
                             {
-                                "t": 48,
+                                "t": 49,
                                 "s": [
                                     1964.4
                                 ]
@@ -9548,13 +10302,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 10.439,
+                                "t": 11.439,
                                 "s": [
                                     1298
                                 ]
                             },
                             {
-                                "t": 47.998046875,
+                                "t": 48.998046875,
                                 "s": [
                                     1605.931
                                 ]
@@ -9586,8 +10340,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -9599,8 +10353,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -9663,8 +10446,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -9783,27 +10566,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 55,
             "ty": 2,
-            "nm": "loading-img-6.png",
+            "nm": "img_8.png",
             "cl": "png",
-            "refId": "image_8",
+            "refId": "img_8.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -9831,13 +10614,13 @@ let loadingJson = {
                                     -2.297
                                 ]
                             },
-                            "t": 0,
+                            "t": 1,
                             "s": [
                                 -72
                             ]
                         },
                         {
-                            "t": 38,
+                            "t": 39,
                             "s": [
                                 -83
                             ]
@@ -9867,13 +10650,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 0,
+                                "t": 1,
                                 "s": [
                                     678
                                 ]
                             },
                             {
-                                "t": 38,
+                                "t": 39,
                                 "s": [
                                     762
                                 ]
@@ -9901,13 +10684,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 0,
+                                "t": 1,
                                 "s": [
                                     1225
                                 ]
                             },
                             {
-                                "t": 37.9765625,
+                                "t": 38.9765625,
                                 "s": [
                                     2053.703
                                 ]
@@ -9984,8 +10767,8 @@ let loadingJson = {
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -9997,8 +10780,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -10061,8 +10873,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -10181,27 +10993,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 57,
             "ty": 2,
-            "nm": "loading-img-9.png",
+            "nm": "img_0.png",
             "cl": "png",
-            "refId": "image_0",
+            "refId": "img_0.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -10229,13 +11041,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 26.461,
+                            "t": 27.461,
                             "s": [
                                 -13
                             ]
                         },
                         {
-                            "t": 76.037109375,
+                            "t": 77.037109375,
                             "s": [
                                 12
                             ]
@@ -10265,15 +11077,15 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 26.936,
+                                "t": 27.936,
                                 "s": [
-                                    1331
+                                    1371
                                 ]
                             },
                             {
-                                "t": 76.02734375,
+                                "t": 77.02734375,
                                 "s": [
-                                    1965.4
+                                    2005.4
                                 ]
                             }
                         ],
@@ -10299,15 +11111,15 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 27,
+                                "t": 28,
                                 "s": [
-                                    165
+                                    125
                                 ]
                             },
                             {
-                                "t": 76.009765625,
+                                "t": 77.009765625,
                                 "s": [
-                                    -129.077
+                                    -169.077
                                 ]
                             }
                         ],
@@ -10337,8 +11149,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -10350,8 +11162,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -10414,8 +11255,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -10534,27 +11375,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 59,
             "ty": 2,
-            "nm": "loading-img-1.png",
+            "nm": "img_1.png",
             "cl": "png",
-            "refId": "image_1",
+            "refId": "img_1.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -10582,13 +11423,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 25.459,
+                            "t": 26.459,
                             "s": [
                                 132
                             ]
                         },
                         {
-                            "t": 76.037109375,
+                            "t": 77.037109375,
                             "s": [
                                 111
                             ]
@@ -10618,13 +11459,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 25.934,
+                                "t": 26.934,
                                 "s": [
                                     73
                                 ]
                             },
                             {
-                                "t": 76.017578125,
+                                "t": 77.017578125,
                                 "s": [
                                     -458.307
                                 ]
@@ -10652,13 +11493,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 26,
+                                "t": 27,
                                 "s": [
                                     167
                                 ]
                             },
                             {
-                                "t": 76.009765625,
+                                "t": 77.009765625,
                                 "s": [
                                     -159.077
                                 ]
@@ -10690,8 +11531,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -10703,8 +11544,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -10767,8 +11637,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -10887,27 +11757,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 61,
             "ty": 2,
-            "nm": "loading-img-4.png",
+            "nm": "img_5.png",
             "cl": "png",
-            "refId": "image_5",
+            "refId": "img_5.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -10935,13 +11805,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 18.693,
+                            "t": 19.693,
                             "s": [
                                 -108
                             ]
                         },
                         {
-                            "t": 66.02734375,
+                            "t": 67.02734375,
                             "s": [
                                 -79
                             ]
@@ -10971,15 +11841,15 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 19.168,
+                                "t": 20.168,
                                 "s": [
                                     1245
                                 ]
                             },
                             {
-                                "t": 66.017578125,
+                                "t": 67,
                                 "s": [
-                                    1531.4
+                                    1645
                                 ]
                             }
                         ],
@@ -11005,13 +11875,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 19,
+                                "t": 20,
                                 "s": [
                                     114
                                 ]
                             },
                             {
-                                "t": 66,
+                                "t": 67,
                                 "s": [
                                     -220.077
                                 ]
@@ -11043,8 +11913,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -11056,8 +11926,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -11120,8 +12019,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -11240,27 +12139,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 63,
             "ty": 2,
-            "nm": "loading-img-6.png",
+            "nm": "img_8.png",
             "cl": "png",
-            "refId": "image_8",
+            "refId": "img_8.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -11288,13 +12187,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 13.895,
+                            "t": 14.895,
                             "s": [
                                 -63
                             ]
                         },
                         {
-                            "t": 54.015625,
+                            "t": 55.015625,
                             "s": [
                                 -66
                             ]
@@ -11324,13 +12223,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 14.369,
+                                "t": 15.369,
                                 "s": [
                                     985
                                 ]
                             },
                             {
-                                "t": 54.005859375,
+                                "t": 55.005859375,
                                 "s": [
                                     1399.4
                                 ]
@@ -11358,13 +12257,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 14,
+                                "t": 15,
                                 "s": [
                                     229
                                 ]
                             },
                             {
-                                "t": 53.98828125,
+                                "t": 54.98828125,
                                 "s": [
                                     -41.077
                                 ]
@@ -11441,8 +12340,8 @@ let loadingJson = {
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -11454,8 +12353,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -11518,8 +12446,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -11638,27 +12566,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 65,
             "ty": 2,
-            "nm": "loading-img-6.png",
+            "nm": "img_8.png",
             "cl": "png",
-            "refId": "image_8",
+            "refId": "img_8.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -11686,13 +12614,13 @@ let loadingJson = {
                                     0
                                 ]
                             },
-                            "t": 12.922,
+                            "t": 13.922,
                             "s": [
                                 56
                             ]
                         },
                         {
-                            "t": 52.013671875,
+                            "t": 53.013671875,
                             "s": [
                                 64
                             ]
@@ -11722,13 +12650,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 13.396,
+                                "t": 14.396,
                                 "s": [
                                     279
                                 ]
                             },
                             {
-                                "t": 51.994140625,
+                                "t": 52.994140625,
                                 "s": [
                                     -148.307
                                 ]
@@ -11756,13 +12684,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 13,
+                                "t": 14,
                                 "s": [
                                     236
                                 ]
                             },
                             {
-                                "t": 51.986328125,
+                                "t": 52.986328125,
                                 "s": [
                                     -18.077
                                 ]
@@ -11839,8 +12767,8 @@ let loadingJson = {
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -11852,8 +12780,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -11916,8 +12873,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -12036,27 +12993,27 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
             "ddd": 0,
             "ind": 67,
             "ty": 2,
-            "nm": "loading-img-8.png",
+            "nm": "img_2.png",
             "cl": "png",
-            "refId": "image_2",
+            "refId": "img_2.png",
             "sr": 1,
             "ks": {
                 "o": {
@@ -12091,13 +13048,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 8.455,
+                                "t": 9.455,
                                 "s": [
                                     550
                                 ]
                             },
                             {
-                                "t": 46.0078125,
+                                "t": 47.0078125,
                                 "s": [
                                     406
                                 ]
@@ -12125,13 +13082,13 @@ let loadingJson = {
                                         0
                                     ]
                                 },
-                                "t": 9,
+                                "t": 10,
                                 "s": [
                                     224.5
                                 ]
                             },
                             {
-                                "t": 45.98046875,
+                                "t": 46.98046875,
                                 "s": [
                                     -225.577
                                 ]
@@ -12163,8 +13120,8 @@ let loadingJson = {
             },
             "ao": 0,
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         },
         {
@@ -12176,8 +13133,37 @@ let loadingJson = {
             "sr": 1,
             "ks": {
                 "o": {
-                    "a": 0,
-                    "k": 15,
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.549
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    1
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 0,
+                            "s": [
+                                56
+                            ]
+                        },
+                        {
+                            "t": 55,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
                     "ix": 11
                 },
                 "r": {
@@ -12240,8 +13226,8 @@ let loadingJson = {
                                 ],
                                 "ix": 3
                             },
-                            "nm": "Ellipse Path 1",
-                            "mn": "ADBE Vector Shape - Ellipse",
+                            "nm": "elp1",
+                            "mn": "vse",
                             "hd": false
                         },
                         {
@@ -12360,18 +13346,18 @@ let loadingJson = {
                             "nm": "Transform"
                         }
                     ],
-                    "nm": "Ellipse 1",
+                    "nm": "el 1",
                     "np": 3,
                     "cix": 2,
                     "bm": 0,
                     "ix": 1,
-                    "mn": "ADBE Vector Group",
+                    "mn": "avg",
                     "hd": false
                 }
             ],
             "ip": 0,
-            "op": 85,
-            "st": 0,
+            "op": 75,
+            "st": 1,
             "bm": 0
         }
     ],

@@ -51,17 +51,6 @@ else{
     heroBannerSVG.style.scale = window.innerWidth/heroBannerSVG.getBoundingClientRect().width;
 }
 
-
-var patternContainer = document.getElementById('patternContainer');
-var patternContainerItem = bodymovin.loadAnimation({
-    wrapper: patternContainer,
-    animType: 'svg',
-    loop: false,
-    autoplay: false,
-    animationData: patternJson,
-});
-
-
 // page transition ========================================
 $(window).on("load", function () {
     loadingLottieItem.play();
@@ -86,7 +75,6 @@ $(window).on("load", function () {
         trigger: '#aboutDeglacer',
         start: 'top 80%',
         end: 'top 80%',
-        onEnter: playPattern,
         // scrub: true,
         toggleActions: "restart none none reverse", // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
         //   markers: true,
@@ -138,11 +126,6 @@ $(window).on("load", function () {
 });
 
 // Scroll Trigger about Deglacer Section ===============================
-
-function playPattern(){
-    patternContainerItem.play();
-}
-
 const text = new SplitType('.showTextAnimation', { types: 'words, chars' });
 
 
