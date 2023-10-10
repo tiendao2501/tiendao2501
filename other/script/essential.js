@@ -622,6 +622,20 @@ if (events.length != 0){
             duration: 0.3,
         });
 
+        gsap.to(eventContainer,{
+            scrollTrigger: {
+                trigger: eventContainer,
+                start: 'bottom 30%',
+                end: 'bottom 20%',
+                scrub: true, 
+                toggleActions: "restart none none reverse", 
+                // markers: true,
+            },
+            opacity: 0,
+            ease: 'none',
+            duration: 0.5,
+        })
+
         gsap.to(eventContainer.getElementsByClassName('event-element')[0],{
             scrollTrigger: {
                 trigger: eventContainer,
@@ -635,20 +649,6 @@ if (events.length != 0){
             top: '48px',
             ease: 'none',
             duration: 0.001,
-        })
-
-        gsap.to(eventContainer,{
-            scrollTrigger: {
-                trigger: eventContainer,
-                start: 'bottom 20%',
-                end: 'bottom top',
-                scrub: true, 
-                toggleActions: "restart none none reverse", 
-                // markers: true,
-            },
-            opacity: 0,
-            ease: 'none',
-            duration: 0.5,
         })
     }
 

@@ -605,6 +605,7 @@ body {
     justify-content: center;
     padding-top: 48px;
     height: 100vh;
+    pointer-events: none;
 
 }
 
@@ -613,6 +614,7 @@ body {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    pointer-events: auto;
 
     width: 800px;
     max-width: 100vw;
