@@ -524,7 +524,15 @@ for (var i = 0; i < eventsCSV.length; i++){
         eventsCSV[i].image = eventsCSV[i].image.split(/\r?\n|\r|\n/g);
         eventsCSV[i].time = eventsCSV[i].time.split(/\r?\n|\r|\n/g);
         eventsCSV[i].pricing = eventsCSV[i].pricing.split(/\r?\n|\r|\n/g);
-        events.push(eventsCSV[i]);
+
+        var dateString = eventsCSV[i].endDate;
+        var dateParts = dateString.split("/");
+        eventsCSV[i].endDate = new Date(+dateParts[2], dateParts[1] - 1, +dateParts[0]).getTime(); 
+
+        // check if event end date is already 48 hrs ago from current date.
+        if( Date.now() < (eventsCSV[i].endDate + (48*60*60*1000)) ){
+            events.push(eventsCSV[i]);
+        }
     }
 }
 
@@ -549,6 +557,25 @@ if (events.length != 0){
             var time = document.createElement('span');
             eventContainerTime += '<span class = "regular-16 event-time">'+ events[i].time[j] +'</span>';
         }
+
+        // check if event has expired
+        var mainCTA = '';
+        var secondCTA = '';
+        disableBG = '';
+
+        if( Date.now() < eventsCSV[i].endDate ){
+            //hasn't expired
+            mainCTA =  '<button onclick="showEventDetail('+ i +');">View Details</button>';
+            secondCTA = '<a target="_blank" href="https://m.me/deglacer.hn"><span>Rerseve your slots</span></a>';
+        }
+        else{
+            // has expired within 48 hrs -> disable.
+            mainCTA = '<button style="background-color: #7C746C; color: #1D1D1B">Event has ended</button>';
+            secondCTA = '<a target="_blank" href="https://m.me/deglacer.hn"><span>Contact us for future events</span></a>';
+            disableBG = 'filter: grayscale(100%);';
+        }
+
+
         eventContainer.innerHTML = `
         <div class="event-element">
             <div class="event-content">
@@ -557,10 +584,10 @@ if (events.length != 0){
                     <span class="event-location regular-16">${events[i].location}</span>
                     ${eventContainerTime}
                 </div>
-                <button onclick="showEventDetail(${i});">View Details</button>
-                <a target="_blank" href="https://m.me/deglacer.hn"><span>Rerseve your slots</span></a>
+                ${mainCTA}
+                ${secondCTA}
             </div>
-            <div class="event-thumbnail" style="background-image: url('../../events/${events[i].thumbnail}');"></div>
+            <div class="event-thumbnail" style="background-image: url('../../events/${events[i].thumbnail}'); ${disableBG} "></div>
 
         </div>
         `;
