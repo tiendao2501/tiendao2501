@@ -432,7 +432,6 @@ gsap.to('#menu .reserveCTA span', {
 onmousemove = function(e){
     var xpos = e.clientX - document.getElementById('mask').getBoundingClientRect().left - 130;
     var ypos = e.clientY - document.getElementById('mask').getBoundingClientRect().top - 130;
-    // console.log("mouse location:", xpos, ypos)
     document.getElementById('mask').style.maskPosition = xpos + "px " + ypos + "px";
     document.getElementById('mask').style.webkitMaskPosition = xpos + "px " + ypos + "px";
 }
@@ -485,7 +484,6 @@ $.ajax({
     async: false,
     success: function (csvd) {
         jsonMenu = $.csv.toObjects(csvd);
-        // console.log(jsonMenu);
     },
     dataType: "text",
     complete: function () {
@@ -544,7 +542,6 @@ if (events.length != 0){
         document.getElementById('menu').getElementsByClassName('menu-events')[0].style.pointerEvents = 'auto';
     }
 
-    // console.log(events);
     for(var i = 0; i < events.length; i++){
         var eventContainer = document.createElement('div');
         eventContainer.classList.add('event-container');
@@ -687,7 +684,7 @@ else{ // if no event currently showed -----------------
 
 
 function showEventDetail(eventID){ 
-    console.log(eventID);
+    // console.log(eventID);
     var thumbnail = document.getElementsByClassName('event-container')[0].getElementsByClassName('event-thumbnail')[0];
     var thumbnailTransition = document.getElementById('event-thumbnail-transition');
 
@@ -1261,6 +1258,27 @@ function toggleProductImg(el){
                 img.style.height = '0';        
               }
         });
+
+        // when scroll reverse
+        gsap.to(img, {
+            scrollTrigger: {
+                trigger: img,
+                start: 'top bottom',
+                end: 'top bottom',
+                // scrub: true, 
+                toggleActions: "none none play play", // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
+                // markers: true,
+            },
+            height: '0',
+            duration: 1,
+            ease: "power3.inOut",
+            onComplete() {
+                img.style.display = 'none';
+                img.style.opacity = '0';
+                img.style.height = '0';        
+              }
+        });
+
     }
 
     else{
