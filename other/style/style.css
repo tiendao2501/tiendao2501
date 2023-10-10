@@ -387,7 +387,7 @@ body {
 }
 
 
-#meal-menu .meal-menu-scroller {
+#meal-menu #meal-menu-scroller {
     /* background-color: black; */
     position: fixed;
     height: 100vh;
@@ -581,6 +581,7 @@ body {
 .meal-item-image-container{
     z-index: 1000;
     transition: all 1s ease-in-out;
+    overflow: hidden;
     /* background-color: red; */
 }
 
@@ -938,7 +939,7 @@ body {
 
 
     /* Meal menu ------------- */
-    #meal-menu .meal-menu-scroller, .meal-menu-tabbar{
+    #meal-menu #meal-menu-scroller, .meal-menu-tabbar{
         display: none !important;
     }
     #meal-menu-list{

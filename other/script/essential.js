@@ -62,12 +62,6 @@ var patternContainerItem = bodymovin.loadAnimation({
 });
 
 
-
-
-var mealImgContEl = document.getElementsByClassName('meal-item-image-container');
-
-
-
 // page transition ========================================
 $(window).on("load", function () {
     loadingLottieItem.play();
@@ -194,6 +188,8 @@ gsap.fromTo('#aboutDeglacer .char', {
 
 var aboutDeglacerChars = gsap.utils.toArray('.char');
 var imageTriggerElements = [aboutDeglacerChars[28], aboutDeglacerChars[282], aboutDeglacerChars[663], aboutDeglacerChars[774]];
+var mealImgContEl = document.getElementsByClassName('meal-item-image-container');
+
 
 // Show image in About Us section
 
@@ -305,15 +301,15 @@ window.addEventListener("scroll", (event) => {
         document.querySelector('#aboutUsImg1').style.marginLeft = "-200px";
     }
 
-// onscroll to hide expanded image.
+// onscroll to hide expanded image. {mark}
 
-    if(isMobileDevice()){
-        // console.log('show image');
-        for(var i = 0; i < mealImgContEl.length; i++){
-            if(mealImgContEl[i].getElementsByClassName('meal-image')[0].getBoundingClientRect().top < 100){
-            mealImgContEl[i].getElementsByClassName('meal-image')[0].style.height = 0;
-        }}
-    }
+    // if(isMobileDevice()){
+    //     for(var i = 0; i < mealImgContEl.length; i++){
+    //         if(mealImgContEl[i].getElementsByClassName('meal-image')[0].getBoundingClientRect().top < 100){
+    //             mealImgContEl[i].getElementsByClassName('meal-image')[0].style.height = 0;
+    //         }
+    //      }
+    // }
 
 });
 
@@ -652,7 +648,7 @@ if (events.length != 0){
                 // markers: true,
             },
             position: 'fixed',
-            top: 0,
+            top: '48px',
             ease: 'none',
             duration: 0.001,
         })
@@ -1056,7 +1052,6 @@ gsap.to('#meal-menu .meal-menu-container',{
     stagger: -0.1,
 });
 
-
 // hide item when menu item leave the background ------------
 
 var scrollTriggerAllMenuItem = gsap.utils.toArray('.meal-menu-all-item');
@@ -1090,7 +1085,7 @@ scrollTriggerAllMenuItem.forEach((el) => {
             // markers: true,
         },
         opacity: 0,
-        ease: "none",
+        ease: "power3.out",
     });
 });
 
@@ -1226,6 +1221,7 @@ for(var i = 0; i< mealsHaveImage.length; i++){
 
 function toggleProductImg(el){
     var img = el.getElementsByClassName('meal-image')[0];
+    var imgContainer = el.getElementsByClassName('meal-item-image-container')[0];
     if(img.style.display == 'none'){
 
         img.style.display = 'block';
@@ -1235,15 +1231,48 @@ function toggleProductImg(el){
         img.style.left = '50%';
         img.style.width = '80vw';
         img.style.maxHeight = '80vh';
-        img.style.height = 'auto';
         img.style.transform = "translate(-50%, 0%)";
+        img.style.height = 'auto';
+
+        // animate showing
+        imgContainer.style.height = '0';
+        gsap.to(imgContainer, {
+            height: 'auto',
+            duration: 1,
+            ease: "power3.inOut",
+        });
+
+        // {mark} animate hide image when image is out of screen.
+        gsap.to(img, {
+            scrollTrigger: {
+                trigger: img,
+                start: 'top top+=60',
+                end: 'center top',
+                // scrub: true, 
+                toggleActions: "restart none none none", 
+                // markers: true,
+            },
+            height: '0',
+            duration: 1,
+            ease: "power3.inOut",
+            onComplete() {
+                img.style.display = 'none';
+                img.style.opacity = '0';
+                img.style.height = '0';        
+              }
+        });
     }
 
     else{
-
-        img.style.display = 'none';
-        img.style.opacity = '0';
-        img.style.height = '0';
+        gsap.to(img, {
+            height: '0',
+            opacity: '0',
+            duration: 1,
+            ease: "power3.inOut",
+            onComplete() {
+                img.style.display = 'none';
+              }
+        });
     }
 }
 
