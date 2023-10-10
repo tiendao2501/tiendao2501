@@ -1023,28 +1023,14 @@ const tlMoveout = gsap.timeline({
     scrollTrigger: {
         trigger: '#meal-menu',
         start: 'bottom bottom+=100',
-        end: 'bottom center',
-        toggleActions: "restart none none reverse", 
+        end: 'bottom top',
+        toggleActions: "restart reverse reverse reverse", 
         scrub: true,
+        markers: true,
     },
   });
 
-tlMoveout.add(function(){
-    var children = document.getElementById("menu-bg-container").children;
-    for(var i = 0; i < children.length; i++){
-        gsap.to(children[i],{
-            scrollTrigger: {
-                trigger: '#meal-menu',
-                start: 'bottom bottom',
-                end: 'bottom center',
-                toggleActions: "restart none none reverse", 
-            },
-            scale: Math.pow(0.8, children.length - i - 1),
-            duration: 1,
-            ease: 'Power1.inOut',
-        })
-    }
-}).to('#meal-menu .meal-menu-container',{
+tlMoveout.to('#meal-menu .meal-menu-container',{
     opacity: 0,
     ease: 'Power4.easeOut',
     duration: 0.3,
@@ -1052,10 +1038,20 @@ tlMoveout.add(function(){
 },)
 .to('#menu-bg-container > *', {
     marginTop: '-102vh',
-    ease: "power1.inOut",
+    ease: "power2.inOut",
+    duration: 0.7,
+    stagger: -0.07,
+}, '<')
+.to('#menu-bg-container > *', {
+    scale: 0.4,
+    ease: "power2.inOut",
+    duration: 0.6,
+    stagger: 0.05,
+}, '<')
+.to('#menu-bg-container > *',{
+    scale: 1,
     duration: 0.5,
-    stagger: -0.05,
-}, '<');
+});
 
 // hide item when menu item leave the background ------------
 
