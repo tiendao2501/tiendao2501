@@ -570,16 +570,17 @@ if (events.length != 0){
         document.getElementById('event-container').appendChild(eventContainer);
     }
 
-    // animate each event on scroll -------------------------------------------------------
+    // animate event on scroll -------------------------------------------------------
 
     for(var i = 0; i < document.getElementsByClassName('event-container').length; i++){
         var eventContainer = document.getElementsByClassName('event-container')[i];
         
         gsap.from(eventContainer.getElementsByClassName('event-element')[0], {
             scrollTrigger: {
-                trigger: eventContainer.getElementsByClassName('event-element')[0],
-                start: 'top bottom',
-                end: 'top 75%',
+                // trigger: eventContainer.getElementsByClassName('event-element')[0],
+                trigger: eventContainer,
+                start: 'top 65%',
+                end: 'top top',
                 scrub: true, 
                 toggleActions: "restart none none reverse", 
                 // markers: true
@@ -591,9 +592,11 @@ if (events.length != 0){
 
         gsap.from(eventContainer.getElementsByClassName('event-content')[0].children, {
             scrollTrigger: {
-                trigger: eventContainer.getElementsByClassName('event-element')[0],
-                start: 'top 60%',
-                end: 'top center',
+                // trigger: eventContainer.getElementsByClassName('event-element')[0],
+                trigger: eventContainer,
+
+                start: 'top 30%',
+                end: 'center 20%',
                 // scrub: true, 
                 toggleActions: "restart none none reverse", 
                 // markers: true
@@ -606,10 +609,11 @@ if (events.length != 0){
 
         gsap.to(eventContainer.getElementsByClassName('event-thumbnail')[0], {
             scrollTrigger: {
-                trigger: eventContainer.getElementsByClassName('event-element')[0],
-                start: 'top 60%',
-                end: 'top center',
-                scrub: true, 
+                // trigger: eventContainer.getElementsByClassName('event-element')[0],
+                trigger: eventContainer,
+                start: 'top 20%',
+                end: 'center 20%',
+                // scrub: true, 
                 toggleActions: "restart none none reverse", 
                 // markers: true,
             },
@@ -684,7 +688,7 @@ function showEventDetail(eventID){
     tl.to('#event-thumbnail-transition', { opacity: 1, duration: 0.03 })
         .to('#event-thumbnail-transition', { width: '100vw', height: '50vh', top: 0, left: 0, borderRadius: '0px 0px 0px 0px', duration: 0.5 })
         .to('#event-detail-background', {height: '100vh', duration: 0.5}, '<')
-        .add( function(){
+        .add(function(){
             document.getElementById('event-detail-exit').style.display = 'block';
             document.getElementById('event-detail-info-container').style.display = 'flex';
             document.getElementsByTagName('body')[0].style.overflowY = 'hidden';
@@ -732,7 +736,6 @@ function closeEventDetail(){
     const tl = gsap.timeline();
     tl.from('#event-thumbnail-transition', { opacity: 1 });
     tl.to('#event-detail-info-container', { top: '120vh', duration: 1})
-
     .to('#event-thumbnail-transition', {
             width: () => thumbnail.getBoundingClientRect().width + 'px',
             height: () => thumbnail.getBoundingClientRect().height + 'px',
@@ -752,11 +755,11 @@ function closeEventDetail(){
             bottom: 0,
             left: 0,
             duration: 0.2}, '<')
-        .add( function(){
+        .add(function(){
             document.getElementById('event-detail-exit').style.display = 'none';
             document.getElementById('event-thumbnail-transition').style.display = 'none';
             document.getElementsByTagName('body')[0].style.overflowY = '';
-        })
+        });
 
 }
 
@@ -1002,35 +1005,57 @@ for (var i = 0; i < scrollTriggerMenuContainer.length; i++) {
 
 // animating hiding menu while scroll to bottom section
 
-gsap.to('#menu-bg-container > *',{
-    scrollTrigger: {
-        trigger: '#meal-menu',
-        start: 'bottom 75%',
-        end: 'bottom center',
-        // scrub: true, 
-        toggleActions: "restart none none reverse", 
-    },
-    // top: '-200vh',
-    marginTop: '-100vh',
-    ease: 'Power2.easeIn',
-    duration: 0.5,
-    stagger: -0.1,
-});
+// gsap.to('#menu-bg-container > *',{
+//     scrollTrigger: {
+//         trigger: '#meal-menu',
+//         start: 'bottom 75%',
+//         end: 'bottom center',
+//         toggleActions: "restart none none reverse", 
+//     },
+//     marginTop: '-100vh',
+//     ease: 'Power2.easeIn',
+//     duration: 0.5,
+//     stagger: -0.1,
+// });
 
-gsap.to('#meal-menu .meal-menu-container',{
+
+const tlMoveout = gsap.timeline({
     scrollTrigger: {
         trigger: '#meal-menu',
-        start: 'bottom 75%',
+        start: 'bottom bottom+=100',
         end: 'bottom center',
-        // scrub: true, 
         toggleActions: "restart none none reverse", 
+        scrub: true,
     },
-    // top: '-100vh',
+  });
+
+tlMoveout.add(function(){
+    var children = document.getElementById("menu-bg-container").children;
+    for(var i = 0; i < children.length; i++){
+        gsap.to(children[i],{
+            scrollTrigger: {
+                trigger: '#meal-menu',
+                start: 'bottom bottom',
+                end: 'bottom center',
+                toggleActions: "restart none none reverse", 
+            },
+            scale: Math.pow(0.8, children.length - i - 1),
+            duration: 1,
+            ease: 'Power1.inOut',
+        })
+    }
+}).to('#meal-menu .meal-menu-container',{
     opacity: 0,
-    ease: 'Power2.easeIn',
+    ease: 'Power4.easeOut',
+    duration: 0.3,
+    stagger: -0.01,
+},)
+.to('#menu-bg-container > *', {
+    marginTop: '-102vh',
+    ease: "power1.inOut",
     duration: 0.5,
-    stagger: -0.1,
-});
+    stagger: -0.05,
+}, '<');
 
 // hide item when menu item leave the background ------------
 

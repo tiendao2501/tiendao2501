@@ -347,8 +347,8 @@ body {
     background-image: url( '../asset/icon/pattern-bg.svg' );
     background-repeat: repeat;
     background-position: center;
-
     position: relative;
+    padding-bottom: 200px;
 }
 
 .meal-menu-container-bg{
@@ -951,11 +951,11 @@ body {
         margin: 0px !important;
     }
     #meal-menu .menu-background{
-        margin:  32px 4px !important;
+        margin:  32px 4px;
     }
 
     .meal-menu-container-bg{
-        margin: 8px !important;
+        margin: 8px;
     }
 
     .menu-bg-separate-line{
@@ -990,11 +990,13 @@ body {
     
     }
     #meal-menu .menu-background{
-        margin:  32px 112px !important;
+        /* margin:  32px 112px !important; */
+        margin:  32px 112px;
     }
 
     .meal-menu-container-bg{
-        margin: 0px 120px !important;
+        /* margin: 0px 120px !important; */
+        margin: 0px 120px;
     }
 
     #menu, #menu .reserveCTA {
