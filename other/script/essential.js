@@ -1026,7 +1026,7 @@ const tlMoveout = gsap.timeline({
         end: 'bottom top',
         toggleActions: "restart reverse reverse reverse", 
         scrub: true,
-        markers: true,
+        // markers: true,
     },
   });
 
