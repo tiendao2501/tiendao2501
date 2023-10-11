@@ -76,7 +76,7 @@ $(window).on("load", function () {
         start: 'top 80%',
         end: 'top 80%',
         // scrub: true,
-        toggleActions: "restart none none reverse", // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
+        toggleActions: "restart none none reverse", 
         //   markers: true,
         },
         duration: 1,
@@ -90,7 +90,7 @@ $(window).on("load", function () {
         start: 'top 80%',
         end: 'top 80%',
         // scrub: true,
-        toggleActions: "restart none none reverse", // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
+        toggleActions: "restart none none reverse", 
         //   markers: true,
         },
         duration: 1,
