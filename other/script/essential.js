@@ -1,4 +1,6 @@
 // Playing Lottie =========================================
+var scrollerSmallPlayer = [];
+
 stylesheet = document.styleSheets[1];
 var loadingContainer = document.getElementById('loadingContainer');
 
@@ -810,12 +812,17 @@ var mealMenu = [];
         mealMenu.push(section);
     }
 // }
-
 function loadMealMenuContainer(){
     //for each Menu Section ------
     for (var i = 0; i < mealMenu.length; i++){
         var mealMenuContainer = document.createElement('div');
+        var mealMenuScollerText = document.createElement('span');
+        mealMenuScollerText.id = "meal-menu-scroller-text-"+ trimWhitespace(mealMenu[i].name);
+        mealMenuScollerText.classList.add('meal-menu-scroller-text');
+        mealMenuScollerText.innerHTML = '<a href="#'+ "meal-container-"+ trimWhitespace(mealMenu[i].name)+'">'+ mealMenu[i].name +'</a>';
 
+        document.getElementById('meal-menu-scroller-text').appendChild(mealMenuScollerText);
+        
         mealMenuContainer.id = "meal-container-"+ trimWhitespace(mealMenu[i].name);
         mealMenuContainer.classList.add('meal-menu-container','meal-menu-section');
         mealMenuContainer.setAttribute('name', mealMenu[i].name);
@@ -953,25 +960,15 @@ function loadMealMenuContainer(){
         mealMenuContainerBg.appendChild(separateLine);
         mealMenuContainerBg.classList.add('meal-menu-container-bg');
 
-        // {mark2}
-        // var scrollThroughMenuItem = bodymovin.loadAnimation({
-        //     wrapper: scrollerSmall,
-        //     animType: 'svg',
-        //     loop: false,
-        //     autoplay: false,
-        //     path: 'other/script/scroll-through-menu-small.json',
-        // });
-        // ScrollTrigger.create({
-        //     trigger: mealMenuContainer,
-        //     start: "top 90%",
-        //     end: "bottom center",
-        //     scrub: true,
-        //     // markers: true,
-        //     onUpdate: (self) => {
-        //         console.log(self.progress);
-        //         scrollThroughMenuItem.goToAndStop(Math.round(self.progress * 649), true); // 649 is number of lottie frame
-        //     },
-        // });
+        // add animation to scroller small in within menu
+        scrollerSmallPlayer[i] = bodymovin.loadAnimation({
+            wrapper: scrollerSmall,
+            animType: 'svg',
+            loop: false,
+            autoplay: false,
+            path: 'other/script/scroll-through-menu-small.json',
+        });
+
     }
 }
 
@@ -1309,7 +1306,7 @@ function isMobileDevice(){
         }
 }
 
-// {mark2}
+// add menu scroller into right menu
 var scrollThroughMenuContainer = document.getElementById('meal-menu-scroller');
 var scrollThroughMenuItem = bodymovin.loadAnimation({
     wrapper: scrollThroughMenuContainer,
@@ -1318,6 +1315,8 @@ var scrollThroughMenuItem = bodymovin.loadAnimation({
     autoplay: false,
     path: 'other/script/scroll-through-menu.json',
 });
+
+//scroll trigger scroller large in right menu
 ScrollTrigger.create({
     trigger: "#meal-menu",
     start: "top center",
@@ -1333,11 +1332,41 @@ gsap.to('#meal-menu-scroller',{
         start: 'top top',
         end: 'top top',
         scrub: true,
-        toggleActions: "restart none none reverse", // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
+        toggleActions: "restart none none reverse", 
         // markers: true,
     },
     position: 'fixed',
     duration: 2,
 })
-  
-  
+
+//scrolltrigger scroller small in menu
+document.querySelectorAll('.meal-menu-container').forEach((element,i) => {
+    ScrollTrigger.create({
+        trigger: element,
+        start: "top 90%",
+        end: "bottom center",
+        scrub: true,
+        // markers: true,
+        onUpdate: (self) => {
+            scrollerSmallPlayer[i].goToAndStop(Math.round(self.progress * 649), true); 
+        },
+    });
+})
+
+
+//scrolltrigger scroller small in menu
+document.querySelectorAll('.meal-menu-container').forEach((element,i) => {
+    gsap.to( document.getElementsByClassName('meal-menu-scroller-text')[i], {
+        scrollTrigger: {
+            trigger: element,
+            start: 'top center',
+            end: 'bottom center',
+            // scrub: true,
+            toggleActions: "restart reverse restart reverse", // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
+        },
+        fontSize: '24px',
+        // opacity: 1,
+        duration: 0.5,
+        ease: "power2.inOut",
+    })
+})
