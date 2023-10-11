@@ -1022,11 +1022,12 @@ for (var i = 0; i < scrollTriggerMenuContainer.length; i++) {
 const tlMoveout = gsap.timeline({
     scrollTrigger: {
         trigger: '#meal-menu',
-        start: 'bottom bottom+=100',
-        end: 'bottom top',
-        toggleActions: "restart reverse reverse reverse", 
-        scrub: true,
-        // markers: true,
+        start: 'bottom bottom-=100',
+        end: 'bottom center',
+        toggleActions: "restart play reverse reverse", 
+         // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
+        // scrub: true,
+        markers: true,
     },
   });
 
@@ -1039,13 +1040,13 @@ tlMoveout.to('#meal-menu .meal-menu-container',{
 .to('#menu-bg-container > *', {
     marginTop: '-102vh',
     ease: "power2.inOut",
-    duration: 0.7,
+    duration: 1.2,
     stagger: -0.07,
 }, '<')
 .to('#menu-bg-container > *', {
     scale: 0.4,
     ease: "power2.inOut",
-    duration: 0.6,
+    duration: 0.8,
     stagger: 0.05,
 }, '<')
 .to('#menu-bg-container > *',{
