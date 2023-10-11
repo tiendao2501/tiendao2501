@@ -3,23 +3,26 @@ body {
 }
 
 #headerLogo{
+    /* background-color: red; */
     width: 30vw;
     /* max-width: 534px; */
     /* width: 30%; */
     aspect-ratio: 1/1;
     transition: all 0.5s;
+    transform-origin: 'top';
 }
 
 .header{
+    top: 50%;
     position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
     flex-direction: column;
     gap: 18px;
     z-index: 10000;
+    transform: translate(0%, -50%);
 }
 
 #mobile-menu{
@@ -359,7 +362,7 @@ body {
     width: -webkit-fill-available;
     margin: 0px 200px;
     padding: 32px 80px;
-    height: 93vh;
+    height: 94vh;
     top: 62px;
     box-sizing: border-box;
     z-index: 0;
@@ -370,7 +373,14 @@ body {
     width: -webkit-fill-available;
     border-left: 0.5px solid var(--secondary-color);
     border-right: 0.5px solid var(--secondary-color);
-
+    display: flex;
+    flex-direction: row-reverse;
+}
+.menu-bg-separate-line .scoller-small{
+    height: 100%;
+    width: 26px;
+    position: relative;
+    left: 52px;
 }
 
 #meal-menu .menu-background{
@@ -388,12 +398,12 @@ body {
 
 
 #meal-menu #meal-menu-scroller {
-    /* background-color: black; */
-    position: fixed;
+    position: absolute;
+    top: 0;
     height: 100vh;
-    width: 100px;
-    top: 0px;
+    width: 50px;
     left: 10px;
+    z-index: 1;
 }
 
 #meal-menu-list{
@@ -407,14 +417,12 @@ body {
 }
 
 #meal-menu > #meal-menu-list > .meal-menu-container{
-    /* background: #043C2D;
-    border-radius: 16px;
-    border: 0.5px solid var(--secondary-color, #E0C0A4); */
     position: relative;
     top: 50px;
     padding-bottom: 32px ;
     box-sizing: border-box;
     z-index: 100;
+    /* background-color: #533d6769; */
 }
 
 
@@ -709,6 +717,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 48px;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: nowrap;
 }
 
 #event-detail-images *{
@@ -898,7 +910,6 @@ body {
 
     .header{
         width: 100vw;
-        height: 100vh;
         gap: 0px;
     }
 

@@ -8,6 +8,8 @@ var loadingLottieItem = bodymovin.loadAnimation({
     loop: false,
     autoplay: false,
     animationData: loadingJson,
+
+
 });
 loadingLottieItem.addEventListener('complete', function(){
     $('.loader-wrapper').fadeOut();
@@ -58,44 +60,36 @@ $(window).on("load", function () {
     // Scroll trigger ========================================
     gsap.to('#tagline', {
         scrollTrigger: {
-        trigger: '#aboutDeglacer',
-        start: 'top 80%',
-        // scrub: true, 
+        trigger: '.hero-warper',
+        start: 'bottom 60%',
+        // markers: true,
         toggleActions: "restart none none reverse",
-        //   markers: true,
         },
         duration: 1,
         scale: 0,
         opacity: 0,
-        // ease: "Power3.inOut",
     })
     
     gsap.to('.header', {
         scrollTrigger: {
-        trigger: '#aboutDeglacer',
-        start: 'top 80%',
-        end: 'top 80%',
-        // scrub: true,
+        trigger: '.hero-warper',
+        start: 'bottom 60%',
         toggleActions: "restart none none reverse", 
-        //   markers: true,
         },
         duration: 1,
-        height: '98px',
-        // ease: "Power3.inOut",
+        top: '16',
+        transform: 'translate(0%, 0%)',
     })
 
     gsap.to('#headerLogo', {
         scrollTrigger: {
-        trigger: '#aboutDeglacer',
-        start: 'top 80%',
-        end: 'top 80%',
-        // scrub: true,
+        trigger: '.hero-warper',
+        start: 'bottom 60%',
         toggleActions: "restart none none reverse", 
-        //   markers: true,
         },
         duration: 1,
         width: '120px',
-        // ease: "Power3.inOut",
+        height: '30px',
     })
 
     gsap.to('#headerLogo *', {
@@ -103,7 +97,6 @@ $(window).on("load", function () {
         trigger: '#aboutDeglacer',
         start: 'top 1%',
         end: 'bottom top',
-        // scrub: true,
         toggleActions: "restart reverse restart reverse", // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
         // markers: true,
         },
@@ -831,8 +824,6 @@ function loadMealMenuContainer(){
         var mealMenuContainerBg = document.createElement('div');
         var separateLine = document.createElement('div');
         separateLine.classList.add('menu-bg-separate-line');
-        mealMenuContainerBg.appendChild(separateLine);
-        mealMenuContainerBg.classList.add('meal-menu-container-bg');
         
         // add tab into meal menu container -------------------
         var tabbar = document.createElement('div');
@@ -955,6 +946,32 @@ function loadMealMenuContainer(){
         // add meal menu container into mealMenu List ----------
         mealMenuList.appendChild(mealMenuContainer);
         document.getElementById('menu-bg-container').appendChild(mealMenuContainerBg);
+
+        var scrollerSmall = document.createElement('div');
+        scrollerSmall.classList.add('scoller-small');
+        separateLine.appendChild(scrollerSmall);
+        mealMenuContainerBg.appendChild(separateLine);
+        mealMenuContainerBg.classList.add('meal-menu-container-bg');
+
+        // {mark2}
+        // var scrollThroughMenuItem = bodymovin.loadAnimation({
+        //     wrapper: scrollerSmall,
+        //     animType: 'svg',
+        //     loop: false,
+        //     autoplay: false,
+        //     path: 'other/script/scroll-through-menu-small.json',
+        // });
+        // ScrollTrigger.create({
+        //     trigger: mealMenuContainer,
+        //     start: "top 90%",
+        //     end: "bottom center",
+        //     scrub: true,
+        //     // markers: true,
+        //     onUpdate: (self) => {
+        //         console.log(self.progress);
+        //         scrollThroughMenuItem.goToAndStop(Math.round(self.progress * 649), true); // 649 is number of lottie frame
+        //     },
+        // });
     }
 }
 
@@ -1045,19 +1062,17 @@ var scrollTriggerAllMenuItem = gsap.utils.toArray('.meal-menu-all-item');
 scrollTriggerAllMenuItem.forEach((el) => {
 
     // show -----------
-
-    gsap.from(el,{
-        scrollTrigger: {
-            trigger: el,
-            start: 'bottom bottom+=32',
-            end: 'bottom 90% ',
-            scrub: true, 
-            toggleActions: "restart none restart none", // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
-            // markers: true,
-        },
-        opacity: 0,
-        ease: Expo.easeIn,
-    });
+    // gsap.from(el,{
+    //     scrollTrigger: {
+    //         trigger: el,
+    //         start: 'bottom bottom+=32',
+    //         end: 'bottom 90% ',
+    //         scrub: true, 
+    //         toggleActions: "restart none restart none", 
+    //     },
+    //     opacity: 0,
+    //     ease: Expo.easeIn,
+    // });
 
     // hide -----------
     gsap.fromTo(el, {
@@ -1065,14 +1080,15 @@ scrollTriggerAllMenuItem.forEach((el) => {
     }, {
         scrollTrigger: {
             trigger: el,
-            start: 'top 10%',
-            end: 'top 5%',
+            start: 'top top+=162',
+            end: 'top top+=80',
             scrub: true, 
-            toggleActions: "restart restart restart restart",
+            toggleActions: "restart none none reverse", // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
             // markers: true,
         },
         opacity: 0,
-        ease: "power3.out",
+        duration: 0.2,
+        ease: "none",
     });
 });
 
@@ -1292,3 +1308,36 @@ function isMobileDevice(){
             return false;
         }
 }
+
+// {mark2}
+var scrollThroughMenuContainer = document.getElementById('meal-menu-scroller');
+var scrollThroughMenuItem = bodymovin.loadAnimation({
+    wrapper: scrollThroughMenuContainer,
+    animType: 'svg',
+    loop: false,
+    autoplay: false,
+    path: 'other/script/scroll-through-menu.json',
+});
+ScrollTrigger.create({
+    trigger: "#meal-menu",
+    start: "top center",
+    end: "bottom bottom-=500",
+    onUpdate: (self) => {
+        scrollThroughMenuItem.goToAndStop(Math.round(self.progress * 379), true); // 379 is number of lottie frame
+    },
+});
+
+gsap.to('#meal-menu-scroller',{
+    scrollTrigger: {
+        trigger: '#meal-menu',
+        start: 'top top',
+        end: 'top top',
+        scrub: true,
+        toggleActions: "restart none none reverse", // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
+        // markers: true,
+    },
+    position: 'fixed',
+    duration: 2,
+})
+  
+  
