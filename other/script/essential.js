@@ -1005,19 +1005,6 @@ for (var i = 0; i < scrollTriggerMenuContainer.length; i++) {
 
 // animating hiding menu while scroll to bottom section
 
-// gsap.to('#menu-bg-container > *',{
-//     scrollTrigger: {
-//         trigger: '#meal-menu',
-//         start: 'bottom 75%',
-//         end: 'bottom center',
-//         toggleActions: "restart none none reverse", 
-//     },
-//     marginTop: '-100vh',
-//     ease: 'Power2.easeIn',
-//     duration: 0.5,
-//     stagger: -0.1,
-// });
-
 
 const tlMoveout = gsap.timeline({
     scrollTrigger: {
@@ -1025,9 +1012,7 @@ const tlMoveout = gsap.timeline({
         start: 'bottom bottom-=100',
         end: 'bottom center',
         toggleActions: "restart play reverse reverse", 
-         // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
-        // scrub: true,
-        markers: true,
+        // markers: true,
     },
   });
 
