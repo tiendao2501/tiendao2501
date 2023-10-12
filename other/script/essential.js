@@ -1364,7 +1364,7 @@ document.querySelectorAll('.meal-menu-container').forEach((element,i) => {
             // scrub: true,
             toggleActions: "restart reverse restart reverse", // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
         },
-        fontSize: '24px',
+        fontSize: '20px',
         // opacity: 1,
         duration: 0.5,
         ease: "power2.inOut",
