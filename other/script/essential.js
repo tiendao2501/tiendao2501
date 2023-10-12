@@ -537,12 +537,12 @@ if (events.length != 0){
         if( Date.now() < eventsCSV[i].endDate ){
             //hasn't expired
             mainCTA =  '<button onclick="showEventDetail('+ i +');">View Details</button>';
-            secondCTA = '<a target="_blank" href="https://www.messenger.com/t/deglacer.hn"><span>Rerseve now</span></a>';
+            secondCTA = '<a target="_blank" href="https://www.facebook.com/deglacer.hn"><span>Rerseve now</span></a>';
         }
         else{
             // has expired within 48 hrs -> disable.
             mainCTA = '<button style="background-color: #7C746C; color: #1D1D1B">Event has ended</button>';
-            secondCTA = '<a target="_blank" href="https://www.messenger.com/t/deglacer.hn"><span>Contact us for future events</span></a>';
+            secondCTA = '<a target="_blank" href="https://www.facebook.com/deglacer.hn"><span>Contact us for future events</span></a>';
             disableBG = 'filter: grayscale(100%);';
         }
 
