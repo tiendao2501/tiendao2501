@@ -537,7 +537,7 @@ if (events.length != 0){
         if( Date.now() < eventsCSV[i].endDate ){
             //hasn't expired
             mainCTA =  '<button onclick="showEventDetail('+ i +');">View Details</button>';
-            secondCTA = '<a target="_blank" href="https://m.me/deglacer.hn"><span>Rerseve your slots</span></a>';
+            secondCTA = '<a target="_blank" href="https://m.me/deglacer.hn"><span>Rerseve now</span></a>';
         }
         else{
             // has expired within 48 hrs -> disable.
