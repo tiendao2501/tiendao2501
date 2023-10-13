@@ -10,75 +10,75 @@ let loadingJson = {
     "ddd": 0,
     "assets": [
         {
-            "id": "img_0.png",
+            "id": "img_0.webp",
             "w": 1000,
             "h": 1012,
             "u": "other/asset/loading-image/",
-            "p": "img_0.png",
+            "p": "img_0.webp",
             "e": 0
         },
         {
-            "id": "img_1.png",
+            "id": "img_1.webp",
             "w": 1000,
             "h": 920,
             "u": "other/asset/loading-image/",
-            "p": "img_1.png",
+            "p": "img_1.webp",
             "e": 0
         },
         {
-            "id": "img_2.png",
+            "id": "img_2.webp",
             "w": 1000,
             "h": 1422,
             "u": "other/asset/loading-image/",
-            "p": "img_2.png",
+            "p": "img_2.webp",
             "e": 0
         },
         {
-            "id": "img_3.png",
+            "id": "img_3.webp",
             "w": 1000,
             "h": 1233,
             "u": "other/asset/loading-image/",
-            "p": "img_3.png",
+            "p": "img_3.webp",
             "e": 0
         },
         {
-            "id": "img_4.png",
+            "id": "img_4.webp",
             "w": 1000,
             "h": 825,
             "u": "other/asset/loading-image/",
-            "p": "img_4.png",
+            "p": "img_4.webp",
             "e": 0
         },
         {
-            "id": "img_5.png",
+            "id": "img_5.webp",
             "w": 1000,
             "h": 1767,
             "u": "other/asset/loading-image/",
-            "p": "img_5.png",
+            "p": "img_5.webp",
             "e": 0
         },
         {
-            "id": "img_6.png",
+            "id": "img_6.webp",
             "w": 1000,
             "h": 2563,
             "u": "other/asset/loading-image/",
-            "p": "img_6.png",
+            "p": "img_6.webp",
             "e": 0
         },
         {
-            "id": "img_7.png",
+            "id": "img_7.webp",
             "w": 1000,
             "h": 2563,
             "u": "other/asset/loading-image/",
-            "p": "img_7.png",
+            "p": "img_7.webp",
             "e": 0
         },
         {
-            "id": "img_8.png",
+            "id": "img_8.webp",
             "w": 1000,
             "h": 2171,
             "u": "other/asset/loading-image/",
-            "p": "img_8.png",
+            "p": "img_8.webp",
             "e": 0
         }
     ],
@@ -87,9 +87,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 1,
             "ty": 2,
-            "nm": "img_0.png",
+            "nm": "img_0.webp",
             "cl": "png",
-            "refId": "img_0.png",
+            "refId": "img_0.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -469,9 +469,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 3,
             "ty": 2,
-            "nm": "img_1.png",
+            "nm": "img_1.webp",
             "cl": "png",
-            "refId": "img_1.png",
+            "refId": "img_1.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -851,9 +851,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 5,
             "ty": 2,
-            "nm": "img_2.png",
+            "nm": "img_2.webp",
             "cl": "png",
-            "refId": "img_2.png",
+            "refId": "img_2.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -1233,9 +1233,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 7,
             "ty": 2,
-            "nm": "img_3.png",
+            "nm": "img_3.webp",
             "cl": "png",
-            "refId": "img_3.png",
+            "refId": "img_3.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -1615,9 +1615,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 9,
             "ty": 2,
-            "nm": "img_4.png",
+            "nm": "img_4.webp",
             "cl": "png",
-            "refId": "img_4.png",
+            "refId": "img_4.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -1997,9 +1997,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 11,
             "ty": 2,
-            "nm": "img_4.png",
+            "nm": "img_4.webp",
             "cl": "png",
-            "refId": "img_4.png",
+            "refId": "img_4.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -2379,9 +2379,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 13,
             "ty": 2,
-            "nm": "img_5.png",
+            "nm": "img_5.webp",
             "cl": "png",
-            "refId": "img_5.png",
+            "refId": "img_5.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -2761,9 +2761,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 15,
             "ty": 2,
-            "nm": "img_5.png",
+            "nm": "img_5.webp",
             "cl": "png",
-            "refId": "img_5.png",
+            "refId": "img_5.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -3143,9 +3143,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 17,
             "ty": 2,
-            "nm": "img_5.png",
+            "nm": "img_5.webp",
             "cl": "png",
-            "refId": "img_5.png",
+            "refId": "img_5.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -3525,9 +3525,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 19,
             "ty": 2,
-            "nm": "img_6.png",
+            "nm": "img_6.webp",
             "cl": "png",
-            "refId": "img_6.png",
+            "refId": "img_6.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -3878,9 +3878,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 21,
             "ty": 2,
-            "nm": "img_6.png",
+            "nm": "img_6.webp",
             "cl": "png",
-            "refId": "img_6.png",
+            "refId": "img_6.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -4260,9 +4260,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 23,
             "ty": 2,
-            "nm": "img_7.png",
+            "nm": "img_7.webp",
             "cl": "png",
-            "refId": "img_7.png",
+            "refId": "img_7.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -4642,9 +4642,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 25,
             "ty": 2,
-            "nm": "img_8.png",
+            "nm": "img_8.webp",
             "cl": "png",
-            "refId": "img_8.png",
+            "refId": "img_8.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -5069,9 +5069,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 27,
             "ty": 2,
-            "nm": "img_8.png",
+            "nm": "img_8.webp",
             "cl": "png",
-            "refId": "img_8.png",
+            "refId": "img_8.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -5496,9 +5496,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 29,
             "ty": 2,
-            "nm": "img_7.png",
+            "nm": "img_7.webp",
             "cl": "png",
-            "refId": "img_7.png",
+            "refId": "img_7.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -5878,9 +5878,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 31,
             "ty": 2,
-            "nm": "img_6.png",
+            "nm": "img_6.webp",
             "cl": "png",
-            "refId": "img_6.png",
+            "refId": "img_6.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -6260,9 +6260,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 33,
             "ty": 2,
-            "nm": "img_2.png",
+            "nm": "img_2.webp",
             "cl": "png",
-            "refId": "img_2.png",
+            "refId": "img_2.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -6613,9 +6613,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 35,
             "ty": 2,
-            "nm": "img_8.png",
+            "nm": "img_8.webp",
             "cl": "png",
-            "refId": "img_8.png",
+            "refId": "img_8.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -7040,9 +7040,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 37,
             "ty": 2,
-            "nm": "img_7.png",
+            "nm": "img_7.webp",
             "cl": "png",
-            "refId": "img_7.png",
+            "refId": "img_7.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -7467,9 +7467,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 39,
             "ty": 2,
-            "nm": "img_5.png",
+            "nm": "img_5.webp",
             "cl": "png",
-            "refId": "img_5.png",
+            "refId": "img_5.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -7894,9 +7894,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 41,
             "ty": 2,
-            "nm": "img_8.png",
+            "nm": "img_8.webp",
             "cl": "png",
-            "refId": "img_8.png",
+            "refId": "img_8.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -8321,9 +8321,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 43,
             "ty": 2,
-            "nm": "img_2.png",
+            "nm": "img_2.webp",
             "cl": "png",
-            "refId": "img_2.png",
+            "refId": "img_2.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -8703,9 +8703,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 45,
             "ty": 2,
-            "nm": "img_3.png",
+            "nm": "img_3.webp",
             "cl": "png",
-            "refId": "img_3.png",
+            "refId": "img_3.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -9085,9 +9085,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 47,
             "ty": 2,
-            "nm": "img_5.png",
+            "nm": "img_5.webp",
             "cl": "png",
-            "refId": "img_5.png",
+            "refId": "img_5.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -9467,9 +9467,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 49,
             "ty": 2,
-            "nm": "img_6.png",
+            "nm": "img_6.webp",
             "cl": "png",
-            "refId": "img_6.png",
+            "refId": "img_6.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -9820,9 +9820,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 51,
             "ty": 2,
-            "nm": "img_7.png",
+            "nm": "img_7.webp",
             "cl": "png",
-            "refId": "img_7.png",
+            "refId": "img_7.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -10202,9 +10202,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 53,
             "ty": 2,
-            "nm": "img_6.png",
+            "nm": "img_6.webp",
             "cl": "png",
-            "refId": "img_6.png",
+            "refId": "img_6.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -10584,9 +10584,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 55,
             "ty": 2,
-            "nm": "img_8.png",
+            "nm": "img_8.webp",
             "cl": "png",
-            "refId": "img_8.png",
+            "refId": "img_8.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -11011,9 +11011,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 57,
             "ty": 2,
-            "nm": "img_0.png",
+            "nm": "img_0.webp",
             "cl": "png",
-            "refId": "img_0.png",
+            "refId": "img_0.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -11393,9 +11393,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 59,
             "ty": 2,
-            "nm": "img_1.png",
+            "nm": "img_1.webp",
             "cl": "png",
-            "refId": "img_1.png",
+            "refId": "img_1.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -11775,9 +11775,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 61,
             "ty": 2,
-            "nm": "img_5.png",
+            "nm": "img_5.webp",
             "cl": "png",
-            "refId": "img_5.png",
+            "refId": "img_5.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -12157,9 +12157,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 63,
             "ty": 2,
-            "nm": "img_8.png",
+            "nm": "img_8.webp",
             "cl": "png",
-            "refId": "img_8.png",
+            "refId": "img_8.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -12584,9 +12584,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 65,
             "ty": 2,
-            "nm": "img_8.png",
+            "nm": "img_8.webp",
             "cl": "png",
-            "refId": "img_8.png",
+            "refId": "img_8.webp",
             "sr": 1,
             "ks": {
                 "o": {
@@ -13011,9 +13011,9 @@ let loadingJson = {
             "ddd": 0,
             "ind": 67,
             "ty": 2,
-            "nm": "img_2.png",
+            "nm": "img_2.webp",
             "cl": "png",
-            "refId": "img_2.png",
+            "refId": "img_2.webp",
             "sr": 1,
             "ks": {
                 "o": {
