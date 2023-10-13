@@ -65,7 +65,7 @@ $(window).on("load", function () {
     loadingLottieItem.play();
 
     // {mark4}
-    document.querySelectorAll('.meal-image').forEach(img => {
+    document.querySelectorAll('.meal-image, .lazy-loading').forEach(img => {
         img.setAttribute('src', img.getAttribute('data-src'));
     });
 
@@ -547,12 +547,12 @@ if (events.length != 0){
         if( Date.now() < eventsCSV[i].endDate ){
             //hasn't expired
             mainCTA =  '<button onclick="showEventDetail('+ i +');">View Details</button>';
-            secondCTA = '<a aria-label="facebook" target="_blank" href="https://www.facebook.com/deglacer.hn"><span>Rerseve now</span></a>';
+            secondCTA = '<a aria-label="Rerseve now" target="_blank" href="https://www.facebook.com/deglacer.hn"><span>Rerseve now</span></a>';
         }
         else{
             // has expired within 48 hrs -> disable.
             mainCTA = '<button style="background-color: #7C746C; color: #1D1D1B">Event has ended</button>';
-            secondCTA = '<a aria-label="facebook" target="_blank" href="https://www.facebook.com/deglacer.hn"><span>Contact us for future events</span></a>';
+            secondCTA = '<a aria-label="Contact us for future events" target="_blank" href="https://www.facebook.com/deglacer.hn"><span>Contact us for future events</span></a>';
             disableBG = 'filter: grayscale(100%);';
         }
 
@@ -829,7 +829,7 @@ function loadMealMenuContainer(){
         var mealMenuScollerText = document.createElement('span');
         mealMenuScollerText.id = "meal-menu-scroller-text-"+ trimWhitespace(mealMenu[i].name);
         mealMenuScollerText.classList.add('meal-menu-scroller-text');
-        mealMenuScollerText.innerHTML = '<a aria-label="view menu" href="#'+ "meal-container-"+ trimWhitespace(mealMenu[i].name)+'">'+ mealMenu[i].name +'</a>';
+        mealMenuScollerText.innerHTML = '<a aria-label="'+mealMenu[i].name+'" href="#'+ "meal-container-"+ trimWhitespace(mealMenu[i].name)+'">'+ mealMenu[i].name +'</a>';
 
         document.getElementById('meal-menu-scroller-text').appendChild(mealMenuScollerText);
         
@@ -854,7 +854,7 @@ function loadMealMenuContainer(){
             // console.log(subName);
             var tabItem = document.createElement('span');
             tabItem.innerHTML = `
-                <a aria-label="view sub-menu"  href="#sub-1-${trimWhitespace(subName)}">${subName}</a>
+                <a aria-label="${subName}"  href="#sub-1-${trimWhitespace(subName)}">${subName}</a>
             
             `;
             tabItem.classList.add('meal-menu-tabbar-item', 'regular-24');

@@ -36,11 +36,11 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.1/lottie.min.js" integrity="sha512-H6aKTjvYAazW0iNuGj1f2dZvSWlt1HGZGEDsXRPETo2IB4H6v36Vl2qiZNlCRxOp0kT7iBf+7USNPavNscZGAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script
+	<!-- <script
 		src="https://code.jquery.com/jquery-3.7.1.min.js"
 		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-		crossorigin="anonymous"></script>
-
+		crossorigin="anonymous"></script> -->
+	<script src="other/script/libs/jquery-3.7.1.min.js"></script>
 	<script src="https://unpkg.com/split-type"></script>
 	<script src="other/script/libs/jquery.csv.min.js"></script>
 	<script src="other/script/libs/svg-inject.min.js"></script>
@@ -66,8 +66,8 @@
 
 	<!-- Navigate to event detail transition ========================= -->
 	<div id="event-detail-container">
-		<a aria-label="Facebook" class="event-detail-CTA" target="_blank" href="https://www.facebook.com/deglacer.hn">Reserve now</a>
-		<img alt="close button" id="event-detail-exit" src="other/asset/icon/exit.svg" onclick="closeEventDetail()">
+		<a aria-label="Reserve now" class="event-detail-CTA" target="_blank" href="https://www.facebook.com/deglacer.hn">Reserve now</a>
+		<img alt="close button" id="event-detail-exit" class="lazy-loading" data-src="other/asset/icon/exit.svg" onclick="closeEventDetail()">
 		<div id="event-detail-info-container">
 			<div id="event-detail-info">
 				<span id="event-detail-name"></span>
@@ -118,10 +118,10 @@
     <div id="aboutDeglacer">
 		<div class="image sticky">
 			<div class="warper">
-				<img alt="about us img" id="aboutUsImg1" src="other/asset/about-us-section/1.webp">
-				<img alt="about us img" id="aboutUsImg2"  src="other/asset/about-us-section/2.webp">
-				<img alt="about us img" id="aboutUsImg3"  src="other/asset/about-us-section/3.webp">
-				<img alt="about us img" id="aboutUsImg4"  src="other/asset/about-us-section/4.webp">
+				<img alt="about us img" id="aboutUsImg1" class="lazy-loading" data-src="other/asset/about-us-section/1.webp">
+				<img alt="about us img" id="aboutUsImg2" class="lazy-loading" data-src="other/asset/about-us-section/2.webp">
+				<img alt="about us img" id="aboutUsImg3" class="lazy-loading" data-src="other/asset/about-us-section/3.webp">
+				<img alt="about us img" id="aboutUsImg4" class="lazy-loading" data-src="other/asset/about-us-section/4.webp">
 			</div>
 		</div>
         <div class="content">
@@ -179,7 +179,7 @@
 				<br><br>
 				</div>
 				<div class="contactUsShowTextAnimation regular-16">
-					Our restaurant is available for exclusive use, with maximum capacity of 30 seatings and 50 standing canape style. For private event, reserve in advance at least 10 days by email: <a aria-label="Send email" target="_blank" href="mailto:deglacer.hanoi@gmail.com">deglacer.hanoi@gmail.com</a> or call <a aria-label="call us"  href="tel:84975239095">097 523 90 95</a>.
+					Our restaurant is available for exclusive use, with maximum capacity of 30 seatings and 50 standing canape style. For private event, reserve in advance at least 10 days by email: <a aria-label="deglacer.hanoi@gmail.com" target="_blank" href="mailto:deglacer.hanoi@gmail.com">deglacer.hanoi@gmail.com</a> or call <a aria-label="097 523 90 95"  href="tel:84975239095">097 523 90 95</a>.
 	
 				</div>
 				<br><br>
@@ -191,8 +191,8 @@
 					<div class="title contactUsShowTextAnimation regular-12">Contact us</div>
 					<br>
 					<div class="regular-16 contactUsShowTextAnimation">
-						<a aria-label="Email us"  target="_blank"  href="mailto:deglacer.hanoi@gmail.com">deglacer.hanoi@gmail.com</a> <br>
-						<a aria-label="Call us" href="tel:84975239095">097 523 90 95</a>
+						<a aria-label="deglacer.hanoi@gmail.com"  target="_blank"  href="mailto:deglacer.hanoi@gmail.com">deglacer.hanoi@gmail.com</a> <br>
+						<a aria-label="097 523 90 95" href="tel:84975239095">097 523 90 95</a>
 					</div>
 				</div>
 				<div class="openingHour">
@@ -221,9 +221,9 @@
 			</div>
 
 			<div class="social">
-				<a aria-label="Facebook" target="_blank" href="https://www.facebook.com/deglacer.hn"><img src="other/asset/icon/facebook.svg" style="width: 32px;"></a>
+				<a aria-label="Facebook" target="_blank" href="https://www.facebook.com/deglacer.hn"><img alt="Facebook" class="lazy-loading" data-src="other/asset/icon/facebook.svg" style="width: 32px;"></a>
 				
-				<a aria-label="Instagram" target="_blank" href="https://www.instagram.com/deglacer.hanoi/"><img src="other/asset/icon/instagram.svg" style="width: 32px;"></a>
+				<a aria-label="Instagram" target="_blank" href="https://www.instagram.com/deglacer.hanoi/"><img alt="Instagram" class="lazy-loading" data-src="other/asset/icon/instagram.svg" style="width: 32px;"></a>
 			</div>
 		</div>
 	</div>
