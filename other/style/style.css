@@ -1043,3 +1043,8 @@ body {
         display: none;
     }
 }
+
+
+.disable-hover, .disable-hover * {
+    pointer-events: none !important;
+}

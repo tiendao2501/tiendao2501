@@ -36,7 +36,7 @@ loadingSVG.style.height = 'auto';
 loadingSVG.style.scale = '1';
 if(window.innerHeight > window.innerWidth){
     // portrait screen
-    loadingSVG.style.scale = window.innerHeight/loadingSVG.getBoundingClientRect().height;
+    loadingSVG.style.scale = window.innerHeight/loadingSVG.getBoundingClientRect().height + 0.2;
 }
 else{
     // landscape screen
@@ -1071,6 +1071,7 @@ scrollTriggerAllMenuItem.forEach((el) => {
     //     ease: Expo.easeIn,
     // });
 
+    // {mark3}
     // hide -----------
     gsap.fromTo(el, {
         opacity: 1
@@ -1175,6 +1176,20 @@ function showThumb(el){
     }
 }
 
+// disable hover event listener when user scroll through body -> avoid auto show meal image when user scroll through the meal list.
+var body = document.body, timer;
+window.addEventListener('scroll', function() {
+    clearTimeout(timer);
+
+    if(!body.classList.contains('disable-hover')) {
+        body.classList.add('disable-hover');
+    }
+
+    timer = setTimeout(function(){
+        body.classList.remove('disable-hover');
+    }, 500);
+}, false);
+
 
 function hideThumb(el){
     el.getElementsByClassName('meal-info')[0].style.opacity = 1;
@@ -1242,13 +1257,14 @@ function toggleProductImg(el){
             ease: "power3.inOut",
         });
 
-        // {mark} animate hide image when image is out of screen.
+        // {mark3} animate hide image when image is out of screen.
         gsap.to(img, {
             scrollTrigger: {
-                trigger: img,
-                start: 'top top+=60',
-                end: 'center top',
-                // scrub: true, 
+                // trigger: img,
+                // start: 'top top+=60',
+                // end: 'center top',
+                trigger: img.closest('.meal-menu-all-item'),
+                start: 'top top+=80',
                 toggleActions: "restart none none none", 
                 // markers: true,
             },
@@ -1362,11 +1378,66 @@ document.querySelectorAll('.meal-menu-container').forEach((element,i) => {
             start: 'top center',
             end: 'bottom center',
             // scrub: true,
-            toggleActions: "restart reverse restart reverse", // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
+            toggleActions: "restart reverse restart reverse", 
         },
         fontSize: '20px',
         // opacity: 1,
         duration: 0.5,
         ease: "power2.inOut",
     })
+})
+
+
+
+// highlight menu when scroll to each section
+gsap.to( '.menu-about', {
+    scrollTrigger: {
+        trigger: '#aboutDeglacer',
+        start: 'top center',
+        end: 'bottom center',
+        // scrub: true,
+        toggleActions: "restart reverse restart reverse", 
+    },
+    fontWeight: '600',
+    duration: 0.3,
+    ease: "power2.inOut",
+})
+
+gsap.to( '.menu-events', {
+    scrollTrigger: {
+        trigger: '#event-container',
+        start: 'top center',
+        end: 'bottom center',
+        // scrub: true,
+        toggleActions: "restart reverse restart reverse", 
+    },
+    fontWeight: '600',
+    duration: 0.3,
+    ease: "power2.inOut",
+})
+
+gsap.to( '.menu-menu', {
+    scrollTrigger: {
+        trigger: '#meal-menu',
+        start: 'top center',
+        end: 'bottom center',
+        // scrub: true,
+        toggleActions: "restart reverse restart reverse", 
+    },
+    fontWeight: '600',
+    duration: 0.3,
+    ease: "power2.inOut",
+})
+
+gsap.to( '.menu-contact', {
+    scrollTrigger: {
+        trigger: '#contactUs',
+        start: 'top center',
+        end: 'bottom center',
+        // scrub: true,
+        toggleActions: "restart reverse restart reverse",
+    },
+    fontWeight: '600',
+    duration: 0.3,
+    ease: "power2.inOut",
 })
