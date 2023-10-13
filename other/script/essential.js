@@ -935,7 +935,7 @@ function loadMealMenuContainer(){
                     </div>
                     <div  style="display: ${hasImgDisplay};" class="meal-item-image-container">
                         <div class="meal-image-overlay1"></div>
-                        <img class="meal-image" src="${mealImgUrl}">
+                        <img class="meal-image" data-src="${mealImgUrl}"=>
                         <div class="meal-image-overlay1"></div>
                     </div>
                     `;
@@ -1112,6 +1112,8 @@ gsap.from('#meal-menu .menu-background',{
 function showThumb(el){
     // console.log(el);
     var image = el.getElementsByClassName('meal-image')[0];
+    image.setAttribute('src', image.getAttribute('data-src'));
+
     image.style.display = 'block';
     image.style.position = 'fixed';
     image.style.opacity = 1;
@@ -1190,12 +1192,13 @@ window.addEventListener('scroll', function() {
 function hideThumb(el){
     el.getElementsByClassName('meal-info')[0].style.opacity = 1;
 
-    var image = el.getElementsByClassName('meal-image')[0];
-    image.style.display = 'none';
-    image.style.opacity = 0;
-    image.style.top = '50vh';
-    image.style.transform = 'translate(-50%, -50%)';
-    image.style.left = '0px';
+    var img = el.getElementsByClassName('meal-image')[0];
+
+    img.style.display = 'none';
+    img.style.opacity = 0;
+    img.style.top = '50vh';
+    img.style.transform = 'translate(-50%, -50%)';
+    img.style.left = '0px';
     document.querySelectorAll('.meal-menu-sub2-title, .end-section-separator, .meal-menu-sub1-title').forEach(element => {
         element.style.width = '100%';
         element.style.marginLeft = '0';
@@ -1232,6 +1235,8 @@ for(var i = 0; i< mealsHaveImage.length; i++){
 
 function toggleProductImg(el){
     var img = el.getElementsByClassName('meal-image')[0];
+    img.setAttribute('src', image.getAttribute('data-src'));
+
     var imgContainer = el.getElementsByClassName('meal-item-image-container')[0];
     if(img.style.display == 'none'){
 
