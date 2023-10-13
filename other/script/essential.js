@@ -547,12 +547,12 @@ if (events.length != 0){
         if( Date.now() < eventsCSV[i].endDate ){
             //hasn't expired
             mainCTA =  '<button onclick="showEventDetail('+ i +');">View Details</button>';
-            secondCTA = '<a target="_blank" href="https://www.facebook.com/deglacer.hn"><span>Rerseve now</span></a>';
+            secondCTA = '<a aria-label="facebook" target="_blank" href="https://www.facebook.com/deglacer.hn"><span>Rerseve now</span></a>';
         }
         else{
             // has expired within 48 hrs -> disable.
             mainCTA = '<button style="background-color: #7C746C; color: #1D1D1B">Event has ended</button>';
-            secondCTA = '<a target="_blank" href="https://www.facebook.com/deglacer.hn"><span>Contact us for future events</span></a>';
+            secondCTA = '<a aria-label="facebook" target="_blank" href="https://www.facebook.com/deglacer.hn"><span>Contact us for future events</span></a>';
             disableBG = 'filter: grayscale(100%);';
         }
 
@@ -722,12 +722,12 @@ function showEventDetail(eventID){
     document.getElementById('event-detail-pricing').innerHTML = tempPrice;
 
     // add image list
-    var tempImage = '<img src="../../events/'+ events[eventID].thumbnail +'">';
+    var tempImage = '<img alt="temp image" src="../../events/'+ events[eventID].thumbnail +'">';
 
     if(events[0].image[0] != '' || events[eventID].image.length > 1){
         tempImage = '';
         for(var i = 0; i < events[eventID].image.length; i++){
-            tempImage += '<img src="../../events/' + events[eventID].image[i] + '">'
+            tempImage += '<img alt="temp image" src="../../events/' + events[eventID].image[i] + '">'
         }
     }
 
@@ -829,7 +829,7 @@ function loadMealMenuContainer(){
         var mealMenuScollerText = document.createElement('span');
         mealMenuScollerText.id = "meal-menu-scroller-text-"+ trimWhitespace(mealMenu[i].name);
         mealMenuScollerText.classList.add('meal-menu-scroller-text');
-        mealMenuScollerText.innerHTML = '<a href="#'+ "meal-container-"+ trimWhitespace(mealMenu[i].name)+'">'+ mealMenu[i].name +'</a>';
+        mealMenuScollerText.innerHTML = '<a aria-label="view menu" href="#'+ "meal-container-"+ trimWhitespace(mealMenu[i].name)+'">'+ mealMenu[i].name +'</a>';
 
         document.getElementById('meal-menu-scroller-text').appendChild(mealMenuScollerText);
         
@@ -854,7 +854,7 @@ function loadMealMenuContainer(){
             // console.log(subName);
             var tabItem = document.createElement('span');
             tabItem.innerHTML = `
-                <a href="#sub-1-${trimWhitespace(subName)}">${subName}</a>
+                <a aria-label="view sub-menu"  href="#sub-1-${trimWhitespace(subName)}">${subName}</a>
             
             `;
             tabItem.classList.add('meal-menu-tabbar-item', 'regular-24');
@@ -904,6 +904,7 @@ function loadMealMenuContainer(){
                 // add center horizontal line
                 var centerHorizontalLine = document.createElement('img');
                 centerHorizontalLine.src = "other/asset/icon/menu-center-horizontal-line.svg";
+                centerHorizontalLine.setAttribute('alt', 'horizontal line')
                 centerHorizontalLine.classList.add('center-horizontal-line');
                 mealList.appendChild(centerHorizontalLine);
                 
@@ -932,7 +933,7 @@ function loadMealMenuContainer(){
                     }
                     mealDiv.innerHTML = `
                     <div class="meal-item-row">
-                    <img style="display: ${hasImgDisplay};" class='meal-image-indicator' src="other/asset/icon/image-indicator.svg">
+                    <img alt="meal image indicator" style="display: ${hasImgDisplay};" class='meal-image-indicator' src="other/asset/icon/image-indicator.svg">
                     <div class="meal-info">
                             <div class="meal-name medium-12">${mealItem.Name}</div>
                             <div class="meal-ingredient light-12">${mealItem.Ingredient}</div>
@@ -940,7 +941,7 @@ function loadMealMenuContainer(){
                     </div>
                     <div  style="display: ${hasImgDisplay};" class="meal-item-image-container">
                         <div class="meal-image-overlay1"></div>
-                        <img class="meal-image" data-src="${mealImgUrl}"=>
+                        <img alt="meal image" class="meal-image" data-src="${mealImgUrl}"=>
                         <div class="meal-image-overlay1"></div>
                     </div>
                     `;
@@ -951,7 +952,7 @@ function loadMealMenuContainer(){
                 var endSectionSeparator = document.createElement('div');
                 endSectionSeparator.classList.add('end-section-separator', 'separate-line', 'meal-menu-all-item');
                 endSectionSeparator.innerHTML = `
-                <img src="other/asset/icon/end-section-center.svg" class = "end-section-center">
+                <img alt="end section center" src="other/asset/icon/end-section-center.svg" class = "end-section-center">
                 <hr> <hr>
                 `;
                 sub2Div.appendChild(endSectionSeparator);

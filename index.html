@@ -36,7 +36,11 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.1/lottie.min.js" integrity="sha512-H6aKTjvYAazW0iNuGj1f2dZvSWlt1HGZGEDsXRPETo2IB4H6v36Vl2qiZNlCRxOp0kT7iBf+7USNPavNscZGAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script
+		src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+		crossorigin="anonymous"></script>
+
 	<script src="https://unpkg.com/split-type"></script>
 	<script src="other/script/libs/jquery.csv.min.js"></script>
 	<script src="other/script/libs/svg-inject.min.js"></script>
@@ -62,8 +66,8 @@
 
 	<!-- Navigate to event detail transition ========================= -->
 	<div id="event-detail-container">
-		<a class="event-detail-CTA" target="_blank" href="https://www.facebook.com/deglacer.hn">Reserve now</a>
-		<img id="event-detail-exit" src="other/asset/icon/exit.svg" onclick="closeEventDetail()">
+		<a aria-label="Facebook" class="event-detail-CTA" target="_blank" href="https://www.facebook.com/deglacer.hn">Reserve now</a>
+		<img alt="close button" id="event-detail-exit" src="other/asset/icon/exit.svg" onclick="closeEventDetail()">
 		<div id="event-detail-info-container">
 			<div id="event-detail-info">
 				<span id="event-detail-name"></span>
@@ -80,16 +84,16 @@
 	</div>
 	<!-- Website header ============================================== -->
     <div class="header">
-        <img id="headerLogo" onload="SVGInject(this)" src="other/asset/icon/logo.svg">
+        <img alt="logo" id="headerLogo" onload="SVGInject(this)" src="other/asset/icon/logo.svg">
         <span id="tagline" class="regular-24 secondary-color">Modern riverside bistro</span>
     </div>
 
 	<div id="menu" class="regular-12">
-		<span class="menu-link menu-about"><a href="#aboutDeglacer">About</a></span>
-		<span class="menu-link menu-events"><a href="#event-container">Events</a></span>
-		<span class="menu-link menu-menu"><a href="#meal-menu">Menu</a></span>
-		<span class="menu-link menu-contact"><a href="#contactUs">Contact</a></span>
-		<a target="_blank" href="https://www.facebook.com/deglacer.hn">
+		<span class="menu-link menu-about"><a aria-label="About Section" href="#aboutDeglacer">About</a></span>
+		<span class="menu-link menu-events"><a aria-label="Event Section" href="#event-container">Events</a></span>
+		<span class="menu-link menu-menu"><a aria-label="Menu Section" href="#meal-menu">Menu</a></span>
+		<span class="menu-link menu-contact"><a aria-label="Contact Section" href="#contactUs">Contact</a></span>
+		<a aria-label="Facebook" target="_blank" href="https://www.facebook.com/deglacer.hn">
 			<div class="reserveCTA">
 				<div class="messenger-icon">
 					<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none" data-inject-url="http://127.0.0.1:5500/other/asset/icon/messenger.svg">
@@ -114,10 +118,10 @@
     <div id="aboutDeglacer">
 		<div class="image sticky">
 			<div class="warper">
-				<img id="aboutUsImg1" src="other/asset/about-us-section/1.webp">
-				<img id="aboutUsImg2"  src="other/asset/about-us-section/2.webp">
-				<img id="aboutUsImg3"  src="other/asset/about-us-section/3.webp">
-				<img id="aboutUsImg4"  src="other/asset/about-us-section/4.webp">
+				<img alt="about us img" id="aboutUsImg1" src="other/asset/about-us-section/1.webp">
+				<img alt="about us img" id="aboutUsImg2"  src="other/asset/about-us-section/2.webp">
+				<img alt="about us img" id="aboutUsImg3"  src="other/asset/about-us-section/3.webp">
+				<img alt="about us img" id="aboutUsImg4"  src="other/asset/about-us-section/4.webp">
 			</div>
 		</div>
         <div class="content">
@@ -175,7 +179,7 @@
 				<br><br>
 				</div>
 				<div class="contactUsShowTextAnimation regular-16">
-					Our restaurant is available for exclusive use, with maximum capacity of 30 seatings and 50 standing canape style. For private event, reserve in advance at least 10 days by email: <a target="_blank" href="mailto:deglacer.hanoi@gmail.com">deglacer.hanoi@gmail.com</a> or call <a href="tel:84975239095">097 523 90 95</a>.
+					Our restaurant is available for exclusive use, with maximum capacity of 30 seatings and 50 standing canape style. For private event, reserve in advance at least 10 days by email: <a aria-label="Send email" target="_blank" href="mailto:deglacer.hanoi@gmail.com">deglacer.hanoi@gmail.com</a> or call <a aria-label="call us"  href="tel:84975239095">097 523 90 95</a>.
 	
 				</div>
 				<br><br>
@@ -187,8 +191,8 @@
 					<div class="title contactUsShowTextAnimation regular-12">Contact us</div>
 					<br>
 					<div class="regular-16 contactUsShowTextAnimation">
-						<a  target="_blank"  href="mailto:deglacer.hanoi@gmail.com">deglacer.hanoi@gmail.com</a> <br>
-						<a href="tel:84975239095">097 523 90 95</a>
+						<a aria-label="Email us"  target="_blank"  href="mailto:deglacer.hanoi@gmail.com">deglacer.hanoi@gmail.com</a> <br>
+						<a aria-label="Call us" href="tel:84975239095">097 523 90 95</a>
 					</div>
 				</div>
 				<div class="openingHour">
@@ -203,7 +207,7 @@
 					<div class="title contactUsShowTextAnimation regular-12">Address</div>
 					<br>
 					<div class="regular-16 contactUsShowTextAnimation">
-						<a target="_blank" href="https://goo.gl/maps/rLNibnd5H5yvKa4Z9">
+						<a aria-label="View map"  target="_blank" href="https://goo.gl/maps/rLNibnd5H5yvKa4Z9">
 							18, Ngõ 268 Ngọc Thuỵ<br>
 							Long Biên, Hà Nội, Việt Nam</a>	
 					</div>
@@ -213,13 +217,13 @@
 			<div class="googlemap">
 				<div class="overlay1"></div>
 				<div class="overlay2"></div>
-				<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.399958091791!2d105.86717349999999!3d21.0566821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abd8db7be181%3A0xd330893f4928dfcf!2sD%C3%A9glacer%20-%20Modern%20riverside%20bistro!5e0!3m2!1sen!2s!4v1693770683252!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<iframe title="google map frame" class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.399958091791!2d105.86717349999999!3d21.0566821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abd8db7be181%3A0xd330893f4928dfcf!2sD%C3%A9glacer%20-%20Modern%20riverside%20bistro!5e0!3m2!1sen!2s!4v1693770683252!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 
 			<div class="social">
-				<a target="_blank" href="https://www.facebook.com/deglacer.hn"><img src="other/asset/icon/facebook.svg"></a>
+				<a aria-label="Facebook" target="_blank" href="https://www.facebook.com/deglacer.hn"><img src="other/asset/icon/facebook.svg" style="width: 32px;"></a>
 				
-				<a target="_blank" href="https://www.instagram.com/deglacer.hanoi/"><img src="other/asset/icon/instagram.svg"></a>
+				<a aria-label="Instagram" target="_blank" href="https://www.instagram.com/deglacer.hanoi/"><img src="other/asset/icon/instagram.svg" style="width: 32px;"></a>
 			</div>
 		</div>
 	</div>
