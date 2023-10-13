@@ -19,7 +19,7 @@ loadingLottieItem.addEventListener('complete', function(){
 })
 
 loadingLottieItem.addEventListener('loaded_images', function(e) { 
-    console.log('all image are loaded'); 
+    // console.log('all image are loaded'); 
     document.getElementById('loadingContainer').getElementsByTagName('svg')[0].style.opacity = 1;
 });
 
