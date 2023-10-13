@@ -18,13 +18,10 @@ loadingLottieItem.addEventListener('complete', function(){
     document.getElementById('menu').style.opacity = 1;
 })
 
-loadingLottieItem.addEventListener('DOMLoaded', function(e) { 
-    console.log('DOM loaded'); 
-    document.getElementById('loadingContainer').style.opacity = 1;
+loadingLottieItem.addEventListener('loaded_images', function(e) { 
+    console.log('all image are loaded'); 
+    document.getElementById('loadingContainer').getElementsByTagName('svg')[0].style.opacity = 1;
 });
-
-
-
 
 
 var heroContainer = document.getElementById('heroContainer');
