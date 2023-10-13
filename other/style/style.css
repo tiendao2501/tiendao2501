@@ -786,6 +786,7 @@ body {
     right: 16px;
     display: none;
     z-index: 100442;
+    cursor: pointer;
 
 }
 

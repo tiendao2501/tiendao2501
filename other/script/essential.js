@@ -544,12 +544,12 @@ if (events.length != 0){
 
         if( Date.now() < eventsCSV[i].endDate ){
             //hasn't expired
-            mainCTA =  '<button onclick="showEventDetail('+ i +');">View Details</button>';
+            mainCTA =  '<button style="cursor: pointer;" onclick="showEventDetail('+ i +');">View Details</button>';
             secondCTA = '<a aria-label="Rerseve now" target="_blank" href="https://www.facebook.com/deglacer.hn"><span>Rerseve now</span></a>';
         }
         else{
             // has expired within 48 hrs -> disable.
-            mainCTA = '<button style="background-color: #7C746C; color: #1D1D1B">Event has ended</button>';
+            mainCTA = '<button style="background-color: #7C746C; color: #1D1D1B; cursor: pointer;">Event has ended</button>';
             secondCTA = '<a aria-label="Contact us for future events" target="_blank" href="https://www.facebook.com/deglacer.hn"><span>Contact us for future events</span></a>';
             disableBG = 'filter: grayscale(100%);';
         }
@@ -691,22 +691,26 @@ function showEventDetail(eventID){
     tl.add(function(){
         document.getElementById('event-detail-background').style.display = 'block';
         document.getElementById('event-detail-background').style.opacity = '0';
-    }).to('#event-thumbnail-transition', { opacity: 1, duration: 0.5 })
-        .to('#event-detail-background', {opacity: 1, duration: 0.5},'<')
+    }).to('#event-thumbnail-transition', { opacity: 1, duration: 0.2 })
+        .to('#event-detail-background', {opacity: 1, duration: 0.2},'<')
         .to('#event-thumbnail-transition', {
             width: '100vw',
-            height: '50vh',
-            top: 0,
             left: 0,
-            borderRadius: '0px 0px 0px 0px',
-            duration: 1,
-            ease: "power3.inOut",
+            duration: 0.8,
+            ease: "power2.inOut",
     }, '<')
-        .to('#event-detail-info-container', { top: '0vh', duration: 1, ease: "power3.inOut"}, '<')
+    .to('#event-thumbnail-transition', {
+        height: '50vh',            
+        top: 0,
+        borderRadius: '0px 0px 0px 0px',
+        duration: 1.2,
+        ease: "power2.inOut",
+}, '<')
+        .to('#event-detail-info-container', { top: '0vh', duration: 1, ease: "power1.inOut"}, '<')
         .to('#event-detail-container .event-detail-CTA', {bottom: '5vh', duration: 0.3}, '1.3')
         .add(function(){
-            document.getElementById('event-detail-exit').style.display = 'block';
-            document.getElementById('event-detail-info-container').style.display = 'flex';
+            $('#event-detail-exit').fadeIn();
+            $('#event-detail-info-container').fadeIn();
             document.getElementsByTagName('body')[0].style.overflowY = 'hidden';
         })
 
@@ -750,14 +754,18 @@ function closeEventDetail(){
     const tl = gsap.timeline();
     tl.from('#event-thumbnail-transition', { opacity: 1 });
     tl.to('#event-detail-info-container', { top: '120vh', duration: 1})
-    .to('#event-thumbnail-transition', {
-            width: () => thumbnail.getBoundingClientRect().width + 'px',
+        .to('#event-thumbnail-transition', {
             height: () => thumbnail.getBoundingClientRect().height + 'px',
             top: () => thumbnail.getBoundingClientRect().top  + 'px',
-            left: () => thumbnail.getBoundingClientRect().left  + 'px',
             borderRadius: '1000px 1000px 0px 0px',
+            duration: 0.6,
+            ease: "power1.easeOut",
+        }, '<')
+        .to('#event-thumbnail-transition', {
+            width: () => thumbnail.getBoundingClientRect().width + 'px',
+            left: () => thumbnail.getBoundingClientRect().left  + 'px',
             duration: 1,
-            ease: "power3.inOut",
+            ease: "power1.easeOut",
         }, '<')
         .to('#event-detail-container .event-detail-CTA',{
             bottom: '-20vh',
@@ -771,10 +779,10 @@ function closeEventDetail(){
             left: 0,
             duration: 0.5}, '<')
         .add(function(){
-            document.getElementById('event-detail-exit').style.display = 'none';
-            document.getElementById('event-thumbnail-transition').style.display = 'none';
             document.getElementsByTagName('body')[0].style.overflowY = '';
-            document.getElementById('event-detail-background').style.display = 'none';
+            $('#event-detail-exit').fadeOut();
+            $('#event-thumbnail-transition').fadeOut();
+            $('#event-detail-background').fadeOut();
         });
 
 }
