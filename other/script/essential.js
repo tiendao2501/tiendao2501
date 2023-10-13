@@ -64,6 +64,11 @@ else{
 $(window).on("load", function () {
     loadingLottieItem.play();
 
+    // {mark4}
+    document.querySelectorAll('.meal-image').forEach(img => {
+        img.setAttribute('src', img.getAttribute('data-src'));
+    });
+
     // Scroll trigger ========================================
     gsap.to('#tagline', {
         scrollTrigger: {
@@ -1112,7 +1117,7 @@ gsap.from('#meal-menu .menu-background',{
 function showThumb(el){
     // console.log(el);
     var image = el.getElementsByClassName('meal-image')[0];
-    image.setAttribute('src', image.getAttribute('data-src'));
+    // image.setAttribute('src', image.getAttribute('data-src'));
 
     image.style.display = 'block';
     image.style.position = 'fixed';
@@ -1235,7 +1240,7 @@ for(var i = 0; i< mealsHaveImage.length; i++){
 
 function toggleProductImg(el){
     var img = el.getElementsByClassName('meal-image')[0];
-    img.setAttribute('src', image.getAttribute('data-src'));
+    // img.setAttribute('src', image.getAttribute('data-src'));
 
     var imgContainer = el.getElementsByClassName('meal-item-image-container')[0];
     if(img.style.display == 'none'){
