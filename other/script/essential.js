@@ -18,10 +18,13 @@ loadingLottieItem.addEventListener('complete', function(){
     document.getElementById('menu').style.opacity = 1;
 })
 
-loadingLottieItem.addEventListener('DOMLoaded', function(){
-    // console.log('amination is already loaded');
-    $('.loader-wrapper').fadeIn();
-})
+loadingLottieItem.addEventListener('DOMLoaded', function(e) { 
+    console.log('DOM loaded'); 
+    document.getElementById('loadingContainer').style.opacity = 1;
+});
+
+
+
 
 
 var heroContainer = document.getElementById('heroContainer');

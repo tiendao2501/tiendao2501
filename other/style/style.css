@@ -85,6 +85,8 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #00533E;
+    opacity: 0;
+    transition: all 0.3 ease-in-out;
 }
 
 
