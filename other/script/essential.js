@@ -1018,15 +1018,14 @@ for (var i = 0; i < scrollTriggerMenuContainer.length; i++) {
 }
 
 // animating hiding menu while scroll to bottom section
-
-
 const tlMoveout = gsap.timeline({
     scrollTrigger: {
         trigger: '#meal-menu',
-        start: 'bottom bottom-=100',
+        start: 'bottom bottom',
         end: 'bottom center',
         toggleActions: "restart play reverse reverse", 
-        // markers: true,
+        scrub: true,
+        markers: true,
     },
   });
 
@@ -1045,8 +1044,8 @@ tlMoveout.to('#meal-menu .meal-menu-container',{
 .to('#menu-bg-container > *', {
     scale: 0.4,
     ease: "power2.inOut",
-    duration: 0.8,
-    stagger: 0.05,
+    duration: 1,
+    stagger: 0.1,
 }, '<')
 .to('#menu-bg-container > *',{
     scale: 1,
@@ -1112,7 +1111,6 @@ function showThumb(el){
     image.style.display = 'block';
     image.style.position = 'fixed';
     image.style.opacity = 1;
-    // document.querySelectorAll('.meal-menu-sub2-title, .end-section-separator, .meal-menu-sub1-title').style.width = '50%';
 
     // set left right -----------
     if (el.getBoundingClientRect().left < window.innerWidth/2){
@@ -1122,9 +1120,6 @@ function showThumb(el){
             element.style.width = '50%';
             element.style.opacity = '0.3';
         });
-
-        // stylesheet.insertRule(".meal-item-left * { opacity: 0}");
-        // stylesheet.insertRule(".meal-item-right * { opacity: 0.5 }");
 
         document.querySelectorAll('.meal-item-left *').forEach(element => {
             element.style.opacity = '0';
@@ -1141,9 +1136,6 @@ function showThumb(el){
             element.style.marginLeft = '50%';
             element.style.opacity = '0.3';
         });
-
-        // stylesheet.insertRule(".meal-item-right * { opacity: 0}");
-        // stylesheet.insertRule(".meal-item-left * { opacity: 0.5 }");
 
         document.querySelectorAll('.meal-item-right *').forEach(element => {
             element.style.opacity = '0';
