@@ -10,9 +10,8 @@ var loadingLottieItem = bodymovin.loadAnimation({
     loop: false,
     autoplay: false,
     animationData: loadingJson,
-
-
 });
+
 loadingLottieItem.addEventListener('complete', function(){
     $('.loader-wrapper').fadeOut();
     heroItem.play();
@@ -20,7 +19,8 @@ loadingLottieItem.addEventListener('complete', function(){
 })
 
 loadingLottieItem.addEventListener('DOMLoaded', function(){
-    console.log('amination is already loaded');
+    // console.log('amination is already loaded');
+    $('.loader-wrapper').fadeIn();
 })
 
 
