@@ -148,16 +148,20 @@ body {
 #aboutDeglacer .sticky{
     position: -webkit-sticky;
     position: sticky;
-    top: 50px;
+    top: 0px;
+    left: 0px;
     z-index: 200;
-    width: 400px;
-    height: 300px;
+    width: 100vw;
+    height: 400px;
     transition: all 0.5s ease-in-out;
-    /* background-color: rgba(165, 42, 42, 0.483); */
+    background: linear-gradient(180deg, #E0C0A4 40%, rgba(224, 192, 164, 0.00) 100%);
 }
 
 .sticky .warper{
+    top: 50px;
     position: relative;
+    width: 100vw;
+    height: 400px;
 }
 
 .sticky .warper img{
@@ -690,12 +694,13 @@ body {
 
 #event-detail-background{
     background-color: rgba(0, 0, 0);
-    height: 0px;
+    height: 100vh;
     width: 100vw;
     position: fixed;
     z-index: 100000;
     bottom: 0;
     left: 0;
+    display: none;
 }
 
 #event-detail-info{
@@ -921,7 +926,6 @@ body {
 
     #aboutDeglacer .sticky{
         width: 100vw;
-        overflow-x: clip;
     }
 
     #aboutDeglacer > .image{
