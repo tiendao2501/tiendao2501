@@ -191,112 +191,90 @@ if(isMobileDevice()){
 window.addEventListener("scroll", (event) => {
 	if(imageTriggerElements[3].style.transform == 'translate(0px, 0px)'){
 		document.querySelector('#aboutUsImg4').style.opacity = 1;
-        document.querySelector('#aboutUsImg4').style.transform = "rotate(4deg)";
+        document.querySelector('#aboutUsImg4').style.transform = "rotate(4deg) translate(-50%,0%) scale(1)";
         document.querySelector('#aboutUsImg4').style.width = aboutUsImgSize[0] + 'px';
-        document.querySelector('#aboutUsImg4').style.marginLeft = -aboutUsImgSize[0]/2 +  "px";
 
 		document.querySelector('#aboutUsImg3').style.opacity = 1;
-        document.querySelector('#aboutUsImg3').style.transform = "rotate(-2deg)";
+        document.querySelector('#aboutUsImg3').style.transform = "rotate(-2deg) translate(-50%,0%) scale(0.9)";
         document.querySelector('#aboutUsImg3').style.width = aboutUsImgSize[1] + 'px';
-        document.querySelector('#aboutUsImg3').style.marginLeft = -aboutUsImgSize[1]/2 + 'px';
 
 		document.querySelector('#aboutUsImg2').style.opacity = 1;
-        document.querySelector('#aboutUsImg2').style.transform = "rotate(5deg)";
+        document.querySelector('#aboutUsImg2').style.transform = "rotate(5deg) translate(-50%,0%) scale(0.8)";
         document.querySelector('#aboutUsImg2').style.width = aboutUsImgSize[2] + 'px';
-        document.querySelector('#aboutUsImg2').style.marginLeft = -aboutUsImgSize[2]/2 + 'px';
 
         document.querySelector('#aboutUsImg1').style.opacity = 1;
-        document.querySelector('#aboutUsImg1').style.transform = "rotate(-3deg)";
+        document.querySelector('#aboutUsImg1').style.transform = "rotate(-3deg) translate(-50%,0%) scale(0.7)";
         document.querySelector('#aboutUsImg1').style.width = aboutUsImgSize[3] + 'px';
-        document.querySelector('#aboutUsImg1').style.marginLeft = -aboutUsImgSize[3]/2 + 'px';
 	}
 	else if(imageTriggerElements[2].style.transform == 'translate(0px, 0px)'){
 		document.querySelector('#aboutUsImg4').style.opacity = 0;
-        document.querySelector('#aboutUsImg4').style.transform = "rotate(-2deg)";
+        document.querySelector('#aboutUsImg4').style.transform = "rotate(-2deg) translate(-50%,0%)  scale(1)";
         document.querySelector('#aboutUsImg4').style.width = aboutUsImgSize[0] + 'px';
-        document.querySelector('#aboutUsImg4').style.marginLeft = -aboutUsImgSize[0]/2 +  "px";
 
         document.querySelector('#aboutUsImg3').style.opacity = 1;
-        document.querySelector('#aboutUsImg3').style.transform = "rotate(8deg)";
+        document.querySelector('#aboutUsImg3').style.transform = "rotate(8deg) translate(-50%,0%) scale(1)";
         document.querySelector('#aboutUsImg3').style.width = aboutUsImgSize[0] + 'px';
-        document.querySelector('#aboutUsImg3').style.marginLeft = -aboutUsImgSize[0]/2 +  "px";
 
 		document.querySelector('#aboutUsImg2').style.opacity = 1;
-        document.querySelector('#aboutUsImg2').style.transform = "rotate(-3deg)";
+        document.querySelector('#aboutUsImg2').style.transform = "rotate(-3deg) translate(-50%,0%) scale(0.9)";
         document.querySelector('#aboutUsImg2').style.width = aboutUsImgSize[1] + 'px';
-        document.querySelector('#aboutUsImg2').style.marginLeft = -aboutUsImgSize[1]/2 + 'px';
 
         document.querySelector('#aboutUsImg1').style.opacity = 1;
-        document.querySelector('#aboutUsImg1').style.transform = "rotate(1deg)";
+        document.querySelector('#aboutUsImg1').style.transform = "rotate(1deg) translate(-50%,0%) scale(0.8)";
         document.querySelector('#aboutUsImg1').style.width = aboutUsImgSize[2] + 'px';
-        document.querySelector('#aboutUsImg1').style.marginLeft = -aboutUsImgSize[2]/2 + 'px';
 	}
 	else if(imageTriggerElements[1].style.transform == 'translate(0px, 0px)'){
 		document.querySelector('#aboutUsImg4').style.opacity = 0;
-        document.querySelector('#aboutUsImg4').style.transform = "rotate(5deg)";
+        document.querySelector('#aboutUsImg4').style.transform = "rotate(5deg) translate(-50%,0%) scale(1)";
         document.querySelector('#aboutUsImg4').style.width = aboutUsImgSize[0] + 'px';
-        document.querySelector('#aboutUsImg4').style.marginLeft = -aboutUsImgSize[0]/2 +  "px";
 
 		document.querySelector('#aboutUsImg3').style.opacity = 0;
-        document.querySelector('#aboutUsImg3').style.transform = "rotate(-2deg)";
+        document.querySelector('#aboutUsImg3').style.transform = "rotate(-2deg) translate(-50%,0%) scale(1)";
         document.querySelector('#aboutUsImg3').style.width = aboutUsImgSize[0] + 'px';
-        document.querySelector('#aboutUsImg3').style.marginLeft = -aboutUsImgSize[0]/2 +  "px";
 
 		document.querySelector('#aboutUsImg2').style.opacity = 1;
-        document.querySelector('#aboutUsImg2').style.transform = "rotate(4deg)";
+        document.querySelector('#aboutUsImg2').style.transform = "rotate(4deg) translate(-50%,0%) scale(1)";
         document.querySelector('#aboutUsImg2').style.width = aboutUsImgSize[0] + 'px';
-        document.querySelector('#aboutUsImg2').style.marginLeft = -aboutUsImgSize[0]/2 +  "px";
 
         document.querySelector('#aboutUsImg1').style.opacity = 1;
-        document.querySelector('#aboutUsImg1').style.transform = "rotate(-3deg)";
+        document.querySelector('#aboutUsImg1').style.transform = "rotate(-3deg) translate(-50%,0%) scale(0.9)";
         document.querySelector('#aboutUsImg1').style.width = aboutUsImgSize[1] + 'px';
-        document.querySelector('#aboutUsImg1').style.marginLeft = -aboutUsImgSize[1]/2 + 'px';
 	}
 	else if(imageTriggerElements[0].style.transform == 'translate(0px, 0px)'){
 		document.querySelector('#aboutUsImg4').style.opacity = 0;
-        document.querySelector('#aboutUsImg4').style.transform = "rotate(-2deg)";
+        document.querySelector('#aboutUsImg4').style.transform = "rotate(-2deg) translate(-50%,0%) scale(1)";
         document.querySelector('#aboutUsImg4').style.width = aboutUsImgSize[0] + 'px';
-        document.querySelector('#aboutUsImg4').style.marginLeft = -aboutUsImgSize[0]/2 +  "px";
 
 		document.querySelector('#aboutUsImg3').style.opacity = 0;
-        document.querySelector('#aboutUsImg3').style.transform = "rotate(5deg)";
+        document.querySelector('#aboutUsImg3').style.transform = "rotate(5deg) translate(-50%,0%) scale(1)";
         document.querySelector('#aboutUsImg3').style.width = aboutUsImgSize[0] + 'px';
-        document.querySelector('#aboutUsImg3').style.marginLeft = -aboutUsImgSize[0]/2 +  "px";
 
 		document.querySelector('#aboutUsImg2').style.opacity = 0;
-        document.querySelector('#aboutUsImg2').style.transform = "rotate(-3deg)";
+        document.querySelector('#aboutUsImg2').style.transform = "rotate(-3deg) translate(-50%,0%) scale(1)";
         document.querySelector('#aboutUsImg2').style.width = aboutUsImgSize[0] + 'px';
-        document.querySelector('#aboutUsImg2').style.marginLeft = -aboutUsImgSize[0]/2 +  "px";
 
         document.querySelector('#aboutUsImg1').style.opacity = 1;
-        document.querySelector('#aboutUsImg1').style.transform = "rotate(4deg)";
+        document.querySelector('#aboutUsImg1').style.transform = "rotate(4deg) translate(-50%,0%) scale(1)";
         document.querySelector('#aboutUsImg1').style.width = aboutUsImgSize[0] + 'px';
-        document.querySelector('#aboutUsImg1').style.marginLeft = -aboutUsImgSize[0]/2 +  "px";
 	}
 
     else{
         document.querySelector('#aboutUsImg4').style.opacity = 0;
-        document.querySelector('#aboutUsImg4').style.transform = "rotate(0deg)";
+        document.querySelector('#aboutUsImg4').style.transform = "rotate(0deg) translate(-50%,0%)";
         document.querySelector('#aboutUsImg4').style.width = aboutUsImgSize[0] + 'px';
-        document.querySelector('#aboutUsImg4').style.marginLeft = -aboutUsImgSize[0]/2 +  "px";
 
 		document.querySelector('#aboutUsImg3').style.opacity = 0;
-        document.querySelector('#aboutUsImg3').style.transform = "rotate(0deg)";
+        document.querySelector('#aboutUsImg3').style.transform = "rotate(0deg) translate(-50%,0%)";
         document.querySelector('#aboutUsImg3').style.width = aboutUsImgSize[0] + 'px';
-        document.querySelector('#aboutUsImg3').style.marginLeft = -aboutUsImgSize[0]/2 +  "px";
 
 		document.querySelector('#aboutUsImg2').style.opacity = 0;
-        document.querySelector('#aboutUsImg2').style.transform = "rotate(0deg)";
+        document.querySelector('#aboutUsImg2').style.transform = "rotate(0deg) translate(-50%,0%)";
         document.querySelector('#aboutUsImg2').style.width = aboutUsImgSize[0] + 'px';
-        document.querySelector('#aboutUsImg2').style.marginLeft = -aboutUsImgSize[0]/2 +  "px";
 
         document.querySelector('#aboutUsImg1').style.opacity = 0;
-        document.querySelector('#aboutUsImg1').style.transform = "rotate(0deg)";
+        document.querySelector('#aboutUsImg1').style.transform = "rotate(0deg) translate(-50%,0%)";
         document.querySelector('#aboutUsImg1').style.width = aboutUsImgSize[0] + 'px';
-        document.querySelector('#aboutUsImg1').style.marginLeft = -aboutUsImgSize[0]/2 +  "px";
     }
-
-
 });
 
 gsap.fromTo('#aboutDeglacer img', {
@@ -1047,24 +1025,66 @@ for (var i = 0; i < scrollTriggerMenuContainer.length; i++) {
     });
 }
 
+gsap.to('.patternCover', {
+    scrollTrigger: {
+        trigger: '#meal-menu',
+        start: 'top top',
+        end: 'bottom bottom',
+        // scrub: true, 
+        // markers: true,
+        toggleActions: "restart reverse restart reverse", // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
+    },
+    height: '62px',
+    duration: 0.001,
+});
+gsap.to('.pattern', {
+    scrollTrigger: {
+        trigger: '#meal-menu',
+        start: 'top top',
+        end: 'top top',
+        // scrub: true, 
+        toggleActions: "restart none none reverse", 
+    },
+    position: 'fixed',
+    duration: 0.1,
+});
+
 // animating hiding menu while scroll to bottom section
 const tlMoveout = gsap.timeline({
     scrollTrigger: {
         trigger: '#meal-menu',
         start: 'bottom bottom',
-        end: 'bottom center',
-        toggleActions: "restart play reverse reverse", 
-        // scrub: true,
+        end: 'bottom top',
+        toggleActions: "restart none none reverse",  // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
     },
-  });
+    onStart(){
+        document.getElementsByClassName('patternCover')[0].style.zIndex = '1';
+        gsap.to('#meal-menu #meal-menu-list',{
+            opacity: 0,
+            ease: 'Power4.easeOut',
+            duration: 0.2,
+        })
+    },
+    onReverseComplete() {
+        console.log('reversed completed');
+        document.getElementsByClassName('patternCover')[0].style.zIndex = '40';
+        gsap.to('#meal-menu #meal-menu-list',{
+            opacity: 1,
+            ease: 'Power4.easeOut',
+            duration: 0.2,
+        })
+    },
+    onComplete(){
+        console.log('completed');
+        gsap.to('#meal-menu #meal-menu-list',{
+                opacity: 0,
+                ease: 'Power4.easeOut',
+                duration: 0.2,
+        })
+    }
+});
 
-tlMoveout.to('#meal-menu .meal-menu-container',{
-    opacity: 0,
-    ease: 'Power4.easeOut',
-    duration: 0.3,
-    stagger: -0.01,
-},)
-.to('#menu-bg-container > *', {
+tlMoveout.to('#menu-bg-container > *', {
     marginTop: '-102vh',
     ease: "power2.inOut",
     duration: 1.2,
@@ -1087,34 +1107,16 @@ var scrollTriggerAllMenuItem = gsap.utils.toArray('.meal-menu-all-item');
 scrollTriggerAllMenuItem.forEach((el) => {
 
     // show -----------
-    // gsap.from(el,{
-    //     scrollTrigger: {
-    //         trigger: el,
-    //         start: 'bottom bottom+=32',
-    //         end: 'bottom 90% ',
-    //         scrub: true, 
-    //         toggleActions: "restart none restart none", 
-    //     },
-    //     opacity: 0,
-    //     ease: Expo.easeIn,
-    // });
-
-    // {mark3}
-    // hide -----------
-    gsap.fromTo(el, {
-        opacity: 1
-    }, {
+    gsap.from(el,{
         scrollTrigger: {
             trigger: el,
-            start: 'top top+=162',
-            end: 'top top+=80',
+            start: 'bottom bottom+=32',
+            end: 'bottom 90% ',
             scrub: true, 
-            toggleActions: "restart none none reverse", // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
-            // markers: true,
+            toggleActions: "restart none restart none", 
         },
         opacity: 0,
-        duration: 0.2,
-        ease: "none",
+        ease: Expo.easeIn,
     });
 });
 
@@ -1286,11 +1288,8 @@ function toggleProductImg(el){
         // {mark3} animate hide image when image is out of screen.
         gsap.to(img, {
             scrollTrigger: {
-                // trigger: img,
-                // start: 'top top+=60',
-                // end: 'center top',
-                trigger: img.closest('.meal-menu-all-item'),
-                start: 'top top+=80',
+                trigger: img,
+                start: 'top+=50 top+=80',
                 toggleActions: "restart none none none", 
                 // markers: true,
             },
@@ -1311,7 +1310,7 @@ function toggleProductImg(el){
                 start: 'top bottom',
                 end: 'top bottom',
                 // scrub: true, 
-                toggleActions: "none none play play", // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
+                toggleActions: "none none play play", 
                 // markers: true,
             },
             height: '0',
