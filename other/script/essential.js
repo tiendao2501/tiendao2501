@@ -67,7 +67,7 @@ $(window).on("load", function () {
 
     loadingLottieItem.play();
 
-    // {mark4}
+    // {mark}
     document.querySelectorAll('.meal-image, .lazy-loading').forEach(img => {
         img.setAttribute('src', img.getAttribute('data-src'));
     });
@@ -132,6 +132,7 @@ $(window).on("load", function () {
 
 
 });
+  
 
 // Scroll Trigger about Deglacer Section ===============================
 const text = new SplitType('.showTextAnimation', { types: 'words, chars' });
@@ -842,8 +843,8 @@ function loadMealMenuContainer(){
         // add tab into meal menu container -------------------
         var tabbar = document.createElement('div');
         tabbar.id = 'tabbar-' + trimWhitespace(mealMenu[i].name);
-        tabbar.classList.add('meal-menu-tabbar');
-        tabbar.style.zIndex = (mealMenu.length - i)*100 + 50;
+        tabbar.classList.add('meal-menu-tabbar', 'sticky');
+        tabbar.style.zIndex = (mealMenu.length - i)*500 + 50;
 
         // adding sub1 into tab -------------------------------
         for(var j = mealMenu[i].list.length - 1; j >= 0; j--){
@@ -859,7 +860,7 @@ function loadMealMenuContainer(){
             tabbar.appendChild(tabItem);
         }
         mealMenuContainer.appendChild(tabbar);
-        mealMenuContainer.style.zIndex = (mealMenu.length - i)*100;
+        mealMenuContainer.style.zIndex = (i)*100 + 500;
 
         // Loop for each sub-1 --------------------------------
         for(var q = 0; q < mealMenu[i].list.length; q++){
@@ -960,13 +961,16 @@ function loadMealMenuContainer(){
 
         // add meal menu container into mealMenu List ----------
         mealMenuList.appendChild(mealMenuContainer);
-        document.getElementById('menu-bg-container').appendChild(mealMenuContainerBg);
+        // {mark6}
+        // document.getElementById('menu-bg-container').appendChild(mealMenuContainerBg);
+        mealMenuContainer.appendChild(mealMenuContainerBg);
 
+        
         var scrollerSmall = document.createElement('div');
         scrollerSmall.classList.add('scoller-small');
         separateLine.appendChild(scrollerSmall);
         mealMenuContainerBg.appendChild(separateLine);
-        mealMenuContainerBg.classList.add('meal-menu-container-bg');
+        mealMenuContainerBg.classList.add('meal-menu-container-bg','sticky', 'animate-bg');
 
         // add animation to scroller small in within menu
         scrollerSmallPlayer[i] = bodymovin.loadAnimation({
@@ -995,34 +999,25 @@ var scrollTriggerMenuContainer = Array.from(document.querySelectorAll('.meal-men
 for (var i = 0; i < scrollTriggerMenuContainer.length; i++) {
     var el = document.getElementsByClassName('meal-menu-container')[i];
     var tabbar = el.getElementsByClassName('meal-menu-tabbar')[0];
-    // trigger tabbar ------------
-    gsap.to(tabbar,{
+    // {mark6}
+    // move menu-background with menu-section
+    gsap.to(document.getElementsByClassName('meal-menu-container-bg')[i], {
         scrollTrigger: {
             trigger: el,
-            start: () => "bottom " + (tabbar.getBoundingClientRect().height + 230),
-            end: () => "bottom " + (tabbar.getBoundingClientRect().height + 100),
-            scrub: true,
-            toggleActions: "restart none none reverse", 
-            // markers: true
+            start: 'top top+=64',
+            end: 'top top+=64',
+            toggleActions: "complete none none reset", // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
         },
-        duration: 0.43,
-        opacity: 0,
+        position: 'fixed',
+        left:  0,
+        // right: el.getBoundingClientRect().left,
+        width: '-webkit-fill-available',
+        margin: '0 ' + el.getBoundingClientRect().left,
+        top: '62px',
+        bottom: '62px',
     });
 
-    // move menu-background with menu-section
-    gsap.from(document.getElementsByClassName('meal-menu-container-bg')[i], {
-        scrollTrigger: {
-            trigger: el,
-            start: 'top bottom+=100',
-            end: 'top top+=100',
-            scrub: true, 
-            toggleActions: "restart none none reverse", 
-            // markers: true
-        },
-        top: '100vh',
-        ease: 'none',
-        duration: 0.3,
-    });
+
 }
 
 gsap.to('.patternCover', {
@@ -1059,24 +1054,22 @@ const tlMoveout = gsap.timeline({
     },
     onStart(){
         document.getElementsByClassName('patternCover')[0].style.zIndex = '1';
-        gsap.to('#meal-menu #meal-menu-list',{
+        gsap.to('.meal-menu-container > div:not(:last-child)',{
             opacity: 0,
             ease: 'Power4.easeOut',
             duration: 0.2,
         })
     },
     onReverseComplete() {
-        console.log('reversed completed');
         document.getElementsByClassName('patternCover')[0].style.zIndex = '40';
-        gsap.to('#meal-menu #meal-menu-list',{
+        gsap.to('.meal-menu-container > div',{
             opacity: 1,
             ease: 'Power4.easeOut',
             duration: 0.2,
         })
     },
     onComplete(){
-        console.log('completed');
-        gsap.to('#meal-menu #meal-menu-list',{
+        gsap.to('.meal-menu-container > div:not(:last-child)',{
                 opacity: 0,
                 ease: 'Power4.easeOut',
                 duration: 0.2,
@@ -1084,19 +1077,19 @@ const tlMoveout = gsap.timeline({
     }
 });
 
-tlMoveout.to('#menu-bg-container > *', {
+tlMoveout.to('.animate-bg', {
     marginTop: '-102vh',
     ease: "power2.inOut",
     duration: 1.2,
     stagger: -0.07,
 }, '<')
-.to('#menu-bg-container > *', {
+.to('.animate-bg', {
     scale: 0.4,
     ease: "power2.inOut",
     duration: 1,
     stagger: 0.1,
 }, '<')
-.to('#menu-bg-container > *',{
+.to('.animate-bg',{
     scale: 1,
     duration: 0.5,
 });
@@ -1113,6 +1106,7 @@ scrollTriggerAllMenuItem.forEach((el) => {
             start: 'bottom bottom+=32',
             end: 'bottom 90% ',
             scrub: true, 
+            // markers: true,
             toggleActions: "restart none restart none", 
         },
         opacity: 0,
@@ -1124,12 +1118,11 @@ scrollTriggerAllMenuItem.forEach((el) => {
 gsap.from('#meal-menu .menu-background',{
     scrollTrigger: {
         trigger: '#meal-menu',
-        start: 'top center',
+        start: 'top top',
         end: 'top top',
-        scrub: true, 
         toggleActions: "restart none none reverse", 
     },
-    top: '100vh',
+    top: '110vh',
     ease: "power1.inOut",
 });
 
@@ -1285,7 +1278,7 @@ function toggleProductImg(el){
             ease: "power3.inOut",
         });
 
-        // {mark3} animate hide image when image is out of screen.
+        // {mark} animate hide image when image is out of screen.
         gsap.to(img, {
             scrollTrigger: {
                 trigger: img,

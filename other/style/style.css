@@ -362,7 +362,7 @@ body {
     position: relative;
     padding-bottom: 200px;
     background-size: 144px;
-    z-index: 200;
+    z-index: 2000;
 }
 
 #meal-menu .pattern{
@@ -377,23 +377,34 @@ body {
     width: 100vw; 
 }
 
-#menu-bg-container{
-    position: relative;
+#meal-menu .menu-background{
+    position: fixed;
+    border-radius: 16px;
+    background-color: #033327;
+    border: 0.5px solid var(--secondary-color, #E0C0A4);
+    width: -webkit-fill-available;
+    margin: 32px 190px;
+    height: 90vh;
+    top: 62px;
+    box-sizing: border-box;
     z-index: 20;
 }
 
 .meal-menu-container-bg{
-    position: fixed;
+    position: absolute;
+    box-sizing: border-box;
+    top: 0px;
+    left: 0px;
+    right: 0px;
     border-radius: 16px;
-    background-color: #043C2D;
+    background-color: #043c2d;
     border: 0.5px solid var(--secondary-color, #E0C0A4);
     width: -webkit-fill-available;
-    margin: 0px 200px;
     padding: 32px 80px;
     height: 94vh;
-    top: 62px;
+    top: 0px;
     box-sizing: border-box;
-    z-index: 0;
+    z-index: 20;
 }
 
 .meal-menu-container-bg .menu-bg-separate-line{
@@ -411,18 +422,7 @@ body {
     left: 58px;
 }
 
-#meal-menu .menu-background{
-    position: fixed;
-    border-radius: 16px;
-    background-color: #033327;
-    border: 0.5px solid var(--secondary-color, #E0C0A4);
-    width: -webkit-fill-available;
-    margin: 32px 190px;
-    height: 90vh;
-    top: 62px;
-    box-sizing: border-box;
-    z-index: 0;
-}
+
 
 
 #meal-menu #meal-menu-scroller {
@@ -505,6 +505,10 @@ body {
     opacity: 0.5;
 }
 
+.meal-menu-section > div:not(.sticky) {
+    position: relative;
+    z-index: 800;
+}
 
 .meal-menu-sub1{
     color: var(--secondary-color);
@@ -1021,11 +1025,7 @@ body {
     #meal-menu .menu-background{
         margin:  32px 4px;
     }
-
-    .meal-menu-container-bg{
-        margin: 0px 8px;
-    }
-
+    
     .menu-bg-separate-line{
         display: none !important;
     }
@@ -1063,7 +1063,6 @@ body {
     }
 
     .meal-menu-container-bg{
-        /* margin: 0px 120px !important; */
         margin: 0px 120px;
     }
 

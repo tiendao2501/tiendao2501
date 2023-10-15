@@ -102,7 +102,7 @@ html {
   font-weight: 200;
   line-height: 18px;
   /* 150% */
-  letter-spacing: 2.4px;
+  letter-spacing: 1.4px;
 
 }
 
@@ -112,8 +112,7 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
-  /* 150% */
-  letter-spacing: 2.4px;
+  letter-spacing: 1.4px;
 }
 
 .medium-12 {
@@ -122,8 +121,7 @@ html {
   font-style: normal;
   font-weight: 500;
   line-height: 18px;
-  /* 150% */
-  letter-spacing: 2.4px;
+  letter-spacing: 1.4px;
 }
 
 .bold-12 {
@@ -132,8 +130,7 @@ html {
   font-style: normal;
   font-weight: 600;
   line-height: 18px;
-  /* 150% */
-  letter-spacing: 2.4px;
+  letter-spacing: 1.4px;
 }
 
 .light-14 {
@@ -142,7 +139,7 @@ html {
   font-style: normal;
   font-weight: 200;
   line-height: normal;
-  letter-spacing: 1.68px;
+  letter-spacing: 1.8px;
 }
 
 .regular-14 {
@@ -151,7 +148,7 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 1.68px;
+  letter-spacing: 1.8px;
 }
 
 .medium-14 {
@@ -160,7 +157,7 @@ html {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  letter-spacing: 1.68px;
+  letter-spacing: 1.8px;
 }
 
 .bold-14 {
@@ -169,7 +166,7 @@ html {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  letter-spacing: 1.68px;
+  letter-spacing: 1.8px;
 }
 
 .light-16 {
@@ -178,7 +175,7 @@ html {
   font-style: normal;
   font-weight: 200;
   line-height: 28px;
-  letter-spacing: 1.6px;
+  letter-spacing: 1.8px;
 }
 
 .regular-16 {
@@ -187,7 +184,7 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
-  letter-spacing: 1.6px;
+  letter-spacing: 1.8px;
 }
 
 .medium-16 {
@@ -196,7 +193,7 @@ html {
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
-  letter-spacing: 1.6px;
+  letter-spacing: 1.8px;
 }
 
 .bold-16 {
@@ -205,7 +202,7 @@ html {
   font-style: normal;
   font-weight: 600;
   line-height: 28px;
-  letter-spacing: 1.6px;
+  letter-spacing: 1.8px;
 }
 
 .light-24 {
