@@ -1096,23 +1096,22 @@ tlMoveout.to('.animate-bg', {
 
 // hide item when menu item leave the background ------------
 
-var scrollTriggerAllMenuItem = gsap.utils.toArray('.meal-menu-all-item');
-scrollTriggerAllMenuItem.forEach((el) => {
+// var scrollTriggerAllMenuItem = gsap.utils.toArray('.meal-menu-all-item');
+// scrollTriggerAllMenuItem.forEach((el) => {
 
-    // show -----------
-    gsap.from(el,{
-        scrollTrigger: {
-            trigger: el,
-            start: 'bottom bottom+=32',
-            end: 'bottom 90% ',
-            scrub: true, 
-            // markers: true,
-            toggleActions: "restart none restart none", 
-        },
-        opacity: 0,
-        ease: Expo.easeIn,
-    });
-});
+//     // show -----------
+//     gsap.from(el,{
+//         scrollTrigger: {
+//             trigger: el,
+//             start: 'bottom bottom+=32',
+//             end: 'bottom 90% ',
+//             scrub: true, 
+//             toggleActions: "restart none restart none", 
+//         },
+//         opacity: 0,
+//         ease: Expo.easeIn,
+//     });
+// });
 
 
 gsap.from('#meal-menu .menu-background',{
