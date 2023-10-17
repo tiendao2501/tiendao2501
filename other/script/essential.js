@@ -489,9 +489,9 @@ for (var i = 0; i < eventsCSV.length; i++){
         eventsCSV[i].endDate = new Date(+dateParts[2], dateParts[1] - 1, +dateParts[0]).getTime(); 
 
         // check if event end date is already 48 hrs ago from current date.
-        if( Date.now() < (eventsCSV[i].endDate + (48*60*60*1000)) ){
+        // if( Date.now() < (eventsCSV[i].endDate + (48*60*60*1000)) ){
             events.push(eventsCSV[i]);
-        }
+        // }
     }
 }
 
@@ -713,6 +713,12 @@ function showEventDetail(eventID){
     }
     document.getElementById('event-detail-pricing').innerHTML = tempPrice;
 
+    if(events[eventID].link){
+        document.getElementById('event-detail-link').setAttribute('href', events[eventID].link);
+        document.getElementById('event-detail-link').style.display = 'inline';
+
+    }
+    
     // add image list
     var tempImage = '<img alt="temp image" src="../../events/'+ events[eventID].thumbnail +'">';
 
