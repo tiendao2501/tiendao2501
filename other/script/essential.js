@@ -654,7 +654,7 @@ else{ // if no event currently showed -----------------
 
 function showEventDetail(eventID){ 
     // console.log(eventID);
-    var thumbnail = document.getElementsByClassName('event-container')[0].getElementsByClassName('event-thumbnail')[0];
+    var thumbnail = document.getElementsByClassName('event-container')[eventID].getElementsByClassName('event-thumbnail')[0];
     var thumbnailTransition = document.getElementById('event-thumbnail-transition');
 
     thumbnailTransition.style.borderRadius = '1000px 1000px 0px 0px';
@@ -697,26 +697,50 @@ function showEventDetail(eventID){
     document.getElementById('event-detail-name').innerHTML = events[eventID].name;
     document.getElementById('event-detail-host').innerHTML = events[eventID].host;
     document.getElementById('event-detail-description').innerHTML = events[eventID].description;
-    document.getElementById('event-detail-location').innerHTML = '➤ Location: <br>' + events[eventID].location;
+
+    if(events[eventID].location[0]){
+        document.getElementById('event-detail-location').innerHTML = '➤ Location: <br>' + events[eventID].location;
+        document.getElementById('event-detail-location').style.display = 'inline';
+    }
+    else{
+        document.getElementById('event-detail-location').style.display = 'none';
+    }
     
     //set time
-    var tempTime = '➤ Time: <br>';
-    for(var i = 0; i< events[eventID].time.length; i++){
-        tempTime += events[eventID].time[i] + '<br>';
-    }
+
+    if(events[eventID].time[0]){
+        var tempTime = '➤ Time: <br>';
+        for(var i = 0; i< events[eventID].time.length; i++){
+            tempTime += events[eventID].time[i] + '<br>';
+        }
         document.getElementById('event-detail-time').innerHTML = tempTime;
+        document.getElementById('event-detail-time').style.display = 'inline';
+    }
+    else{
+        document.getElementById('event-detail-time').style.display = 'none';
+    }
+
 
     // set pricing
-    var tempPrice = '➤ Fee: <br>';
-    for(var i = 0; i< events[eventID].pricing.length; i++){
-        tempPrice += events[eventID].pricing[i] + '<br>';
+    if(events[eventID].pricing[0]){
+        var tempPrice = '➤ Fee: <br>';
+        for(var i = 0; i< events[eventID].pricing.length; i++){
+            tempPrice += events[eventID].pricing[i] + '<br>';
+        }
+        document.getElementById('event-detail-pricing').innerHTML = tempPrice;
+        document.getElementById('event-detail-pricing').style.display = 'inline';
     }
-    document.getElementById('event-detail-pricing').innerHTML = tempPrice;
+    else{
+        document.getElementById('event-detail-pricing').style.display = 'none';
+    }
+
 
     if(events[eventID].link){
         document.getElementById('event-detail-link').setAttribute('href', events[eventID].link);
         document.getElementById('event-detail-link').style.display = 'inline';
-
+    }
+    else{
+        document.getElementById('event-detail-link').style.display = 'none';
     }
     
     // add image list
