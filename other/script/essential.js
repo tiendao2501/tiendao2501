@@ -61,7 +61,6 @@ else{
 }
 
 // disable scrolling before the page is loaded
-  
 // page transition ========================================
 $(window).on("load", function () {
 
@@ -120,7 +119,6 @@ $(window).on("load", function () {
         ease: "Power3.inOut",
     })
 
-
     // Initial loading --------
     // load css to all meal image.
 
@@ -133,6 +131,16 @@ $(window).on("load", function () {
 
 });
   
+
+var screenWidth = window.innerWidth;
+// reload website when screen width change
+window.addEventListener('resize', function () { 
+    if (screenWidth != window.innerWidth){
+        screenWidth = window.innerWidth;
+        window.location.reload(); 
+    }
+});
+
 
 // Scroll Trigger about Deglacer Section ===============================
 const text = new SplitType('.showTextAnimation', { types: 'words, chars' });
