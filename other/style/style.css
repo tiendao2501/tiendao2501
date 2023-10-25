@@ -1081,7 +1081,8 @@ body {
     }
 
     .meal-menu-container-bg{
-        margin: 0px 120px;
+        margin: 0px 0px;
+        width: 100%;
     }
 
     #menu, #menu .reserveCTA {
