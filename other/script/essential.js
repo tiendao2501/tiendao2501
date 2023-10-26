@@ -529,7 +529,7 @@ if (events.length != 0){
         var secondCTA = '';
         disableBG = '';
 
-        if( Date.now() < eventsCSV[i].endDate ){
+        if( Date.now() < events[i].endDate ){
             //hasn't expired
             mainCTA =  '<button style="cursor: pointer;" onclick="showEventDetail('+ i +');">View Details</button>';
             secondCTA = '<a aria-label="Rerseve now" target="_blank" href="https://www.facebook.com/deglacer.hn"><span>Rerseve now</span></a>';
