@@ -1,120 +1,116 @@
-Section,Sub1,Sub2,Name,Ingredient,Image
-Dinner,Starter,Hot,Vichyssoise soup,"bacon, herbs, garlic",Vichyssoise soup.webp
-Dinner,Starter,Hot,French onion soup with puff pastry,,French onion soup with puff pastry.webp
-Dinner,Starter,Hot,Bouillabaisse soup,"seafood carcasses, prawn, squid, focaccia",Bouillabaisse soup.webp
-Dinner,Starter,Hot,Clams casino,"bacon, coriander, parsley",Clams casino.webp
-Dinner,Starter,Hot,Foie gras with berries and brioche ,,Foie gras with berries and brioche.webp
-Dinner,Starter,Hot,Grilled prawn,"Ajo blanco, grape",Grilled prawn.webp
-Dinner,Starter,Cold,Mixed salad with Kumquat dressing and burrata cheese,,
-Dinner,Starter,Cold,Tomato salad,"feta, basil, gazpacho",Tomato salad.webp
-Dinner,Starter,Cold,Grilled veggie salad with balsamic dressing and walnuts,,
-Dinner,Starter,Cold,"Mini cheese board: goat cheese, comté, gruyère, emmental, 24-month parmigiano and mixed nuts",,IMG_8757.webp
-Dinner,Starter,Homemade bread,Flat bread with variation of hummus dippings,,Flat bread with variation of hummus dippings.webp
-Dinner,Starter,Homemade bread,Homemade bread with duck & pork rillettes and butter,,Homemade bread with duck & pork rillettes and butter.webp
-Dinner,Main,LA VIANDE,Dry aged duck breast,"duck jus, potato fondant",Dry aged duck breast.webp
-Dinner,Main,LA VIANDE,Grilled Galician pork chop,"coco bean, kale, mixed mushroom, olives, green pepper jus ",
-Dinner,Main,LA VIANDE,36-hour slow cook oyster blade Aus Black Angus with mulberry jus,,D16B21C0.webp
-Dinner,Main,LA VIANDE,Steak frites,Ask our staff about the cut and sauce of the day,Steak frites.webp
-Dinner,Main,LA VIANDE,Beef rossini,"Tenderloin, foie gras, potatoes of choice (alumettes, mashed or french fries)",
-Dinner,Main,LA VIANDE,Hay smoked New Zealand lamb rack,"Eggplant and plum, café de Paris butter",Hay smoked New Zealand lamb rack.webp
-Dinner,Main,LA VIANDE,"Veal tenderloin wrapped in Caul fat, ginger-carrot purée and Chimichurri",,"Veal tenderloin wrapped in Caul fat, ginger-carrot purée and Chimichurri.webp"
-Dinner,Main,HOMEMADE PASTA,Puttanesca,"Anchovies, tomatoes, eggplants, chillies",
-Dinner,Main,HOMEMADE PASTA,Carbonara,"Guanciale, eggs, peppers, 24-month parmigiano",Carbonara.webp
-Dinner,Main,HOMEMADE PASTA,Tomato basil,"Tomatoes, basil, 24-month parmigiano",Tomato basil.webp
-Dinner,Main,HOMEMADE PASTA,Vongole,"Clams, white wine, parsley",Vongole.webp
-Dinner,Main,HOMEMADE PASTA,Lasagna,"Minced beef, tomatoes, piperade, cheese",Lasagna.webp
-Dinner,Main,COCOTTE,Bœuf Bourguignon en cocotte,mashed potato,
-Dinner,Main,COCOTTE,Duck parmentier and mixed salad,"mixed forest mushrooms, potatoes",Duck parmentier and mixed salad.webp
-Dinner,Main,COCOTTE,Coniglio al Vino Rosso,"stewed rabbit, vegetables, red wine, long grain rice",Coniglio al Vino Rosso.webp
-Dinner,Main,COCOTTE,Cassoulet,"Toulouse sausage, pork, focaccia, coco beans",Cassoulet.webp
-Dinner,Main,COCOTTE,Œufs cocotte,"Eggs, ham, spinach, mushroom, sourdough",
-Dinner,Main,LE POISSON,Salt-baked grouper,"mountain pear, hollandaise sauce",Salt-baked grouper.webp
-Dinner,Main,LE POISSON,Broiled barramundi,"chilly butter, ratatouille, tomato sauce",Broiled barramundi.webp
-Dinner,Main,LE POISSON,Grilled octopus tentacle,"soya glazed, kalamansi, quinoa",Grilled octopus tentacle.webp
-Dinner,Snack & Dessert,Snack,Chicken popcorn,,
-Dinner,Snack & Dessert,Snack,Crab cake,,
-Dinner,Snack & Dessert,Snack,French fries/Sweet potato fries,,
-Dinner,Snack & Dessert,Snack,Olives,,
-Dinner,Snack & Dessert,Snack,Sundried tomato,,
-Dinner,Snack & Dessert,Dessert,Baba au rhum,,Baba au rhum.webp
-Dinner,Snack & Dessert,Dessert,Choco chilly ,"Smoked chocolate cremeux with tabasco, mousse rye cocoa crumble, vanilla dehydrated sponge",A69642FD-F56D-4BE6-B224-73BD6B69A1DF.webp
-Dinner,Snack & Dessert,Dessert,Basil-berry island ,"Strawberry jasmine consommé, basil ice cream, green apple foam",
-Dinner,Snack & Dessert,Dessert,Brioche brulée,"Smoked cheese ice cream, French toast brioche brulée, caramelized walnuts, macerated cherries",
-Dinner,Snack & Dessert,Dessert,Add Ice cream/Sorbet to any dessert/Gọi thêm kem cùng món tráng miệng ,,
-Brunch,Brunch,Brunch,Viennoiserie basket,"Croissant, pain au chocolat, danish",
-Brunch,Brunch,Brunch,Avocado on toast,"Sourdough, eggs of choice (poached, scrambled, sunny side-up) feta cheese, avocado",Avocado on toast.webp
-Brunch,Brunch,Brunch,Shakshouka,"Stewed bell peppers & tomatoes, basil, focaccia, goat cheese, poached eggs",Shakshouka.webp
-Brunch,Brunch,Brunch,French toast,"brioche, cinnamon, caramel",
-Brunch,Brunch,Brunch,Déglacer omelette ,"Oyster mushroom,emmental, goat cheese and side salad",Déglacer omelette.webp
-Brunch,Brunch,Brunch,Eggs Benedict,"Soft poached eggs, ham, on an English muffin topped with a creamy hollandaise sauce",Eggs Benedict.webp
-Brunch,Brunch,Brunch,Croque monsieur/madame & mixed salad,"sandwich, ham, cheese, (sunny-side up)",Croque monsieur - madame mixed salad.webp
-Brunch,Brunch,Brunch,Flatbread with hummus dippings,,
-Brunch,Brunch,Brunch,Big breakie,"eggs, bacons or ham, mixed salad, sausage, french fries",Big breakie.webp
-Brunch,Brunch,Brunch,Mixed salad with kumquat dressing & burrata cheese,,IMG_1093.webp
-Brunch,Brunch,Brunch,Rocket salad with mixed nuts & torched feta cheese,,
-Brunch,Brunch,Brunch,Grilled veggie salad with balsamic dressing and walnuts,,
-Brunch,Brunch,Brunch,Crudites with Greek yogurt and honey dipping sauce,,
-Brunch,Brunch,Brunch,Smoothie bowl ,"banana, cacao, berries, almond, granola, dried coconut",IMG_9301.webp
-Brunch,Brunch,Add-ons,"eggs (scrambled, sunny side-up, poached)",,
-Brunch,Brunch,Add-ons,"bread (foccacia, sourdough, brioche)",,
-Brunch,Brunch,Add-ons,mushroom,,
-Brunch,Brunch,Add-ons,confit tomato,,
-Brunch,Brunch,Add-ons,avocado,,
-Brunch,Brunch,Add-ons,sausage,,
-Brunch,Brunch,Add-ons,bacon,,
-Brunch,Brunch,Add-ons,coco beans,,
-Brunch,Brunch,Add-ons,fries,,
-Beverages,Alcohol,Sparkling,Arthur Metz Cremant D'Alsace Brut,"Pinot Blanc, Chardonnay, Riesling | Alsace, France",
-Beverages,Alcohol,Sparkling,Pol Remy Brut,"Ugni blanc, Chardonnay, Sauvignon Blanc | Vin de France",
-Beverages,Alcohol,Sparkling,"Champagne Charles Mignon, Brut Premium Reserve","Champagne, France",
-Beverages,Alcohol,Sparkling,Champagne Duval - Leroy Brut Reserve,"Champagne, France",
-Beverages,Alcohol,White Wine,House Wine,,
-Beverages,Alcohol,White Wine,Pedro Luis Jumilla,Sauvignon blanc | DO Jumilla,
-Beverages,Alcohol,White Wine,Conde Villar Vinho Verde DOC Branco,"Loureiro, Arinto, Trajadura | Portugal",
-Beverages,Alcohol,White Wine,Argiolas Costamolino,"Vermentino | Vermentino di Sardegna DOC, Italy",
-Beverages,Alcohol,White Wine,Pecorino Terre Di Chieti IGT,"Pecorino | Abruzzo, Italy",
-Beverages,Alcohol,White Wine,Cave de Lugny Mâcon-Villages Florières,Chardonnay | Mâcon-Villages AOC,
-Beverages,Alcohol,White Wine,Côté Mas ,"Sauvignon-Vermentino | Languedoc, France",
-Beverages,Alcohol,White Wine,Les Jamelles,"Gewurztraminer | Vin de Pays, Ardèche, France",
-Beverages,Alcohol,White Wine,Les Jamelles,"Chardonnay | Vin de Pays, Ardèche, France",
-Beverages,Alcohol,White Wine,Château La Rosé Bellevue Blanc,"Sauvignon Blanc - Muscadelle | Blaye – Côtes de Bordeaux AOC, France",
-Beverages,Alcohol,White Wine,Arthur Metz Vieilles Vignes,"Riesling | Alsace, France",
-Beverages,Alcohol,White Wine,Greywacke,"Sauvignon Blanc | Malborough, New Zealand",
-Beverages,Alcohol,White Wine,Muga Blanco,"Grenache Blanc, Malvasía | Rioja, Spain",
-Beverages,Alcohol,Red wine,House Wine,,
-Beverages,Alcohol,Red wine,Côté Mas ,"Syrah-Grenache | Languedoc, France",
-Beverages,Alcohol,Red wine,Les Jamelles ,"Malbec | Vin de Pays, Pays d'Oc, France",
-Beverages,Alcohol,Red wine,Delas St Esprit Rouge,"Syrah - Grenache | Côtes du Rhône AOC, France",
-Beverages,Alcohol,Red wine,Michele Chiarlo Le Orme Barbera d'Asti Superiore,"Barbera | Piemonte, Barbera d'Asti, Italy",
-Beverages,Alcohol,Red wine,Pedro Luis Jumilla,Monastrell (Mouvedre) | Spain,
-Beverages,Alcohol,Red wine,Cap Royal,"Carbenet Sauvignon, Merlot | Bordeaux, France",
-Beverages,Alcohol,Red wine,Bestheim Chasseurs de Lune Collection ,"Pinot Noir | Alsace, France",
-Beverages,Alcohol,Red wine,Leeuwin Estate Siblings,"Shiraz | Margaret River, Australia",
-Beverages,Alcohol,Red wine,Casalforte Valpolicella Ripasso,"Corvina, Rondinella, Corvinone | Valpolicella, Italy",
-Beverages,Alcohol,Dessert wine,La Morandina D'asti,"Moscato | Piemonte, Italy",
-Beverages,Alcohol,Beer,Carlsberg,,
-Beverages,Alcohol,Beer,Blanc 1664,,
-Beverages,Alcohol,Cocktail,Phù sa,"gold rum, spicy apricot, orange bItter ",Phù sa.webp
-Beverages,Alcohol,Cocktail,Long Bien bridge,"red wine, white sour",Long Bien bridge.webp
-Beverages,Alcohol,Cocktail,Bana island,"Về để đi's creme de cacao, banana vodka, espresso, whipping",bana island 2.webp
-Beverages,Non alcohol,FRUIT TEA,Hibiberries,"Hibicus, berries, green tea",Hibiberries.webp
-Beverages,Non alcohol,FRUIT TEA,Citron,Yuzu lemonade & red grapefruit tea,Citron.webp
-Beverages,Non alcohol,FRUIT TEA,Tropicana,Pink guava & strawberry tea,Tropicana.webp
-Beverages,Non alcohol,FRUIT TEA,Hot tea (cup/pot),,
-Beverages,Non alcohol,SOFT DRINKS,Coke/Coke Light/ Sprite,,
-Beverages,Non alcohol,SOFT DRINKS,Tonic Schweppes,,
-Beverages,Non alcohol,SOFT DRINKS,Still water bottle 450ml,,
-Beverages,Non alcohol,SOFT DRINKS,Still water bottle 750ml,,
-Beverages,Non alcohol,SOFT DRINKS,Sparkling water 450ml,,
-Beverages,Non alcohol,Juice,Watermelon juice,,
-Beverages,Non alcohol,Juice,Lemon juice,,
-Beverages,Non alcohol,Juice,Orange juice,,
-Beverages,Non alcohol,KOMBUCHA,Lychee & Rose,,Lychee & Rose.webp
-Beverages,Non alcohol,KOMBUCHA,Mango & Passionfruit ,,Mango & Passionfruit.webp
-Beverages,Non alcohol,COFFEE,Espresso,,
-Beverages,Non alcohol,COFFEE,Americano,,
-Beverages,Non alcohol,COFFEE,Latte,,IMG_8274.webp
-Beverages,Non alcohol,COFFEE,Cappuccino ,,
-Beverages,Non alcohol,COFFEE,Nâu ,,
-Beverages,Non alcohol,COFFEE,Bạc Xỉu,,
-Beverages,Non alcohol,COFFEE,Affogato,,
+Section,Sub1,Sub2,Name,Ingredient,Image,ShowingByDefault
+Dinner,Starter,Hot,French onion soup with puff pastry,,French onion soup with puff pastry.webp,yes
+Dinner,Starter,Hot,Bouillabaisse soup,"seafood carcasses, prawn, squid, focaccia",bouillabaise.jpeg,yes
+Dinner,Starter,Hot,Clams casino,"bacon, coriander, parsley",Clams casino.webp,yes
+Dinner,Starter,Hot,Foie gras with berries and brioche ,,Foie gras with berries and brioche.webp,yes
+Dinner,Starter,Hot,Grilled prawn,"Ajo blanco, grape",Grilled prawn.webp,
+Dinner,Starter,Cold,Mixed salad with Kumquat dressing and burrata cheese,,,
+Dinner,Starter,Cold,Tomato salad,"feta, basil, gazpacho",Tomato salad.webp,yes
+Dinner,Starter,Cold,Grilled veggie salad with balsamic dressing and walnuts,,,
+Dinner,Starter,Cold,"Mini cheese board: goat cheese, comté, gruyère, emmental, 24-month parmigiano and mixed nuts",,IMG_8757.webp,
+Dinner,Starter,Homemade bread,Flat bread with variation of hummus dippings,,Flat bread with variation of hummus dippings.webp,
+Dinner,Starter,Homemade bread,Homemade bread with duck & pork rillettes and butter,,Homemade bread with duck & pork rillettes and butter.webp,
+Dinner,Main,LA VIANDE,Dry aged duck breast,"duck jus, potato fondant",Dry aged duck breast.webp,yes
+Dinner,Main,LA VIANDE,Grilled Galician pork chop,"coco bean, kale, mixed mushroom, olives, green pepper jus ",,
+Dinner,Main,LA VIANDE,36-hour slow cook oyster blade Aus Black Angus with mulberry jus,,D16B21C0.webp,
+Dinner,Main,LA VIANDE,Steak frites,Ask our staff about the cut and sauce of the day,Steak frites.webp,
+Dinner,Main,LA VIANDE,Beef rossini,"Tenderloin, foie gras, potatoes of choice (alumettes, mashed or french fries)",beef rossini.jpeg,yes
+Dinner,Main,LA VIANDE,Hay smoked New Zealand lamb rack,"Eggplant and plum, café de Paris butter",Hay smoked New Zealand lamb rack.webp,yes
+Dinner,Main,HOMEMADE PASTA,Puttanesca,"Anchovies, tomatoes, eggplants, chillies",,
+Dinner,Main,HOMEMADE PASTA,Carbonara,"Guanciale, eggs, peppers, 24-month parmigiano",Carbonara.webp,yes
+Dinner,Main,HOMEMADE PASTA,Tomato basil,"Tomatoes, basil, 24-month parmigiano",Tomato basil.webp,
+Dinner,Main,HOMEMADE PASTA,Vongole,"Clams, white wine, parsley",Vongole.webp,
+Dinner,Main,HOMEMADE PASTA,Lasagna,"Minced beef, tomatoes, piperade, cheese",Lasagna.webp,
+Dinner,Main,COCOTTE,Bœuf Bourguignon en cocotte,mashed potato,,
+Dinner,Main,COCOTTE,Duck parmentier and mixed salad,"mixed forest mushrooms, potatoes",Duck parmentier and mixed salad.webp,
+Dinner,Main,COCOTTE,Coniglio al Vino Rosso,"stewed rabbit, vegetables, red wine, long grain rice",Coniglio al Vino Rosso.webp,yes
+Dinner,Main,COCOTTE,Cassoulet,"Toulouse sausage, pork, focaccia, coco beans",Cassoulet.webp,
+Dinner,Main,COCOTTE,Œufs cocotte,"Eggs, ham, spinach, mushroom, sourdough",,
+Dinner,Main,LE POISSON,Salt-baked grouper,"mountain pear, hollandaise sauce",Salt-baked grouper.webp,
+Dinner,Main,LE POISSON,Broiled barramundi,"chilly butter, ratatouille, tomato sauce",Broiled barramundi.webp,yes
+Dinner,Main,LE POISSON,Grilled octopus tentacle,"soya glazed, kalamansi, quinoa",Grilled octopus tentacle.webp,
+Dinner,Snack & Dessert,Snack,Chicken popcorn,,,
+Dinner,Snack & Dessert,Snack,Crab cake,,,
+Dinner,Snack & Dessert,Snack,French fries/Sweet potato fries,,,
+Dinner,Snack & Dessert,Snack,Olives,,,
+Dinner,Snack & Dessert,Snack,Sundried tomato,,,
+Dinner,Snack & Dessert,Dessert,Baba au rhum,,Baba au rhum.webp,
+Dinner,Snack & Dessert,Dessert,Choco chilly ,"Smoked chocolate cremeux with tabasco, mousse rye cocoa crumble, vanilla dehydrated sponge",A69642FD-F56D-4BE6-B224-73BD6B69A1DF.webp,
+Dinner,Snack & Dessert,Dessert,Basil-berry island ,"Strawberry jasmine consommé, basil ice cream, green apple foam",,
+Dinner,Snack & Dessert,Dessert,Brioche brulée,"Smoked cheese ice cream, French toast brioche brulée, caramelized walnuts, macerated cherries",,
+Dinner,Snack & Dessert,Dessert,Add Ice cream/Sorbet to any dessert/Gọi thêm kem cùng món tráng miệng ,,,
+Brunch,Brunch,Brunch,Viennoiserie basket,"Croissant, pain au chocolat, danish",,
+Brunch,Brunch,Brunch,Avocado on toast,"Sourdough, eggs of choice (poached, scrambled, sunny side-up) feta cheese, avocado",Avocado on toast.webp,yes
+Brunch,Brunch,Brunch,Shakshouka,"Stewed bell peppers & tomatoes, basil, focaccia, goat cheese, poached eggs",Shakshouka.webp,yes
+Brunch,Brunch,Brunch,French toast,"brioche, cinnamon, caramel",,
+Brunch,Brunch,Brunch,Déglacer omelette ,"Oyster mushroom,emmental, goat cheese and side salad",Déglacer omelette.webp,
+Brunch,Brunch,Brunch,Eggs Benedict,"Soft poached eggs, ham, on an English muffin topped with a creamy hollandaise sauce",Eggs Benedict.webp,yes
+Brunch,Brunch,Brunch,Croque monsieur/madame & mixed salad,"sandwich, ham, cheese, (sunny-side up)",Croque monsieur - madame mixed salad.webp,
+Brunch,Brunch,Brunch,Flatbread with hummus dippings,,,
+Brunch,Brunch,Brunch,Big breakie,"eggs, bacons or ham, mixed salad, sausage, french fries",Big breakie.webp,
+Brunch,Brunch,Brunch,Mixed salad with kumquat dressing & burrata cheese,,IMG_1093.webp,
+Brunch,Brunch,Brunch,Rocket salad with mixed nuts & torched feta cheese,,,
+Brunch,Brunch,Brunch,Grilled veggie salad with balsamic dressing and walnuts,,,
+Brunch,Brunch,Brunch,Crudites with Greek yogurt and honey dipping sauce,,,
+Brunch,Brunch,Add-ons,"eggs (scrambled, sunny side-up, poached)",,,
+Brunch,Brunch,Add-ons,"bread (foccacia, sourdough, brioche)",,,
+Brunch,Brunch,Add-ons,mushroom,,,
+Brunch,Brunch,Add-ons,confit tomato,,,
+Brunch,Brunch,Add-ons,avocado,,,
+Brunch,Brunch,Add-ons,sausage,,,
+Brunch,Brunch,Add-ons,bacon,,,
+Brunch,Brunch,Add-ons,coco beans,,,
+Brunch,Brunch,Add-ons,fries,,,
+Beverages,Alcohol,Sparkling,Arthur Metz Cremant D'Alsace Brut,"Pinot Blanc, Chardonnay, Riesling | Alsace, France",,
+Beverages,Alcohol,Sparkling,Pol Remy Brut,"Ugni blanc, Chardonnay, Sauvignon Blanc | Vin de France",,
+Beverages,Alcohol,Sparkling,"Champagne Charles Mignon, Brut Premium Reserve","Champagne, France",,
+Beverages,Alcohol,Sparkling,Champagne Duval - Leroy Brut Reserve,"Champagne, France",,
+Beverages,Alcohol,White Wine,House Wine,,,
+Beverages,Alcohol,White Wine,Pedro Luis Jumilla,Sauvignon blanc | DO Jumilla,,
+Beverages,Alcohol,White Wine,Conde Villar Vinho Verde DOC Branco,"Loureiro, Arinto, Trajadura | Portugal",,
+Beverages,Alcohol,White Wine,Argiolas Costamolino,"Vermentino | Vermentino di Sardegna DOC, Italy",,
+Beverages,Alcohol,White Wine,Pecorino Terre Di Chieti IGT,"Pecorino | Abruzzo, Italy",,
+Beverages,Alcohol,White Wine,Cave de Lugny Mâcon-Villages Florières,Chardonnay | Mâcon-Villages AOC,,
+Beverages,Alcohol,White Wine,Côté Mas ,"Sauvignon-Vermentino | Languedoc, France",,
+Beverages,Alcohol,White Wine,Les Jamelles,"Gewurztraminer | Vin de Pays, Ardèche, France",,
+Beverages,Alcohol,White Wine,Les Jamelles,"Chardonnay | Vin de Pays, Ardèche, France",,
+Beverages,Alcohol,White Wine,Château La Rosé Bellevue Blanc,"Sauvignon Blanc - Muscadelle | Blaye – Côtes de Bordeaux AOC, France",,
+Beverages,Alcohol,White Wine,Arthur Metz Vieilles Vignes,"Riesling | Alsace, France",,
+Beverages,Alcohol,White Wine,Greywacke,"Sauvignon Blanc | Malborough, New Zealand",,
+Beverages,Alcohol,White Wine,Muga Blanco,"Grenache Blanc, Malvasía | Rioja, Spain",,
+Beverages,Alcohol,Red wine,House Wine,,,
+Beverages,Alcohol,Red wine,Côté Mas ,"Syrah-Grenache | Languedoc, France",,
+Beverages,Alcohol,Red wine,Les Jamelles ,"Malbec | Vin de Pays, Pays d'Oc, France",,
+Beverages,Alcohol,Red wine,Delas St Esprit Rouge,"Syrah - Grenache | Côtes du Rhône AOC, France",,
+Beverages,Alcohol,Red wine,Michele Chiarlo Le Orme Barbera d'Asti Superiore,"Barbera | Piemonte, Barbera d'Asti, Italy",,
+Beverages,Alcohol,Red wine,Pedro Luis Jumilla,Monastrell (Mouvedre) | Spain,,
+Beverages,Alcohol,Red wine,Cap Royal,"Carbenet Sauvignon, Merlot | Bordeaux, France",,
+Beverages,Alcohol,Red wine,Bestheim Chasseurs de Lune Collection ,"Pinot Noir | Alsace, France",,
+Beverages,Alcohol,Red wine,Leeuwin Estate Siblings,"Shiraz | Margaret River, Australia",,
+Beverages,Alcohol,Red wine,Casalforte Valpolicella Ripasso,"Corvina, Rondinella, Corvinone | Valpolicella, Italy",,
+Beverages,Alcohol,Dessert wine,La Morandina D'asti,"Moscato | Piemonte, Italy",,
+Beverages,Alcohol,Beer,Carlsberg,,,
+Beverages,Alcohol,Beer,Blanc 1664,,,
+Beverages,Alcohol,Cocktail,Phù sa,"gold rum, spicy apricot, orange bItter ",Phù sa.webp,
+Beverages,Alcohol,Cocktail,Long Bien bridge,"red wine, white sour",Long Bien bridge.webp,
+Beverages,Alcohol,Cocktail,Bana island,"Về để đi's creme de cacao, banana vodka, espresso, whipping",bana island 2.webp,
+Beverages,Non alcohol,FRUIT TEA,Hibiberries,"Hibicus, berries, green tea",Hibiberries.webp,
+Beverages,Non alcohol,FRUIT TEA,Citron,Yuzu lemonade & red grapefruit tea,Citron.webp,
+Beverages,Non alcohol,FRUIT TEA,Tropicana,Pink guava & strawberry tea,Tropicana.webp,
+Beverages,Non alcohol,FRUIT TEA,Hot tea (cup/pot),,,
+Beverages,Non alcohol,SOFT DRINKS,Coke/Coke Light/ Sprite,,,
+Beverages,Non alcohol,SOFT DRINKS,Tonic Lemonade,,,
+Beverages,Non alcohol,SOFT DRINKS,Still water bottle 450ml,,,
+Beverages,Non alcohol,SOFT DRINKS,Sparkling water 450ml,,,
+Beverages,Non alcohol,Juice,Watermelon juice,,,
+Beverages,Non alcohol,Juice,Lemon juice,,,
+Beverages,Non alcohol,Juice,Orange juice,,,
+Beverages,Non alcohol,KOMBUCHA,Lychee & Rose,,Lychee & Rose.webp,
+Beverages,Non alcohol,KOMBUCHA,Mango & Passionfruit ,,Mango & Passionfruit.webp,
+Beverages,Non alcohol,COFFEE,Espresso,,,
+Beverages,Non alcohol,COFFEE,Americano,,,
+Beverages,Non alcohol,COFFEE,Latte,,IMG_8274.webp,
+Beverages,Non alcohol,COFFEE,Cappuccino ,,,
+Beverages,Non alcohol,COFFEE,Nâu ,,,
+Beverages,Non alcohol,COFFEE,Bạc Xỉu,,,
+Beverages,Non alcohol,COFFEE,Affogato,,,
