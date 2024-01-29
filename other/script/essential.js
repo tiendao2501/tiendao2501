@@ -127,13 +127,11 @@ $(window).on("load", function () {
         mealImgContEl[i].getElementsByClassName('meal-image')[0].style.display = 'none';
     }
 
-
-    // auto show default image on mobile
-    // if (isMobileDevice) {
-    //     for (var i = 0; i < mealsHaveImage.length; i++) {
-    //         showProductImgMobile(mealsHaveImage[i]);
-    //     }
-    // }
+    document.querySelectorAll('.showingByDefault').forEach((element, i) => {
+        if (isMobileDevice()) {
+            showProductImgMobile(element);
+        }
+    })
 });
 
 
@@ -969,6 +967,11 @@ function loadMealMenuContainer() {
                         mealDiv.classList.add('meal-has-image');
                         mealImgUrl = '../../menu-img/' + mealItem.Image;
                     };
+
+                    if (mealItem.ShowingByDefault == 'yes'){
+                        // console.log(mealItem);
+                        mealDiv.classList.add('showingByDefault');
+                    }
                     mealDiv.classList.add('meal-item', 'meal-menu-all-item');
                     // add class left-right-class to mealItem -> to hide when show image.
                     if (a % 2) {
@@ -1011,7 +1014,6 @@ function loadMealMenuContainer() {
 
         // add meal menu container into mealMenu List ----------
         mealMenuList.appendChild(mealMenuContainer);
-        // {mark6}
         // document.getElementById('menu-bg-container').appendChild(mealMenuContainerBg);
         mealMenuContainer.appendChild(mealMenuContainerBg);
 
@@ -1044,19 +1046,56 @@ function trimWhitespace(str) {
 
 // animate menu ==========================================================
 // animate tabbar -----
-var scrollTriggerMenuContainer = Array.from(document.querySelectorAll('.meal-menu-container'));
 
+var gsapElMenuBg = [];
+var showingByDefaultTrigger = [];
+
+function updateTriggerEl(){
+    for(var i = 0; i < gsapElMenuBg.length; i++){
+        gsapElMenuBg[i].scrollTrigger.refresh();
+    }
+
+    for(var i = 0; i < showingByDefaultTrigger.length; i++){
+        showingByDefaultTrigger[i].scrollTrigger.refresh();
+    }
+
+    tlMoveout.scrollTrigger.refresh();
+    patternCoverTrigger.scrollTrigger.refresh();
+}
+
+
+// mark2
+// document.querySelectorAll('.showingByDefault').forEach((element, i) => {
+//     showingByDefaultTrigger[i] = gsap.to(element, {
+//         scrollTrigger: {
+//             trigger: element,
+//             start: "top bottom",
+//             end: "top top",
+//         },
+//         onStart: () => {
+//             if (isMobileDevice()) {
+//                 showProductImgMobile(element);
+//             }
+//         },
+//     });
+// })
+
+
+var scrollTriggerMenuContainer = Array.from(document.querySelectorAll('.meal-menu-container'));
+//mark3
 for (var i = 0; i < scrollTriggerMenuContainer.length; i++) {
     var el = document.getElementsByClassName('meal-menu-container')[i];
+    var containerBg = el.getElementsByClassName('meal-menu-container-bg')[0];
     var tabbar = el.getElementsByClassName('meal-menu-tabbar')[0];
-    // {mark6}
     // move menu-background with menu-section
-    gsap.to(document.getElementsByClassName('meal-menu-container-bg')[i], {
+    //mark3
+    gsapElMenuBg[i] = gsap.to(containerBg, {
         scrollTrigger: {
             trigger: el,
             start: 'top top+=64',
             end: 'top top+=64',
             toggleActions: "complete none none reset", // onEnter, onLeave, onEnterBack, and onLeaveBack -> sẽ nhận 1 trong các giá trị sau: "play", "pause", "resume", "reset", "restart", "complete", "reverse", and "none".
+            // markers: true,
         },
         position: 'fixed',
         left: 0,
@@ -1067,10 +1106,9 @@ for (var i = 0; i < scrollTriggerMenuContainer.length; i++) {
         bottom: '62px',
     });
 
-
 }
 
-gsap.to('.patternCover', {
+var patternCoverTrigger = gsap.to('.patternCover', {
     scrollTrigger: {
         trigger: '#meal-menu',
         start: 'top top',
@@ -1128,7 +1166,7 @@ const tlMoveout = gsap.timeline({
 });
 
 tlMoveout.to('.animate-bg', {
-    marginTop: '-102vh',
+    marginTop: '-110vh',
     ease: "power2.inOut",
     duration: 1.2,
     stagger: -0.07,
@@ -1179,7 +1217,7 @@ gsap.from('#meal-menu .menu-background', {
 // hover on meal has image -> show image ----------------------
 
 function showThumb(el) {
-    // console.log(el);
+    console.log(el);
     var image = el.getElementsByClassName('meal-image')[0];
     // image.setAttribute('src', image.getAttribute('data-src'));
 
@@ -1324,49 +1362,47 @@ function showProductImgMobile(el) {
         height: 'auto',
         duration: 1,
         ease: "power3.inOut",
+        onComplete: ()=>{ updateTriggerEl(); }
     });
 
 
-    //markkk
+    //mark1
     //animate hide image when image is out of screen.
-    gsap.to(img, {
-        scrollTrigger: {
-            trigger: img,
-            start: 'top+=50 top+=80',
-            toggleActions: "restart none none none",
-        },
-        height: '0',
-        duration: 1,
-        ease: "power3.inOut",
-        onComplete() {
-            img.style.display = 'none';
-            img.style.opacity = '0';
-            img.style.height = '0';
-            img.closest('.meal-has-image').getElementsByClassName('meal-image-indicator')[0].style.transform = 'translate(0%, -50%) rotate(0deg)';
-        }
-    });
+    // gsap.to(img, {
+    //     scrollTrigger: {
+    //         trigger: img,
+    //         start: 'top+=50 top+=80',
+    //         toggleActions: "restart none none none",
+    //     },
+    //     height: '0',
+    //     duration: 1,
+    //     ease: "power3.inOut",
+    //     onComplete() {
+    //         img.style.display = 'none';
+    //         img.style.opacity = '0';
+    //         img.style.height = '0';
+    //         img.closest('.meal-has-image').getElementsByClassName('meal-image-indicator')[0].style.transform = 'translate(0%, -50%) rotate(0deg)';
+    //     }
+    // });
 
     // when scroll reverse
-    gsap.to(img, {
-        scrollTrigger: {
-            trigger: img,
-            start: 'top bottom',
-            end: 'top bottom',
-            // scrub: true, 
-            toggleActions: "none none play play",
-            // markers: true,
-        },
-        height: '0',
-        duration: 1,
-        ease: "power3.inOut",
-        onComplete() {
-            img.style.display = 'none';
-            img.style.opacity = '0';
-            img.style.height = '0';
-            img.closest('.meal-has-image').getElementsByClassName('meal-image-indicator')[0].style.transform = 'translate(0%, -50%) rotate(0deg)';
-
-        }
-    });
+    // gsap.to(img, {
+    //     scrollTrigger: {
+    //         trigger: img,
+    //         start: 'top bottom',
+    //         end: 'top bottom',
+    //         toggleActions: "none none play play",
+    //     },
+    //     height: '0',
+    //     duration: 1,
+    //     ease: "power3.inOut",
+    //     onComplete() {
+    //         img.style.display = 'none';
+    //         img.style.opacity = '0';
+    //         img.style.height = '0';
+    //         img.closest('.meal-has-image').getElementsByClassName('meal-image-indicator')[0].style.transform = 'translate(0%, -50%) rotate(0deg)';
+    //     }
+    // });
 }
 
 function hideProductImgMobile(el) {
@@ -1378,8 +1414,9 @@ function hideProductImgMobile(el) {
         opacity: '0',
         duration: 1,
         ease: "power3.inOut",
-        onComplete() {
+        onComplete: ()=> {
             img.style.display = 'none';
+            updateTriggerEl();
         }
     });
 }
@@ -1404,6 +1441,7 @@ function isMobileDevice() {
         return false;
     }
 }
+
 
 // add menu scroller into right menu
 var scrollThroughMenuContainer = document.getElementById('meal-menu-scroller');

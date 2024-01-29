@@ -399,7 +399,7 @@ body {
     right: 0px;
     border-radius: 16px;
     background-color: #043c2d;
-    border: 0.5px solid var(--secondary-color, #E0C0A4);
+    border: 0.5px solid var(--secondary-color, #e0c0a4);
     width: -webkit-fill-available;
     padding: 32px 80px;
     height: 96vh;
@@ -476,6 +476,7 @@ body {
     padding-bottom: 32px ;
     box-sizing: border-box;
     z-index: 100;
+    height: auto;
     /* background-color: #533d6769; */
 }
 
@@ -1102,3 +1103,7 @@ body {
         display: none;
     }
 }
+
+[class^="gsap"] {
+    z-index: 10000 !important;
+ }
