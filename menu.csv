@@ -1,6 +1,6 @@
 Section,Sub1,Sub2,Name,Ingredient,Image,ShowingByDefault
 Dinner,Starter,Hot,French onion soup with puff pastry,,French onion soup with puff pastry.webp,yes
-Dinner,Starter,Hot,Bouillabaisse soup,"seafood carcasses, prawn, squid, focaccia",bouillabaise.jpeg,yes
+Dinner,Starter,Hot,Bouillabaisse soup,"seafood carcasses, prawn, squid, focaccia",bouillabaise.webp,yes
 Dinner,Starter,Hot,"""Déglacer"" chestnut soup","pancetta, baked brie toast",chestnut1.jpeg,yes
 Dinner,Starter,Hot,Foie gras with berries and brioche ,,Foie gras with berries and brioche.webp,
 Dinner,Starter,Cold,Mixed salad with Kumquat dressing and burrata cheese,,,
@@ -104,9 +104,7 @@ Beverages,Non alcohol,FRUIT TEA,Tropicana,Pink guava & strawberry tea,Tropicana.
 Beverages,Non alcohol,FRUIT TEA,Hot tea (cup/pot),,,
 Beverages,Non alcohol,SOFT DRINKS,Coke/Coke Light/ Sprite,,,
 Beverages,Non alcohol,SOFT DRINKS,Tonic Lemonade,,,
-Beverages,Non alcohol,SOFT DRINKS,Still water bottle 450ml,,,
-Beverages,Non alcohol,SOFT DRINKS,Sparkling water 450ml,,,
-Beverages,Non alcohol,Juice,Juice,,,
+Beverages,Non alcohol,SOFT DRINKS,Still water/Sparkling water,,,
 Beverages,Non alcohol,KOMBUCHA,Lychee & Rose,,Lychee & Rose.webp,
 Beverages,Non alcohol,KOMBUCHA,Mango & Passionfruit ,,Mango & Passionfruit.webp,
 Beverages,Non alcohol,COFFEE,Espresso,,,
