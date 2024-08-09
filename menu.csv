@@ -1,42 +1,42 @@
 Section,Sub1,Sub2,Name,Ingredient,Image,ShowingByDefault
-Dinner,Starter,Hot,French onion soup with puff pastry,,French onion soup with puff pastry.webp,yes
-Dinner,Starter,Hot,Bouillabaisse soup,"seafood carcasses, prawn, squid, focaccia",bouillabaise.webp,yes
-Dinner,Starter,Hot,Pan seared foie gras with berries and brioche ,,Foie gras with berries and brioche.webp,
-Dinner,Starter,Hot,Grilled tiger prawn,"Sweetcorn, cream butter chilly sauce, almond foam",,
-Dinner,Starter,Hot,Mussel meuniere,,,
-Dinner,Starter,Cold,Mixed salad with Kumquat dressing and burrata cheese,,,
-Dinner,Starter,Cold,Tomato salad,"feta, basil, gazpacho",Tomato salad.webp,yes
-Dinner,Starter,Cold,Roasted cauliflower salad,"Spicy pickled mustard seed, watermelon radish, yogurt sauce",,yes
-Dinner,Starter,Cold,Pate en croute,,,
-Dinner,Starter,Cold,Cold vichyssoise soup,,,
-Dinner,Starter,Cold,Cold cut platter,,,
-Dinner,Starter,Homemade bread,"Flat bread with ""hummus"" dippings",,Flat bread with variation of hummus dippings.webp,
-Dinner,Starter,Homemade bread,Bread basket with duck & pork rillettes and butter,,Homemade bread with duck & pork rillettes and butter.webp,
-Dinner,Main,FROM THE FARM,Dry aged duck breast,"duck jus, potato fondant",Dry aged duck breast.webp,yes
-Dinner,Main,FROM THE FARM,Roasted quail ,"gastrique sauce and vegetables, gratin potato",,yes
-Dinner,Main,FROM THE FARM,Steak au poivre,,,
-Dinner,Main,FROM THE FARM,Lamb duo: lamb rack & eye of loin,,,yes
-Dinner,Main,HOMEMADE PASTA,Puttanesca,"anchovies, tomatoes, eggplants, chillies",,
-Dinner,Main,HOMEMADE PASTA,Carbonara,"guanciale, eggs, peppers, 24-month parmigiano",Carbonara.webp,
-Dinner,Main,HOMEMADE PASTA,Tomato basil,"tomatoes, basil, 24-month parmigiano",Tomato basil.webp,
-Dinner,Main,HOMEMADE PASTA,Vongole,"clams, white wine, parsley",Vongole.webp,
-Dinner,Main,HOMEMADE PASTA,Lasagna,"minced beef, tomatoes, piperade, cheese",Lasagna.webp,
-Dinner,Main,COCOTTE,Bœuf Bourguignon en cocotte,mashed potato,,
-Dinner,Main,COCOTTE,Coniglio al Vino Rosso,"stewed rabbit, vegetables, red wine, long grain rice",Coniglio al Vino Rosso.webp,yes
-Dinner,Main,COCOTTE,Cassoulet,"toulouse sausage, pork, focaccia, coco beans",Cassoulet.webp,
-Dinner,Main,COCOTTE,Œufs en meurette,"eggs, ham, spinach, mushroom, sourdough",,
-Dinner,Main,FROM THE SEA,Silver pomfret meuniere,"Beurre Noisette, veggies",,
-Dinner,Main,FROM THE SEA,Seafood risotto ,"fermented chilly, calamari, prawn, Hokkaido scallop",,
-Dinner,Main,FROM THE SEA,Grilled octopus leg,"soya glazed, kalamansi, quinoa",Grilled octopus tentacle.webp,
-Dinner,Main,Tasting platter,"Extrem Puro Extremadura - Jamón Ibérico: Chorizo, Jamon de Bellota, Salchichon",,,
-Dinner,Main,Tasting platter,Sweet potato fried with Parmigiano Reggiano 24months and honey mustard dipping,,,
-Dinner,Main,Tasting platter,Kampachi ceviche with mango salsa and kumquat dressing,,,
-Dinner,Snack & Dessert,Dessert,Baba au rhum,,Baba au rhum.webp,
-Dinner,Snack & Dessert,Dessert,Choco chilly ,"smoked chocolate cremeux with tabasco, mousse rye cocoa crumble, vanilla dehydrated sponge",A69642FD-F56D-4BE6-B224-73BD6B69A1DF.webp,
-Dinner,Snack & Dessert,Dessert,Basil-berry island ,"strawberry jasmine consommé, basil ice cream, green apple foam",,
-Dinner,Snack & Dessert,Dessert,Whiskey salted caramel,"candied nuts, citrus fruits",,
-Dinner,Snack & Dessert,Dessert,Déglacer's Affogato,,,
-Dinner,Snack & Dessert,Dessert,Add Ice cream/Sorbet to any dessert/Gọi thêm kem cùng món tráng miệng ,,,
+À la carte,Starter,Hot,French onion soup with puff pastry,,French onion soup with puff pastry.webp,yes
+À la carte,Starter,Hot,Bouillabaisse soup,"seafood carcasses, prawn, squid, focaccia",bouillabaise.webp,yes
+À la carte,Starter,Hot,Pan seared foie gras with berries and brioche ,,Foie gras with berries and brioche.webp,
+À la carte,Starter,Hot,Grilled tiger prawn,"Sweetcorn, cream butter chilly sauce, almond foam",,
+À la carte,Starter,Hot,Mussel meuniere,,,
+À la carte,Starter,Cold,Mixed salad with Kumquat dressing and burrata cheese,,,
+À la carte,Starter,Cold,Tomato salad,"feta, basil, gazpacho",Tomato salad.webp,yes
+À la carte,Starter,Cold,Roasted cauliflower salad,"Spicy pickled mustard seed, watermelon radish, yogurt sauce",,yes
+À la carte,Starter,Cold,Pate en croute,,,
+À la carte,Starter,Cold,Cold vichyssoise soup,,,
+À la carte,Starter,Cold,Cold cut platter,,,
+À la carte,Starter,Homemade bread,"Flat bread with ""hummus"" dippings",,Flat bread with variation of hummus dippings.webp,
+À la carte,Starter,Homemade bread,Bread basket with duck & pork rillettes and butter,,Homemade bread with duck & pork rillettes and butter.webp,
+À la carte,Main,FROM THE FARM,Dry aged duck breast,"duck jus, potato fondant",Dry aged duck breast.webp,yes
+À la carte,Main,FROM THE FARM,Roasted quail ,"gastrique sauce and vegetables, gratin potato",,yes
+À la carte,Main,FROM THE FARM,Steak au poivre,,,
+À la carte,Main,FROM THE FARM,Lamb duo: lamb rack & eye of loin,,,yes
+À la carte,Main,HOMEMADE PASTA,Puttanesca,"anchovies, tomatoes, eggplants, chillies",,
+À la carte,Main,HOMEMADE PASTA,Carbonara,"guanciale, eggs, peppers, 24-month parmigiano",Carbonara.webp,
+À la carte,Main,HOMEMADE PASTA,Tomato basil,"tomatoes, basil, 24-month parmigiano",Tomato basil.webp,
+À la carte,Main,HOMEMADE PASTA,Vongole,"clams, white wine, parsley",Vongole.webp,
+À la carte,Main,HOMEMADE PASTA,Lasagna,"minced beef, tomatoes, piperade, cheese",Lasagna.webp,
+À la carte,Main,COCOTTE,Bœuf Bourguignon en cocotte,mashed potato,,
+À la carte,Main,COCOTTE,Coniglio al Vino Rosso,"stewed rabbit, vegetables, red wine, long grain rice",Coniglio al Vino Rosso.webp,yes
+À la carte,Main,COCOTTE,Cassoulet,"toulouse sausage, pork, focaccia, coco beans",Cassoulet.webp,
+À la carte,Main,COCOTTE,Œufs en meurette,"eggs, ham, spinach, mushroom, sourdough",,
+À la carte,Main,FROM THE SEA,Silver pomfret meuniere,"Beurre Noisette, veggies",,
+À la carte,Main,FROM THE SEA,Seafood risotto ,"fermented chilly, calamari, prawn, Hokkaido scallop",,
+À la carte,Main,FROM THE SEA,Grilled octopus leg,"soya glazed, kalamansi, quinoa",Grilled octopus tentacle.webp,
+À la carte,Main,Tasting platter,"Extrem Puro Extremadura - Jamón Ibérico: Chorizo, Jamon de Bellota, Salchichon",,,
+À la carte,Main,Tasting platter,Sweet potato fried with Parmigiano Reggiano 24months and honey mustard dipping,,,
+À la carte,Main,Tasting platter,Kampachi ceviche with mango salsa and kumquat dressing,,,
+À la carte,Snack & Dessert,Dessert,Baba au rhum,,Baba au rhum.webp,
+À la carte,Snack & Dessert,Dessert,Choco chilly ,"smoked chocolate cremeux with tabasco, mousse rye cocoa crumble, vanilla dehydrated sponge",A69642FD-F56D-4BE6-B224-73BD6B69A1DF.webp,
+À la carte,Snack & Dessert,Dessert,Basil-berry island ,"strawberry jasmine consommé, basil ice cream, green apple foam",,
+À la carte,Snack & Dessert,Dessert,Whiskey salted caramel,"candied nuts, citrus fruits",,
+À la carte,Snack & Dessert,Dessert,Déglacer's Affogato,,,
+À la carte,Snack & Dessert,Dessert,Add Ice cream/Sorbet to any dessert/Gọi thêm kem cùng món tráng miệng ,,,
 Brunch,Brunch,Brunch,Avocado on toast,"Sourdough, eggs of choice (poached, scrambled, sunny side-up) feta cheese, avocado",Avocado on toast.webp,yes
 Brunch,Brunch,Brunch,Shakshouka,"Stewed bell peppers & tomatoes, basil, focaccia, goat cheese, poached eggs",Shakshouka.webp,yes
 Brunch,Brunch,Brunch,French toast,"brioche, cinnamon, caramel",,
