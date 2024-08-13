@@ -190,7 +190,7 @@ gsap.fromTo('#aboutDeglacer .char', {
 
 
 var aboutDeglacerChars = gsap.utils.toArray('.char');
-var imageTriggerElements = [aboutDeglacerChars[0], aboutDeglacerChars[282], aboutDeglacerChars[663], aboutDeglacerChars[774]];
+var imageTriggerElements = [aboutDeglacerChars[0], aboutDeglacerChars[71], aboutDeglacerChars[250], aboutDeglacerChars[516]];
 var mealImgContEl = document.getElementsByClassName('meal-item-image-container');
 
 
