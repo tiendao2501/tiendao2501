@@ -1,38 +1,47 @@
 Section,Sub1,Sub2,Name,Ingredient,Image,ShowingByDefault
-À la carte,Starter,Hot,French onion soup with puff pastry,,French onion soup with puff pastry.webp,yes
-À la carte,Starter,Hot,Bouillabaisse soup,"seafood carcasses, prawn, squid, focaccia",bouillabaise.webp,yes
-À la carte,Starter,Hot,Pan seared foie gras with berries and brioche ,,foie-final.jpeg,
-À la carte,Starter,Hot,Mussel meuniere,,,
-À la carte,Starter,Cold,Mixed salad with Kumquat dressing and burrata cheese,,burrata-final.jpeg,
-À la carte,Starter,Cold,Pate en croute,,,
-À la carte,Starter,Cold,Cold cut platter,,,
+À la carte,Starter,Hot,French onion soup,"Beef jus, puff pastry",French onion soup with puff pastry.webp,yes
+À la carte,Starter,Hot,Prawn & corn veloute,,,yes
+À la carte,Starter,Hot,White clams,"N'duja, white wine, toast",,
+À la carte,Starter,Cold,Deglacer's garden,"Tomato, feta cheese, elderflower",,
+À la carte,Starter,Cold,Grilled artichoke,"Chilly, yogurt sauce, lentil (vegetarian)",,
+À la carte,Starter,Cold,Pâté en croûte,"Pork, foie gras, chicken liver, nuts. seasonal chutney",,
+À la carte,Starter,Cold,Beef tartare & chips,,,
 À la carte,Starter,Homemade bread,Bread basket with duck & pork rillettes and butter,,breadbasket.jpg,
-À la carte,Main,FROM THE FARM,Dry aged duck breast,"duck jus, potato fondant",Dry aged duck breast.webp,yes
-À la carte,Main,FROM THE FARM,Noir de Bigorre pork,"braised purple cabbage, ratatouille, Port jus, pistachio",,yes
+À la carte,Main,FROM THE SEA,Fish of the day,,,
+À la carte,Main,FROM THE SEA,Grilled octopus legs,"Soya glazed, kalamansi, quinoa ",Grilled octopus tentacle.webp,
+À la carte,Main,FROM THE SEA,Braised stuffed squid,"Hazelnut, hot honey yolk, Dugléré sauce",,
+À la carte,Main,FROM THE SEA,Seafood platter,"Viet fine de claire oyster, prawn, clams in white wine, babylon snail, bread",,
+À la carte,Main,FROM THE FARM,Dry aged duck breast,"Duck jus, potato fondant",Dry aged duck breast.webp,yes
 À la carte,Main,FROM THE FARM,Steak au poivre,,,
+À la carte,Main,FROM THE FARM,Noir de Bigorre pork,"Braised purple cabbage, ratatouille, Port jus, pistachio",,yes
 ,,,,,,
-À la carte,Main,COCOTTE,Bœuf Bourguignon en cocotte,mashed potato,,
-À la carte,Main,COCOTTE,Lapin à la moutarde ,"white wine, braised rabbit, mustard, long grain rice",,
-À la carte,Main,COCOTTE,Cassoulet ,,,
-À la carte,Main,FROM THE SEA,Grilled octopus leg,"soya glazed, kalamansi, quinoa",Grilled octopus tentacle.webp,
-À la carte,Main,FROM THE SEA,Silver pomfret meuniere ,,,
-À la carte,Small bites & Dessert,Small bites ,French fries or Sweet potato fries,,,
-À la carte,Small bites & Dessert,Small bites ,Lamb kefta skewer & yogurt sauce,,,
-À la carte,Small bites & Dessert,Small bites ,Wagyu beef heart skewer,,,
-À la carte,Small bites & Dessert,Small bites ,Scallop crudo ,,,
+À la carte,Main,COCOTTE - SHARING STEWED DISHES,Lapin à la moutarde,"White wine, braised rabbit, mustard, long grain rice",,
+À la carte,Main,COCOTTE - SHARING STEWED DISHES,Bœuf Bourguignon en cocotte and mashed potato,,,
+À la carte,Main,COCOTTE - SHARING STEWED DISHES,Cassoulet,"Toulouse sausage, pork, duck confit, coco beans",,
+À la carte,Small bites & Dessert,Small bites ,Fries,Potato or sweet potato,,
+À la carte,Small bites & Dessert,Small bites ,Lamb kefta skewer with yogurt sauce,3 pcs,,
+À la carte,Small bites & Dessert,Small bites ,Scallop crudo,"Ponzu, espelette pepper",,
 À la carte,Small bites & Dessert,Small bites ,Tapenade & toast,,,
+À la carte,Small bites & Dessert,Small bites ,Add on a selected glass of wine/beer with every small bites ordered,"90/85
+wine/beer",,
 À la carte,Small bites & Dessert,Dessert,Baba au rhum,,,
 À la carte,Small bites & Dessert,Dessert,Mont blanc tart,,,
-À la carte,Small bites & Dessert,Dessert,Déglacer's Affogato,,,
-À la carte,Small bites & Dessert,Dessert,Add Ice cream/Sorbet to any dessert/Gọi thêm kem cùng món tráng miệng ,,,
-Brunch,Brunch,Brunch,Avocado on toast,"Sourdough, eggs of choice (poached, scrambled, sunny side-up) feta cheese, avocado",Avocado on toast.webp,yes
-Brunch,Brunch,Brunch,Shakshouka,"Stewed bell peppers & tomatoes, basil, focaccia, goat cheese, poached eggs",Shakshouka.webp,yes
-Brunch,Brunch,Brunch,French toast,"brioche, cinnamon, caramel",,
-Brunch,Brunch,Brunch,Eggs Benedict,"Soft poached eggs, ham, on an English muffin topped with a creamy hollandaise sauce",Eggs Benedict.webp,yes
-Brunch,Brunch,Brunch,Croque monsieur/madame & mixed salad,"sandwich, ham, cheese, (sunny-side up)",Croque monsieur - madame mixed salad.webp,
-Brunch,Brunch,Brunch,Mixed salad with kumquat dressing & burrata cheese,,IMG_1093.webp,
-Brunch,Brunch,Brunch,Mushroom toast,,,
-Brunch,Brunch,Brunch,Grilled eggplant with toast,,,
-Brunch,Brunch,Brunch,Seafood burger,"Lobster, king crab, mixed salad, habaneros",,
-Brunch,Brunch,Brunch,Special roast,,,
-Brunch,Brunch,Brunch,Free flow alc package,,,
+À la carte,Small bites & Dessert,Dessert,Déglacer's Affogato,"Tonka bean ice cream, espresso",,
+À la carte,Small bites & Dessert,Dessert,Ice cream/sorbet (scoop),,,
+À la carte,Kids'menu,,Carbonara,"Guanciale, eggs, peppers, 24-month parmigiano",,
+À la carte,Kids'menu,,Chicken popcorn,,,
+À la carte,Kids'menu,,Lasagna,,,
+Brunch,Brunch,Brunch,Artisanal flat bread selection,"Egg/bacon/ parmegiano
+Garlic butter/ chive cream/ sardine/ olive
+Onion/ black garlic/ hazelnut
+Beef ragout",,yes
+Brunch,Brunch,Brunch,Roasted chorizo asparagus,Pear hollandaisse/ crispy chorizo & toast,,yes
+Brunch,Brunch,Brunch,Cured trout,Fennel/ celeriac/ crouton,,
+Brunch,Brunch,Brunch,Chicken liver mousse,Chilly jam/ mulberry jam / toast,,yes
+Brunch,Brunch,Brunch,Potato variation,"Hash brown and babaganoush
+Croquette with beef with chilly mayo
+Gnocchi/ rabbit/ green peas",,
+Brunch,Brunch,Brunch,Crepe suzette,,,
+Brunch,Brunch,Brunch,Apple tart and tonka ice cream,,,
+Brunch,Brunch,Brunch,Bread basket with duck & pork rillettes and butter,,,
+Brunch,Brunch,Brunch,Ice cream/sorbet (scoop),,,
