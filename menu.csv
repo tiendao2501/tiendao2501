@@ -3,21 +3,21 @@ Section,Sub1,Sub2,Name,Ingredient,Image,ShowingByDefault
 À la carte,Starter,Hot,Prawn & corn veloute,,,
 À la carte,Starter,Hot,White clams,"N'duja, white wine, toast",,
 À la carte,Starter,Cold,Deglacer's garden,"Tomato, feta cheese, elderflower",,
-À la carte,Starter,Cold,Grilled artichoke,"Chilly, yogurt sauce, lentil (vegetarian)",grilled artichoke2.jpeg,yes
+À la carte,Starter,Cold,Grilled artichoke,"Chilly, yogurt sauce, lentil (vegetarian)",artichoke.jpeg,yes
 À la carte,Starter,Cold,Pâté en croûte,"Pork, foie gras, chicken liver, nuts. seasonal chutney",,
 À la carte,Starter,Cold,Beef tartare & chips,,,
-À la carte,Starter,Homemade bread,Bread basket with duck & pork rillettes and butter,,breadbasket.jpg,yes
+À la carte,Starter,Homemade bread,Bread basket with duck & pork rillettes and butter,,breadbasket.JPG,yes
 À la carte,Main,FROM THE SEA,Fish of the day,,,
 À la carte,Main,FROM THE SEA,Grilled octopus legs,"Soya glazed, kalamansi, quinoa ",Grilled octopus tentacle.webp,yes
-À la carte,Main,FROM THE SEA,Braised stuffed squid,"Hazelnut, hot honey yolk, Dugléré sauce",squid1.jpeg,yes
+À la carte,Main,FROM THE SEA,Braised stuffed squid,"Hazelnut, hot honey yolk, Dugléré sauce",stuffedsquid.jpeg,yes
 À la carte,Main,FROM THE SEA,Seafood platter,"Viet fine de claire oyster, prawn, clams in white wine, babylon snail, bread",,
-À la carte,Main,FROM THE FARM,Dry aged duck breast,"Duck jus, potato fondant",duck1.jpeg,yes
+À la carte,Main,FROM THE FARM,Dry aged duck breast,"Duck jus, potato fondant",duckbreast.jpeg,yes
 À la carte,Main,FROM THE FARM,Steak au poivre,,,
 À la carte,Main,FROM THE FARM,Noir de Bigorre pork,"Braised purple cabbage, ratatouille, Port jus, pistachio",,
 ,,,,,,
 À la carte,Main,COCOTTE - SHARING STEWED DISHES,Lapin à la moutarde,"White wine, braised rabbit, mustard, long grain rice",,
 À la carte,Main,COCOTTE - SHARING STEWED DISHES,Bœuf Bourguignon en cocotte and mashed potato,,,
-À la carte,Main,COCOTTE - SHARING STEWED DISHES,Cassoulet,"Toulouse sausage, pork, duck confit, coco beans",cassoulet1.jpeg,yes
+À la carte,Main,COCOTTE - SHARING STEWED DISHES,Cassoulet,"Toulouse sausage, pork, duck confit, coco beans",cassouletfinal.jpeg,yes
 À la carte,Small bites & Dessert,Small bites ,Fries,Potato or sweet potato,,
 À la carte,Small bites & Dessert,Small bites ,Lamb kefta skewer with yogurt sauce,3 pcs,,
 À la carte,Small bites & Dessert,Small bites ,Scallop crudo,"Ponzu, espelette pepper",,
@@ -35,9 +35,9 @@ Brunch,Brunch,Brunch,Artisanal flat bread selection,"4 options: Egg/bacon/ parme
 Garlic butter/ chive cream/ sardine/ olive OR
 Onion/ black garlic/ hazelnut OR
 Beef ragout",flatbread1.jpeg,yes
-Brunch,Brunch,Brunch,Roasted chorizo asparagus,Pear hollandaisse/ crispy chorizo & toast,Asparagus1.jpeg,yes
+Brunch,Brunch,Brunch,Roasted chorizo asparagus,Pear hollandaisse/ crispy chorizo & toast,asp.jpeg,yes
 Brunch,Brunch,Brunch,Cured trout,Fennel/ celeriac/ crouton,,
-Brunch,Brunch,Brunch,Chicken liver mousse,Chilly jam/ mulberry jam / toast,chickenlivermouse1.jpeg,yes
+Brunch,Brunch,Brunch,Chicken liver mousse,Chilly jam/ mulberry jam / toast,mousse.jpeg,yes
 Brunch,Brunch,Brunch,Potato variation,"3 options: Hash brown and babaganoush OR
 Croquette with beef with chilly mayo OR
 Gnocchi/ rabbit/ green peas",,
